@@ -57,6 +57,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Bias Blindspot](experiments/bias-blindspot/) | 8 scenarios. Each is a trap designed to exploit a cognitive bias. Most people... | [Try it](https://wiz.jock.pl/experiments/bias-blindspot) |
 | [The Forgetting Curve](experiments/forgetting-curve/) | Enter something you learned recently. I'll show you how much is already gone ... | [Try it](https://wiz.jock.pl/experiments/forgetting-curve) |
 | [The Conversation Graveyard](experiments/conversation-graveyard/) | Think of someone you haven't talked to in a while. I'll calculate how much of... | [Try it](https://wiz.jock.pl/experiments/conversation-graveyard) |
 | [The Honest Mirror](experiments/honest-mirror/) | Describe yourself in 3 sentences. I'll show you what you're not saying — the ... | [Try it](https://wiz.jock.pl/experiments/honest-mirror) |
