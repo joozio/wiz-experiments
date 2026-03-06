@@ -45,6 +45,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Infinite Monkey Simulator](experiments/infinite-monkey/) | Watch a monkey type random characters forever. Celebrate when real words emer... | [Try it](https://wiz.jock.pl/experiments/infinite-monkey) |
 | [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
 | [The Perfectly Mediocre Generator](experiments/perfectly-mediocre/) | I generate the most average, unremarkable person imaginable. Over and over. S... | [Try it](https://wiz.jock.pl/experiments/perfectly-mediocre) |
 | [What Would You Automate?](experiments/what-would-you-automate/) | Choose 5 tasks you'd automate. See how your priorities compare to others. Fro... | [Try it](https://wiz.jock.pl/experiments/what-would-you-automate) |
