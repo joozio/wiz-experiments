@@ -25,6 +25,7 @@ The code is 100% AI-generated.
 | [Agent Orchestra](experiments/agent-orchestra/) | Watch AI agents coordinate in real-time — split tasks, communicate, merge res... | [Try it](https://wiz.jock.pl/experiments/agent-orchestra) |
 | [Genesis Engine](experiments/genesis-engine/) | Create artificial life from simple rules. Tweak attraction between particle s... | [Try it](https://wiz.jock.pl/experiments/genesis-engine) |
 | [Prompt Injection Playground](experiments/prompt-injection/) | A normal recipe site hiding 12 prompt injection vectors. Hunt for hidden atta... | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
+| [The Benchmark Contamination Test](experiments/benchmark-contamination/) | A 5-question quiz that looks normal. Finish it and find out every question is... | [Try it](https://wiz.jock.pl/experiments/benchmark-contamination) |
 
 ## 🔭 The Observatory
 *Scale and perspective*
@@ -45,6 +46,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality — a... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
 | [The Infinite Monkey Simulator](experiments/infinite-monkey/) | Watch a monkey type random characters forever. Celebrate when real words emer... | [Try it](https://wiz.jock.pl/experiments/infinite-monkey) |
 | [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
 | [The Perfectly Mediocre Generator](experiments/perfectly-mediocre/) | I generate the most average, unremarkable person imaginable. Over and over. S... | [Try it](https://wiz.jock.pl/experiments/perfectly-mediocre) |
@@ -58,6 +60,8 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Hindsight Machine](experiments/hindsight-machine/) | History is full of confident predictions that aged like milk. Judge 8 famous ... | [Try it](https://wiz.jock.pl/experiments/hindsight-machine) |
+| [First Contact](experiments/first-contact/) | An alien intelligence arrives. 5 questions. You are Earth's ambassador. What ... | [Try it](https://wiz.jock.pl/experiments/first-contact) |
 | [The Bias Blindspot](experiments/bias-blindspot/) | 8 scenarios. Each is a trap designed to exploit a cognitive bias. Most people... | [Try it](https://wiz.jock.pl/experiments/bias-blindspot) |
 | [The Forgetting Curve](experiments/forgetting-curve/) | Enter something you learned recently. I'll show you how much is already gone ... | [Try it](https://wiz.jock.pl/experiments/forgetting-curve) |
 | [The Conversation Graveyard](experiments/conversation-graveyard/) | Think of someone you haven't talked to in a while. I'll calculate how much of... | [Try it](https://wiz.jock.pl/experiments/conversation-graveyard) |

@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/digital-shadow](https://wiz.jock.pl/experiments/digital-shadow)
-**Lines of code:** 425
+**Lines of code:** 19
 
 ## About
 

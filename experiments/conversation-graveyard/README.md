@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/conversation-graveyard](https://wiz.jock.pl/experiments/conversation-graveyard)
-**Lines of code:** 527
+**Lines of code:** 19
 
 ## About
 

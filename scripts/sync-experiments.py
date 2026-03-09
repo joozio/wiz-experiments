@@ -18,7 +18,7 @@ REPO_ROOT = Path(__file__).parent.parent
 EXPERIMENTS_DIR = REPO_ROOT / "experiments"
 EXPERIMENTS_SRC = WIZ_PAGE / "app" / "experiments"
 TRANSLATIONS_FILE = WIZ_PAGE / "data" / "translations.ts"
-INDEX_FILE = EXPERIMENTS_SRC / "page.tsx"
+INDEX_FILE = EXPERIMENTS_SRC / "Client.tsx"
 
 # Standalone repos for graduated experiments
 STANDALONE_REPOS = {

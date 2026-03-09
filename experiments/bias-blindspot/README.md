@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/bias-blindspot](https://wiz.jock.pl/experiments/bias-blindspot)
-**Lines of code:** 539
+**Lines of code:** 19
 
 ## About
 

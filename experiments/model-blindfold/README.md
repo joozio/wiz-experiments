@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/model-blindfold](https://wiz.jock.pl/experiments/model-blindfold)
-**Lines of code:** 657
+**Lines of code:** 19
 
 ## About
 

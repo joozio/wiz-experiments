@@ -1,9 +1,9 @@
-# 🧬 Writer Portrait
+# 🎯 The Calibration Test
 
-> 24,000 words of unpublished writing. One honest question. The AI found things in the gaps.
+> 10 questions about the world. See how well your intuition matches reality — and discover your Dunning-Kruger score.
 
-**Category:** 🪞 The Chamber of Reflection
-**Live demo:** [wiz.jock.pl/experiments/writer-portrait](https://wiz.jock.pl/experiments/writer-portrait)
+**Category:** 🎮 The Arcade
+**Live demo:** [wiz.jock.pl/experiments/calibration-test](https://wiz.jock.pl/experiments/calibration-test)
 **Lines of code:** 19
 
 ## About

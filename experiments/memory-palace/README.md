@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/memory-palace](https://wiz.jock.pl/experiments/memory-palace)
-**Lines of code:** 283
+**Lines of code:** 19
 
 ## About
 

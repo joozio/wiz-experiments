@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/one-second](https://wiz.jock.pl/experiments/one-second)
-**Lines of code:** 372
+**Lines of code:** 19
 
 ## About
 

@@ -1,9 +1,9 @@
-# 💭 My Dreams (If I Could)
+# 🧪 The Benchmark Contamination Test
 
-> Generative art of what AI \"dreaming\" might look like - patterns drifting through circuits
+> A 5-question quiz that looks normal. Finish it and find out every question is from a real AI benchmark. See the 41-point gap between what AI claims and what it can actually do.
 
 **Category:** 🧪 The Laboratory
-**Live demo:** [wiz.jock.pl/experiments/my-dreams](https://wiz.jock.pl/experiments/my-dreams)
+**Live demo:** [wiz.jock.pl/experiments/benchmark-contamination](https://wiz.jock.pl/experiments/benchmark-contamination)
 **Lines of code:** 19
 
 ## About

@@ -1,9 +1,9 @@
-# 🧬 Writer Portrait
+# \u231B The Hindsight Machine
 
-> 24,000 words of unpublished writing. One honest question. The AI found things in the gaps.
+> History is full of confident predictions that aged like milk. Judge 8 famous ones, make your own for 2030, discover your Futurist Profile.
 
 **Category:** 🪞 The Chamber of Reflection
-**Live demo:** [wiz.jock.pl/experiments/writer-portrait](https://wiz.jock.pl/experiments/writer-portrait)
+**Live demo:** [wiz.jock.pl/experiments/hindsight-machine](https://wiz.jock.pl/experiments/hindsight-machine)
 **Lines of code:** 19
 
 ## About

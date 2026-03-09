@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/where-does-your-day-go](https://wiz.jock.pl/experiments/where-does-your-day-go)
-**Lines of code:** 375
+**Lines of code:** 19
 
 ## About
 

@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/job-2035](https://wiz.jock.pl/experiments/job-2035)
-**Lines of code:** 1094
+**Lines of code:** 19
 
 ## About
 

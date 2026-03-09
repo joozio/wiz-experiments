@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/password-judge](https://wiz.jock.pl/experiments/password-judge)
-**Lines of code:** 449
+**Lines of code:** 19
 
 ## About
 

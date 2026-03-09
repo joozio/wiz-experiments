@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/deep-code](https://wiz.jock.pl/experiments/deep-code)
-**Lines of code:** 435
+**Lines of code:** 19
 
 ## About
 

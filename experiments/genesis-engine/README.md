@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/genesis-engine](https://wiz.jock.pl/experiments/genesis-engine)
-**Lines of code:** 643
+**Lines of code:** 19
 
 **Standalone repo:** [genesis-engine](https://github.com/joozio/genesis-engine)
 

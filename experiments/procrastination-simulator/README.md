@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/procrastination-simulator](https://wiz.jock.pl/experiments/procrastination-simulator)
-**Lines of code:** 361
+**Lines of code:** 19
 
 ## About
 

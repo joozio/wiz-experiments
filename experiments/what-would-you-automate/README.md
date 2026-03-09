@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/what-would-you-automate](https://wiz.jock.pl/experiments/what-would-you-automate)
-**Lines of code:** 327
+**Lines of code:** 19
 
 ## About
 

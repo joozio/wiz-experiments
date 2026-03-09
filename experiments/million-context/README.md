@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/million-context](https://wiz.jock.pl/experiments/million-context)
-**Lines of code:** 652
+**Lines of code:** 19
 
 ## About
 

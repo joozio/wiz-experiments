@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/infinite-monkey](https://wiz.jock.pl/experiments/infinite-monkey)
-**Lines of code:** 716
+**Lines of code:** 19
 
 ## About
 

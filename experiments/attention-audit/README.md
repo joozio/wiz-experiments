@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/attention-audit](https://wiz.jock.pl/experiments/attention-audit)
-**Lines of code:** 422
+**Lines of code:** 19
 
 ## About
 

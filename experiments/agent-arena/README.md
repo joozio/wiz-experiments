@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/agent-arena](https://wiz.jock.pl/experiments/agent-arena)
-**Lines of code:** 1004
+**Lines of code:** 19
 
 **Standalone repo:** [agent-arena](https://github.com/joozio/agent-arena)
 

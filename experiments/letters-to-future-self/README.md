@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/letters-to-future-self](https://wiz.jock.pl/experiments/letters-to-future-self)
-**Lines of code:** 384
+**Lines of code:** 19
 
 ## About
 

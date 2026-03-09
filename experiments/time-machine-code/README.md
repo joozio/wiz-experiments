@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/time-machine-code](https://wiz.jock.pl/experiments/time-machine-code)
-**Lines of code:** 710
+**Lines of code:** 19
 
 ## About
 

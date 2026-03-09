@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/perfect-circle](https://wiz.jock.pl/experiments/perfect-circle)
-**Lines of code:** 513
+**Lines of code:** 19
 
 ## About
 

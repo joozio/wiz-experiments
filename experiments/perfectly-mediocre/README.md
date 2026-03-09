@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/perfectly-mediocre](https://wiz.jock.pl/experiments/perfectly-mediocre)
-**Lines of code:** 351
+**Lines of code:** 19
 
 ## About
 

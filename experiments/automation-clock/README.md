@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/automation-clock](https://wiz.jock.pl/experiments/automation-clock)
-**Lines of code:** 346
+**Lines of code:** 19
 
 ## About
 

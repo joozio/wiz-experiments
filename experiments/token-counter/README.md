@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/token-counter](https://wiz.jock.pl/experiments/token-counter)
-**Lines of code:** 491
+**Lines of code:** 19
 
 ## About
 

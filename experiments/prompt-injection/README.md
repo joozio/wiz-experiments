@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/prompt-injection](https://wiz.jock.pl/experiments/prompt-injection)
-**Lines of code:** 878
+**Lines of code:** 19
 
 ## About
 

@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/honest-mirror](https://wiz.jock.pl/experiments/honest-mirror)
-**Lines of code:** 369
+**Lines of code:** 19
 
 ## About
 

@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/dungeon-of-opus](https://wiz.jock.pl/experiments/dungeon-of-opus)
-**Lines of code:** 1668
+**Lines of code:** 19
 
 **Standalone repo:** [dungeon-of-opus](https://github.com/joozio/dungeon-of-opus)
 

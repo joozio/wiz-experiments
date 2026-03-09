@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Client from './Client';
 import { experimentsSeo } from '@/data/seo-metadata';
 
-const seo = experimentsSeo['digital-shadow'];
+const seo = experimentsSeo['calibration-test'];
 
 export const metadata: Metadata = {
   title: seo.title,

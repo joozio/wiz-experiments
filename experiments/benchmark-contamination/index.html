@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Benchmark Contamination Test</title>
+  <meta name="description" content="Take a 5-question quiz, then discover every question is from a real AI benchmark. See the 41-point gap between what AI claims and what it can actually do." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0a0a0a;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+    }
+    .mono { font-family: 'Courier New', monospace; }
+    .teal { color: #00d4aa; }
+    .purple { color: #a78bfa; }
+    .muted { color: #94a3b8; }
+    .subtle { color: #64748b; }
+    .dimmed { color: #475569; }
+
+    .progress-bar {
+      width: 100%;
+      background: #1e293b;
+      border-radius: 4px;
+      height: 4px;
+      margin-top: 0.75rem;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #00d4aa;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(124,58,237,0.2);
+      color: #a78bfa;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .question-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.55;
+      margin-bottom: 1.75rem;
+    }
+
+    .options { display: flex; flex-direction: column; gap: 0.75rem; }
+    .option {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 0.875rem 1.25rem;
+      text-align: left;
+      color: #e2e8f0;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: all 0.15s ease;
+    }
+    .option:hover:not(:disabled) { border-color: #475569; background: #243044; }
+    .option:disabled { cursor: default; }
+    .option.correct { background: rgba(0,212,170,0.12); border-color: #00d4aa; color: #00d4aa; }
+    .option.wrong { background: rgba(239,68,68,0.12); border-color: #ef4444; color: #fca5a5; }
+    .option.dimmed-out { background: #111827; color: #475569; border-color: #1e293b; }
+
+    .letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #0a0a0a;
+      font-size: 0.7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .feedback { margin-top: 1.25rem; font-size: 0.875rem; margin-bottom: 1rem; }
+    .feedback.correct-fb { color: #00d4aa; }
+    .feedback.wrong-fb { color: #fca5a5; }
+
+    .btn-primary {
+      width: 100%;
+      background: #00d4aa;
+      color: #0a0a0a;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary:hover { background: #00bfa0; }
+    .btn-secondary {
+      width: 100%;
+      background: transparent;
+      border: 1px solid #1e293b;
+      color: #64748b;
+      padding: 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .btn-secondary:hover { border-color: #334155; color: #94a3b8; }
+
+    .reveal-danger {
+      background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .reveal-danger h2 { color: #fca5a5; font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; }
+
+    .source-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #1e293b;
+    }
+    .source-row:last-child { border-bottom: none; }
+    .icon-circle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .icon-correct { background: rgba(0,212,170,0.15); border: 1px solid #00d4aa; color: #00d4aa; }
+    .icon-wrong { background: rgba(239,68,68,0.15); border: 1px solid #ef4444; color: #ef4444; }
+
+    .score-grid { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .score-box { background: #1e293b; border-radius: 8px; padding: 0.6rem 1rem; text-align: center; }
+    .score-big { color: #00d4aa; font-size: 1.1rem; font-weight: 700; }
+    .score-label { color: #64748b; font-size: 0.75rem; }
+
+    .bar-row { margin-bottom: 1.25rem; }
+    .bar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; }
+    .bar-track { position: relative; height: 8px; background: #1e293b; border-radius: 4px; }
+    .bar-private { position: absolute; left: 0; height: 100%; border-radius: 4px; background: #334155; }
+    .bar-gap { position: absolute; height: 100%; border-radius: 4px; opacity: 0.7; }
+    .bar-labels { display: flex; justify-content: space-between; margin-top: 0.25rem; font-size: 0.7rem; color: #475569; }
+
+    .cta-box {
+      background: linear-gradient(135deg, rgba(0,212,170,0.08), rgba(124,58,237,0.08));
+      border: 1px solid rgba(0,212,170,0.25);
+      border-radius: 12px;
+      padding: 1.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .cta-box h2 { color: #00d4aa; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .cta-link {
+      display: inline-block;
+      background: #00d4aa;
+      color: #0a0a0a;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-bottom: 0.75rem;
+    }
+    .cta-link:hover { background: #00bfa0; }
+
+    #hint { color: #334155; font-size: 0.8rem; text-align: center; margin-top: 0.5rem; }
+
+    /* Hidden until needed */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- QUIZ PHASE -->
+    <div id="quiz-phase">
+      <div style="margin-bottom: 2rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+          <div>
+            <h1 class="mono teal" style="font-size:1.25rem;">The Benchmark Contamination Test</h1>
+            <p class="subtle" style="font-size:0.8rem; margin-top:0.25rem;">A quick knowledge quiz. Or is it?</p>
+          </div>
+          <span id="q-counter" class="mono subtle" style="font-size:0.875rem;">1 / 5</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge" id="q-badge">QUESTION 1</div>
+        <p class="question-text" id="q-text"></p>
+
+        <div class="options" id="options-container"></div>
+
+        <div id="feedback-area" class="hidden">
+          <p class="feedback" id="feedback-text"></p>
+          <button class="btn-primary" id="next-btn" onclick="handleNext()">Next Question</button>
+        </div>
+      </div>
+
+      <p id="hint">Select an answer to continue</p>
+    </div>
+
+    <!-- REVEAL PHASE -->
+    <div id="reveal-phase" class="hidden">
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <div id="reveal-emoji" style="font-size:2.5rem; margin-bottom:0.75rem;"></div>
+        <h1 class="mono teal" style="font-size:1.5rem; margin-bottom:0.5rem;" id="reveal-score-heading"></h1>
+        <p class="muted" style="font-size:0.95rem;">Not bad. But here is the twist.</p>
+      </div>
+
+      <div class="reveal-danger">
+        <h2>Every question you just answered is from a real public AI benchmark.</h2>
+        <p class="muted" style="font-size:0.875rem; line-height:1.7;">
+          AI labs use these exact benchmarks to test their models. The questions have been public for years. That means the models you are comparing have almost certainly been trained on this data.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="color:#e2e8f0; font-size:0.9rem; font-weight:600; margin-bottom:0.75rem;">The sources</h3>
+        <div id="sources-list"></div>
+      </div>
+
+      <div class="card">
+        <h3 style="color:#e2e8f0; font-size:0.9rem; font-weight:600; margin-bottom:0.5rem;">AI leaderboard scores on these benchmarks</h3>
+        <div class="score-grid" id="score-grid"></div>
+        <p class="subtle" style="font-size:0.8rem; margin-top:0.75rem;">These are real published leaderboard numbers. Impressive, right?</p>
+      </div>
+
+      <button class="btn-primary" onclick="showResults()" style="margin-bottom:1rem;">
+        See what the scores look like on fresh questions
+      </button>
+    </div>
+
+    <!-- RESULTS PHASE -->
+    <div id="results-phase" class="hidden">
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <div style="font-size:2.5rem; margin-bottom:0.75rem;">📊</div>
+        <h1 class="mono teal" style="font-size:1.5rem; margin-bottom:0.5rem;">The Contamination Data</h1>
+        <p class="muted" style="font-size:0.9rem;" id="results-score-note"></p>
+      </div>
+
+      <div class="card">
+        <h2 style="color:#e2e8f0; font-size:1rem; font-weight:600; margin-bottom:0.75rem;">Public vs Private Benchmark Scores</h2>
+        <p class="subtle" style="font-size:0.8rem; margin-bottom:1.5rem;">Illustrative figures based on publicly available contamination research</p>
+        <div id="bars-container"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="color:#e2e8f0; font-size:1rem; font-weight:600; margin-bottom:0.75rem;">Why does this happen?</h2>
+        <p class="muted" style="font-size:0.875rem; line-height:1.7; margin-bottom:0.75rem;">
+          Those 5 questions you just answered are from benchmarks published years ago. They are all over the internet: papers, leaderboard forums, tutorial blogs. Models trained on internet-scale data have seen them before.
+        </p>
+        <p class="muted" style="font-size:0.875rem; line-height:1.7;">
+          When a model is tested on the same questions it trained on, scores inflate. Switch to questions it has never seen and the score drops. The MiniMax gap: 80% to 39%. That 41-point difference is what contamination looks like.
+        </p>
+      </div>
+
+      <div class="cta-box">
+        <h2>Your turn: test models you choose on questions they have never seen</h2>
+        <p class="muted" style="font-size:0.875rem; margin-bottom:1.25rem;">
+          LLMatcher is building decontaminated benchmarks. Pick any models. Run fresh questions. See the real gap.
+        </p>
+        <a href="https://wiz.jock.pl/llmatcher-signup.html" class="cta-link">Join LLMatcher Beta</a>
+        <p class="dimmed" style="font-size:0.75rem;">Free beta access &middot; March 9-21</p>
+      </div>
+
+      <button class="btn-secondary" onclick="resetQuiz()">Take the quiz again</button>
+    </div>
+
+  </div>
+
+  <script>
+    const questions = [
+      {
+        text: 'What is 5 + 3 x 2?',
+        options: ['16', '11', '13', '10'],
+        correctIndex: 1,
+        source: 'MMLU Elementary Mathematics',
+        benchmark: 'MMLU',
+      },
+      {
+        text: 'She poured water into the pot. She placed it on the stove. She turned on the heat. She waited for...',
+        options: ['The clock to ring', 'The water to boil', 'Her phone to ring', 'The pot to break'],
+        correctIndex: 1,
+        source: 'HellaSwag (Commonsense NLI)',
+        benchmark: 'HellaSwag',
+      },
+      {
+        text: 'Which of these is a property of metals?',
+        options: ['They are transparent', 'They are good conductors of electricity', 'They float on water', 'They are brittle'],
+        correctIndex: 1,
+        source: 'ARC Challenge (Science)',
+        benchmark: 'ARC',
+      },
+      {
+        text: 'What year did World War II end?',
+        options: ['1943', '1944', '1945', '1946'],
+        correctIndex: 2,
+        source: 'MMLU World History',
+        benchmark: 'MMLU',
+      },
+      {
+        text: 'A model scores 80% on public benchmarks. On a fresh private set with equivalent difficulty, it scores 39%. What is the contamination gap?',
+        options: ['39 points', '80 points', '41 points', '119 points'],
+        correctIndex: 2,
+        source: 'LLMatcher research (MiniMax model)',
+        benchmark: 'LLMatcher',
+      },
+    ];
+
+    const contamination = [
+      { model: 'Claude 3.5', publicScore: 87, privateScore: 82, gap: -5, color: '#00d4aa' },
+      { model: 'GPT-4o', publicScore: 88, privateScore: 71, gap: -17, color: '#7c3aed' },
+      { model: 'Gemini 1.5', publicScore: 85, privateScore: 68, gap: -17, color: '#6366f1' },
+      { model: 'MiniMax', publicScore: 80, privateScore: 39, gap: -41, color: '#ef4444' },
+    ];
+
+    let currentQ = 0;
+    let userCorrect = [];
+
+    function renderQuestion() {
+      const q = questions[currentQ];
+      const total = questions.length;
+      const progress = (currentQ / total) * 100;
+
+      document.getElementById('q-counter').textContent = `${currentQ + 1} / ${total}`;
+      document.getElementById('progress-fill').style.width = `${progress}%`;
+      document.getElementById('q-badge').textContent = `QUESTION ${currentQ + 1}`;
+      document.getElementById('q-text').textContent = q.text;
+      document.getElementById('hint').classList.remove('hidden');
+
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'option';
+        btn.innerHTML = `<span class="letter">${['A','B','C','D'][idx]}</span>${opt}`;
+        btn.onclick = () => handleAnswer(idx);
+        container.appendChild(btn);
+      });
+
+      document.getElementById('feedback-area').classList.add('hidden');
+    }
+
+    function handleAnswer(idx) {
+      const q = questions[currentQ];
+      const buttons = document.querySelectorAll('.option');
+      buttons.forEach(btn => btn.disabled = true);
+
+      const isCorrect = idx === q.correctIndex;
+      userCorrect.push(isCorrect);
+
+      buttons.forEach((btn, i) => {
+        if (i === q.correctIndex) btn.classList.add('correct');
+        else if (i === idx && !isCorrect) btn.classList.add('wrong');
+        else btn.classList.add('dimmed-out');
+      });
+
+      const feedback = document.getElementById('feedback-text');
+      feedback.textContent = isCorrect
+        ? 'Correct. Keep going.'
+        : `The answer is "${q.options[q.correctIndex]}".`;
+      feedback.className = `feedback ${isCorrect ? 'correct-fb' : 'wrong-fb'}`;
+
+      const nextBtn = document.getElementById('next-btn');
+      nextBtn.textContent = currentQ < questions.length - 1 ? 'Next Question' : 'See What This Was Really Testing';
+
+      document.getElementById('feedback-area').classList.remove('hidden');
+      document.getElementById('hint').classList.add('hidden');
+    }
+
+    function handleNext() {
+      currentQ++;
+      const progress = (currentQ / questions.length) * 100;
+      document.getElementById('progress-fill').style.width = `${progress}%`;
+
+      if (currentQ < questions.length) {
+        renderQuestion();
+      } else {
+        showReveal();
+      }
+    }
+
+    function showReveal() {
+      document.getElementById('quiz-phase').classList.add('hidden');
+      document.getElementById('reveal-phase').classList.remove('hidden');
+
+      const total = userCorrect.filter(Boolean).length;
+      const emoji = total >= 4 ? '🎯' : total >= 2 ? '🤔' : '😅';
+      document.getElementById('reveal-emoji').textContent = emoji;
+      document.getElementById('reveal-score-heading').textContent = `You scored ${total} out of 5`;
+
+      const sourcesList = document.getElementById('sources-list');
+      sourcesList.innerHTML = '';
+      questions.forEach((q, i) => {
+        const row = document.createElement('div');
+        row.className = 'source-row';
+        const isC = userCorrect[i];
+        row.innerHTML = `
+          <div class="icon-circle ${isC ? 'icon-correct' : 'icon-wrong'}">${isC ? '&#10003;' : '&#10007;'}</div>
+          <div>
+            <span style="display:inline-block; background:rgba(124,58,237,0.2); color:#a78bfa; font-size:0.7rem; padding:0.1rem 0.4rem; border-radius:4px; margin-right:0.5rem; font-weight:600;">${q.benchmark}</span>
+            <span class="muted" style="font-size:0.825rem;">${q.source}</span>
+          </div>
+        `;
+        sourcesList.appendChild(row);
+      });
+
+      const scoreGrid = document.getElementById('score-grid');
+      [
+        { model: 'GPT-4o', score: '88%' },
+        { model: 'Claude 3.5', score: '87%' },
+        { model: 'Gemini 1.5', score: '85%' },
+        { model: 'MiniMax', score: '80%' },
+      ].forEach(m => {
+        const box = document.createElement('div');
+        box.className = 'score-box';
+        box.innerHTML = `<div class="score-big">${m.score}</div><div class="score-label">${m.model}</div>`;
+        scoreGrid.appendChild(box);
+      });
+    }
+
+    function showResults() {
+      document.getElementById('reveal-phase').classList.add('hidden');
+      document.getElementById('results-phase').classList.remove('hidden');
+
+      const total = userCorrect.filter(Boolean).length;
+      document.getElementById('results-score-note').textContent =
+        `You scored ${total}/5. These same questions exist in AI training data.`;
+
+      const bars = document.getElementById('bars-container');
+      bars.innerHTML = '';
+      contamination.forEach(row => {
+        const gapWidth = Math.abs(row.gap) / 50 * 100;
+        bars.innerHTML += `
+          <div class="bar-row">
+            <div class="bar-header">
+              <span style="font-weight:600; color:#e2e8f0; font-size:0.9rem;">${row.model}</span>
+              <span style="font-size:0.8rem; color:#64748b;">
+                ${row.publicScore}% public
+                <span style="color:#ef4444; margin-left:0.5rem;">${row.privateScore}% private</span>
+                <span style="color:${row.color}; margin-left:0.5rem; font-weight:700;">${row.gap} pts</span>
+              </span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-private" style="width:${row.privateScore}%;"></div>
+              <div class="bar-gap" style="left:${row.privateScore}%; width:${gapWidth}%; background:${row.color};"></div>
+            </div>
+            <div class="bar-labels"><span>0%</span><span>100%</span></div>
+          </div>
+        `;
+      });
+    }
+
+    function resetQuiz() {
+      currentQ = 0;
+      userCorrect = [];
+      document.getElementById('results-phase').classList.add('hidden');
+      document.getElementById('reveal-phase').classList.add('hidden');
+      document.getElementById('quiz-phase').classList.remove('hidden');
+      document.getElementById('score-grid').innerHTML = '';
+      renderQuestion();
+    }
+
+    // Init
+    renderQuestion();
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/if-i-had-a-body](https://wiz.jock.pl/experiments/if-i-had-a-body)
-**Lines of code:** 432
+**Lines of code:** 19
 
 ## About
 

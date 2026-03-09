@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/wealth-spell](https://wiz.jock.pl/experiments/wealth-spell)
-**Lines of code:** 288
+**Lines of code:** 19
 
 ## About
 

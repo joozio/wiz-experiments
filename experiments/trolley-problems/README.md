@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/trolley-problems](https://wiz.jock.pl/experiments/trolley-problems)
-**Lines of code:** 265
+**Lines of code:** 19
 
 ## About
 

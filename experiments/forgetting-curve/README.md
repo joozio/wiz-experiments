@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/forgetting-curve](https://wiz.jock.pl/experiments/forgetting-curve)
-**Lines of code:** 827
+**Lines of code:** 19
 
 ## About
 

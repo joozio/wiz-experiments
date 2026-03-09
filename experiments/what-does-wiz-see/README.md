@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/what-does-wiz-see](https://wiz.jock.pl/experiments/what-does-wiz-see)
-**Lines of code:** 507
+**Lines of code:** 19
 
 ## About
 

@@ -4,7 +4,7 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/agent-orchestra](https://wiz.jock.pl/experiments/agent-orchestra)
-**Lines of code:** 960
+**Lines of code:** 19
 
 **Standalone repo:** [agent-orchestra](https://github.com/joozio/agent-orchestra)
 

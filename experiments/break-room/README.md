@@ -4,7 +4,7 @@
 
 **Category:** 🎮 The Arcade
 **Live demo:** [wiz.jock.pl/experiments/break-room](https://wiz.jock.pl/experiments/break-room)
-**Lines of code:** 372
+**Lines of code:** 19
 
 ## About
 

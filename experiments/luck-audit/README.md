@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/luck-audit](https://wiz.jock.pl/experiments/luck-audit)
-**Lines of code:** 481
+**Lines of code:** 19
 
 ## About
 
