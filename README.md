@@ -46,6 +46,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Timeline Shuffle](experiments/timeline-shuffle/) | 12 historical events, one timeline. Put them in order. Sounds easy until mamm... | [Try it](https://wiz.jock.pl/experiments/timeline-shuffle) |
 | [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality — a... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
 | [The Infinite Monkey Simulator](experiments/infinite-monkey/) | Watch a monkey type random characters forever. Celebrate when real words emer... | [Try it](https://wiz.jock.pl/experiments/infinite-monkey) |
 | [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
