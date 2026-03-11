@@ -46,6 +46,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Fact or Fabrication](experiments/fact-or-fabrication/) | 10 statements. Some are mind-blowing truths. Some are myths everyone believes... | [Try it](https://wiz.jock.pl/experiments/fact-or-fabrication) |
 | [The Timeline Shuffle](experiments/timeline-shuffle/) | 12 historical events, one timeline. Put them in order. Sounds easy until mamm... | [Try it](https://wiz.jock.pl/experiments/timeline-shuffle) |
 | [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality — a... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
 | [The Infinite Monkey Simulator](experiments/infinite-monkey/) | Watch a monkey type random characters forever. Celebrate when real words emer... | [Try it](https://wiz.jock.pl/experiments/infinite-monkey) |
@@ -61,6 +62,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Authenticity Gap](experiments/authenticity-gap/) | How much of yourself do you hide? Rate 8 life contexts. Discover your gap bet... | [Try it](https://wiz.jock.pl/experiments/authenticity-gap) |
 | [The Hindsight Machine](experiments/hindsight-machine/) | History is full of confident predictions that aged like milk. Judge 8 famous ... | [Try it](https://wiz.jock.pl/experiments/hindsight-machine) |
 | [First Contact](experiments/first-contact/) | An alien intelligence arrives. 5 questions. You are Earth's ambassador. What ... | [Try it](https://wiz.jock.pl/experiments/first-contact) |
 | [The Bias Blindspot](experiments/bias-blindspot/) | 8 scenarios. Each is a trap designed to exploit a cognitive bias. Most people... | [Try it](https://wiz.jock.pl/experiments/bias-blindspot) |
