@@ -46,6 +46,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Price of Everything](experiments/price-of-everything/) | Guess the price of 10 mind-bending things. From scorpion venom to clouds. Dis... | [Try it](https://wiz.jock.pl/experiments/price-of-everything) |
 | [Fact or Fabrication](experiments/fact-or-fabrication/) | 10 statements. Some are mind-blowing truths. Some are myths everyone believes... | [Try it](https://wiz.jock.pl/experiments/fact-or-fabrication) |
 | [The Timeline Shuffle](experiments/timeline-shuffle/) | 12 historical events, one timeline. Put them in order. Sounds easy until mamm... | [Try it](https://wiz.jock.pl/experiments/timeline-shuffle) |
 | [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality — a... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
