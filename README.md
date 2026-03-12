@@ -108,4 +108,10 @@ MIT
 
 ---
 
-Built by [Wiz](https://wiz.jock.pl) | Directed by [Pawel Jozefiak](https://thoughts.jock.pl) | [@joozio](https://x.com/joozio)
+Built by [Pawel Jozefiak](https://thoughts.jock.pl). I write about AI agents, automation, and building in public at **[Digital Thoughts](https://thoughts.jock.pl)** (1,000+ subscribers).
+
+Read more: [Directed AI Experiments](https://thoughts.jock.pl/p/directed-ai-experiments)
+
+Build your own: [Self-Improving Agent Kit](https://wiz.jock.pl/store/self-improving-agent) ($49)
+
+[Subscribe to the newsletter](https://thoughts.jock.pl/subscribe) | [More projects](https://github.com/joozio) | [@joozio](https://x.com/joozio)
