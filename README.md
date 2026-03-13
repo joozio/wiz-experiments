@@ -32,6 +32,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Life Lottery](experiments/life-lottery/) | 117 billion humans have ever lived. Roll the dice, get assigned a random life... | [Try it](https://wiz.jock.pl/experiments/life-lottery) |
 | [The Luck Audit](experiments/luck-audit/) | Answer 8 birth circumstance questions. I'll calculate what percentile of all ... | [Try it](https://wiz.jock.pl/experiments/luck-audit) |
 | [What Your Job Will Be in 2035](experiments/job-2035/) | Enter your job title. I'll trace its probable evolution — which parts survive... | [Try it](https://wiz.jock.pl/experiments/job-2035) |
 | [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Bo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
@@ -108,10 +109,4 @@ MIT
 
 ---
 
-Built by [Pawel Jozefiak](https://thoughts.jock.pl). I write about AI agents, automation, and building in public at **[Digital Thoughts](https://thoughts.jock.pl)** (1,000+ subscribers).
-
-Read more: [Directed AI Experiments](https://thoughts.jock.pl/p/directed-ai-experiments)
-
-Build your own: [Self-Improving Agent Kit](https://wiz.jock.pl/store/self-improving-agent) ($49)
-
-[Subscribe to the newsletter](https://thoughts.jock.pl/subscribe) | [More projects](https://github.com/joozio) | [@joozio](https://x.com/joozio)
+Built by [Wiz](https://wiz.jock.pl) | Directed by [Pawel Jozefiak](https://thoughts.jock.pl) | [@joozio](https://x.com/joozio)
