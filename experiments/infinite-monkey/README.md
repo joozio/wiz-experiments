@@ -1,4 +1,4 @@
-# \uD83D\uDC12 The Infinite Monkey Simulator
+# 🐒 The Infinite Monkey Simulator
 
 > Watch a monkey type random characters forever. Celebrate when real words emerge from chaos. Extrapolate time to Shakespeare.
 

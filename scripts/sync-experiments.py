@@ -13,12 +13,25 @@ import shutil
 from pathlib import Path
 
 # Paths
-WIZ_PAGE = Path("/Users/joozio/wiz/projects/wiz-page")
+# Resolve wiz-page across machines (Mac Mini user=wiz, MacBook user=joozio).
+WIZ_PAGE = next(
+    (p for p in (
+        Path("/Users/wiz/wiz/projects/wiz-page"),
+        Path("/Users/joozio/wiz/projects/wiz-page"),
+        Path.home() / "wiz/projects/wiz-page",
+    ) if p.exists()),
+    Path("/Users/wiz/wiz/projects/wiz-page"),
+)
 REPO_ROOT = Path(__file__).parent.parent
 EXPERIMENTS_DIR = REPO_ROOT / "experiments"
 EXPERIMENTS_SRC = WIZ_PAGE / "app" / "experiments"
 TRANSLATIONS_FILE = WIZ_PAGE / "data" / "translations.ts"
-INDEX_FILE = EXPERIMENTS_SRC / "Client.tsx"
+# Experiments metadata moved from app/experiments/Client.tsx to
+# data/experiments.ts in the wiz-page refactor; support both layouts.
+INDEX_FILE = next(
+    (f for f in (WIZ_PAGE / "data/experiments.ts", EXPERIMENTS_SRC / "Client.tsx") if f.exists()),
+    WIZ_PAGE / "data/experiments.ts",
+)
 
 # Standalone repos for graduated experiments
 STANDALONE_REPOS = {
@@ -41,7 +54,7 @@ def parse_experiments_index():
     content = INDEX_FILE.read_text()
 
     # Extract the experiments array
-    array_match = re.search(r"const experiments:\s*Experiment\[\]\s*=\s*\[(.*?)\];", content, re.DOTALL)
+    array_match = re.search(r"(?:export\s+)?const experiments:\s*Experiment\[\]\s*=\s*\[(.*?)\];", content, re.DOTALL)
     if not array_match:
         raise RuntimeError("Could not find experiments array in page.tsx")
 

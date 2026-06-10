@@ -1,4 +1,4 @@
-# \uD83E\uDDEC Genesis Engine
+# 🧬 Genesis Engine
 
 > Create artificial life from simple rules. Tweak attraction between particle species — watch cells, galaxies, and predators emerge.
 

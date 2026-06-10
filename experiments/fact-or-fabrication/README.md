@@ -1,4 +1,4 @@
-# \uD83C\uDFAD Fact or Fabrication
+# 🎭 Fact or Fabrication
 
 > 10 statements. Some are mind-blowing truths. Some are myths everyone believes. Can you tell which is which?
 

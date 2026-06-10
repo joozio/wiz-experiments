@@ -1,0 +1,21 @@
+# 📐 The Belief Bias
+
+> Wilkins (1928) Archives of Psychology vol 16 gave subjects matched sets of categorical syllogisms — symbolic content (letters and nonsense words), neutral familiar content, and emotionally loaded content. Logical performance dropped systematically as content moved from symbolic to neutral to loaded. The drop was not random: subjects accepted invalid arguments when the conclusion matched their prior beliefs and rejected valid arguments when the conclusion contradicted them. The logic of the syllogism was being read through a belief filter. Evans Barston & Pollard (1983) Memory & Cognition vol 11 picked up the thread with a clean 2x2 design. Syllogisms varied independently along logical validity (valid or invalid) and conclusion believability (believable or unbelievable). Instructions were explicit: assume the premises are true, judge whether the conclusion follows logically, ignore the real-world truth of the conclusion. Acceptance rates across three experiments: V+B 89%, V+U 56%, I+B 71%, I+U 10%. Subjects accepted 89% of valid arguments when the conclusion was believable but only 56% when it was unbelievable — a 33-point penalty for valid arguments whose conclusion they did not already accept. They accepted 71% of invalid arguments when the conclusion was believable, against 10% when it was unbelievable — a 61-point bonus for invalid arguments whose conclusion they already believed. 8 syllogisms in four hidden cells of the Evans 2x2: two V+B baseline (copper conducts electricity, aspirin has side effects), two V+U diagnostic (no nutritious foods are green therefore spinach is not nutritious, all foods containing protein cause cancer therefore eggs cause cancer), two I+B diagnostic (all addictive substances change brain chemistry and caffeine changes brain chemistry therefore caffeine is addictive — undistributed middle, all licensed doctors completed medical school and some surgeons completed medical school therefore some surgeons are licensed doctors — undistributed middle), two I+U baseline (all planets orbit a star and some asteroids orbit a star therefore some asteroids are planets, all sharks live in water and some birds live in water therefore some birds are sharks). For each, judge VALID or INVALID assuming the premises are true. WIZ computes your Belief Bias Gap: accuracy on belief-aligned items (V+B and I+U) minus accuracy on belief-conflicting items (V+U and I+B). A pure logician scores 0; a pure belief-follower scores 100. Profiles from The Logician (gap <10, below the Evans Barston & Pollard 1983 trained-subject band, less than 10% of unselected subjects per Newstead Pollard Evans & Allen 1992) through The Calibrated (10-25, post-intervention range), The Standard Subject (25-45, Evans 1983 modal band, typical adult magnitude), The Belief Driven (45-65, Klauer Musch & Naumer 2000 high-bias band), to The Pure Believer (>65, at or beyond the upper tail of the Evans 1983 distribution). Mechanism per Goel & Dolan (2003) Cognition vol 87 fMRI: belief-based judgments activate ventral medial prefrontal cortex (affective evaluation), logic-based judgments activate left lateral parietal cortex (rule-based deduction). De Neys (2012) Perspectives on Psychological Science vol 7: even subjects who give the belief-based answer show physiological signs they detected the conflict; the bias is an override not pure ignorance. Stanovich & West (2008) JPSP vol 94: only weak correlation with cognitive ability. Kahan Peters Dawson & Slovic (2017) Behavioural Public Policy vol 1: on politically-charged numerical claims, high-math-skill subjects show larger belief-driven gaps. Markovits & Nantel (1989), Evans (1989) Bias in Human Reasoning, Stanovich (2011) Rationality and the Reflective Mind, Pennington & Hastie (1992), Croskerry (2003), Mahoney (1977), Aristotle Prior Analytics.
+
+**Category:** 🪞 The Chamber of Reflection
+**Live demo:** [wiz.jock.pl/experiments/belief-bias](https://wiz.jock.pl/experiments/belief-bias)
+**Lines of code:** 27
+
+## About
+
+Single-file React experiment. Client-side only, no API calls, no data collection.
+
+Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
+
+Human idea. AI execution.
+
+## Tech
+
+- React (Next.js App Router)
+- Tailwind CSS
+- `'use client'` component

@@ -1,4 +1,4 @@
-# \uD83D\uDD00 The Timeline Shuffle
+# 🔀 The Timeline Shuffle
 
 > 12 historical events, one timeline. Put them in order. Sounds easy until mammoths and the guillotine enter the chat.
 

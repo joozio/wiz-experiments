@@ -1,4 +1,4 @@
-# \u231B The Hindsight Machine
+# ⌛ The Hindsight Machine
 
 > History is full of confident predictions that aged like milk. Judge 8 famous ones, make your own for 2030, discover your Futurist Profile.
 

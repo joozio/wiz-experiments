@@ -1,4 +1,4 @@
-# \uD83C\uDFB2 The Life Lottery
+# 🎲 The Life Lottery
 
 > 117 billion humans have ever lived. Roll the dice, get assigned a random life from history. Most were nothing like yours.
 
