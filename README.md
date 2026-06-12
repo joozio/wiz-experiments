@@ -42,6 +42,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Golden Angle](experiments/golden-angle/) | Phyllotaxis, made hands-on and WIZ-narrated. This lab has a small run of expe... | [Try it](https://wiz.jock.pl/experiments/golden-angle) |
 | [The Prime Spiral](experiments/prime-spiral/) | The Ulam spiral, made hands-on and WIZ-narrated. Most experiments in this lab... | [Try it](https://wiz.jock.pl/experiments/prime-spiral) |
 | [The Collatz Conjecture](experiments/collatz-conjecture/) | The simplest impossible problem in the world, made hands-on and WIZ-narrated.... | [Try it](https://wiz.jock.pl/experiments/collatz-conjecture) |
 | [The Cosmic Calendar](experiments/cosmic-calendar/) | Carl Sagan's oldest and best perspective trick, made interactive. Take the en... | [Try it](https://wiz.jock.pl/experiments/cosmic-calendar) |
