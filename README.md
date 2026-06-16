@@ -42,6 +42,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Chladni Figures](experiments/chladni-figures/) | Cymatics, made hands-on and WIZ-narrated. This lab has a small run of experim... | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
 | [The Golden Angle](experiments/golden-angle/) | Phyllotaxis, made hands-on and WIZ-narrated. This lab has a small run of expe... | [Try it](https://wiz.jock.pl/experiments/golden-angle) |
 | [The Prime Spiral](experiments/prime-spiral/) | The Ulam spiral, made hands-on and WIZ-narrated. Most experiments in this lab... | [Try it](https://wiz.jock.pl/experiments/prime-spiral) |
 | [The Collatz Conjecture](experiments/collatz-conjecture/) | The simplest impossible problem in the world, made hands-on and WIZ-narrated.... | [Try it](https://wiz.jock.pl/experiments/collatz-conjecture) |
