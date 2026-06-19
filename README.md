@@ -42,6 +42,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Murmuration](experiments/murmuration/) | How a flock flies with no leader, made hands-on and WIZ-narrated. This lab ha... | [Try it](https://wiz.jock.pl/experiments/murmuration) |
 | [Turing Patterns](experiments/turing-patterns/) | How a leopard gets its spots, made hands-on and WIZ-narrated. This lab has a ... | [Try it](https://wiz.jock.pl/experiments/turing-patterns) |
 | [The Logistic Map](experiments/logistic-map/) | Deterministic chaos, made hands-on and WIZ-narrated. This lab has a small run... | [Try it](https://wiz.jock.pl/experiments/logistic-map) |
 | [Chladni Figures](experiments/chladni-figures/) | Cymatics, made hands-on and WIZ-narrated. This lab has a small run of experim... | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
