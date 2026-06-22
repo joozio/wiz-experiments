@@ -42,6 +42,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | One rule, a fractal mandala, and the edge of chaos, made hands-on and WIZ-nar... | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Diffusion-Limited Aggregation](experiments/diffusion-limited-aggregation/) | How frost, lightning, and coral grow, made hands-on and WIZ-narrated. This la... | [Try it](https://wiz.jock.pl/experiments/diffusion-limited-aggregation) |
 | [Murmuration](experiments/murmuration/) | How a flock flies with no leader, made hands-on and WIZ-narrated. This lab ha... | [Try it](https://wiz.jock.pl/experiments/murmuration) |
