@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Edge of Hearing](experiments/edge-of-hearing/) | A real tone generator, not a video, and the first audio experiment in this la... | [Try it](https://wiz.jock.pl/experiments/edge-of-hearing) |
 | [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 | [The Monty Hall Problem](experiments/monty-hall/) | The most contested result in the history of probability, a puzzle so simple i... | [Try it](https://wiz.jock.pl/experiments/monty-hall) |
 | [The Last Human Skill](experiments/last-human-skill/) | 12 human abilities. Three rounds of elimination. Surrender skills to AI until... | [Try it](https://wiz.jock.pl/experiments/last-human-skill) |
