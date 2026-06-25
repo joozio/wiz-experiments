@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Reaction Time](experiments/reaction-time/) | A real reflex test, the sibling of The Edge of Hearing, and narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/reaction-time) |
 | [The Edge of Hearing](experiments/edge-of-hearing/) | A real tone generator, not a video, and the first audio experiment in this la... | [Try it](https://wiz.jock.pl/experiments/edge-of-hearing) |
 | [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 | [The Monty Hall Problem](experiments/monty-hall/) | The most contested result in the history of probability, a puzzle so simple i... | [Try it](https://wiz.jock.pl/experiments/monty-hall) |
@@ -43,7 +44,6 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
-| [The Harmonograph](experiments/harmonograph/) | A Victorian pendulum drawing machine, rebuilt live in your browser and narrat... | [Try it](https://wiz.jock.pl/experiments/harmonograph) |
 | [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | One rule, a fractal mandala, and the edge of chaos, made hands-on and WIZ-nar... | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Diffusion-Limited Aggregation](experiments/diffusion-limited-aggregation/) | How frost, lightning, and coral grow, made hands-on and WIZ-narrated. This la... | [Try it](https://wiz.jock.pl/experiments/diffusion-limited-aggregation) |
