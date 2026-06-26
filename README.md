@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Blind Spot](experiments/blind-spot/) | A real perception test, the third sibling of The Edge of Hearing and Reaction... | [Try it](https://wiz.jock.pl/experiments/blind-spot) |
 | [Reaction Time](experiments/reaction-time/) | A real reflex test, the sibling of The Edge of Hearing, and narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/reaction-time) |
 | [The Edge of Hearing](experiments/edge-of-hearing/) | A real tone generator, not a video, and the first audio experiment in this la... | [Try it](https://wiz.jock.pl/experiments/edge-of-hearing) |
 | [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
