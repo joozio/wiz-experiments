@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Hyperacuity](experiments/hyperacuity/) | A real vernier acuity test, the sibling of The Edge of Hearing, Reaction Time... | [Try it](https://wiz.jock.pl/experiments/hyperacuity) |
 | [The Number Sense](experiments/number-sense/) | A real numerosity test, the sibling of The Edge of Hearing, Reaction Time, Th... | [Try it](https://wiz.jock.pl/experiments/number-sense) |
 | [The Internal Clock](experiments/internal-clock/) | A real time-perception test, the sibling of The Edge of Hearing, Reaction Tim... | [Try it](https://wiz.jock.pl/experiments/internal-clock) |
 | [Change Blindness](experiments/change-blindness/) | A real change-blindness test, the fifth sibling of The Edge of Hearing, React... | [Try it](https://wiz.jock.pl/experiments/change-blindness) |
