@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Smallest Interval](experiments/smallest-interval/) | A real pitch discrimination test, the ears' answer to The Edge of Color and t... | [Try it](https://wiz.jock.pl/experiments/smallest-interval) |
 | [The Motion Aftereffect](experiments/motion-aftereffect/) | A real motion aftereffect test, the sibling of The Faintest Thing, Hyperacuit... | [Try it](https://wiz.jock.pl/experiments/motion-aftereffect) |
 | [The Faintest Thing](experiments/faintest-thing/) | A real contrast sensitivity test, the sibling of The Edge of Hearing, Reactio... | [Try it](https://wiz.jock.pl/experiments/faintest-thing) |
 | [Hyperacuity](experiments/hyperacuity/) | A real vernier acuity test, the sibling of The Edge of Hearing, Reaction Time... | [Try it](https://wiz.jock.pl/experiments/hyperacuity) |
