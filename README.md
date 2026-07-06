@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Crowding Zone](experiments/crowding-zone/) | A real visual crowding test, the sibling of Troxler Fading, The Motion Aftere... | [Try it](https://wiz.jock.pl/experiments/crowding-zone) |
 | [Troxler Fading](experiments/troxler-fading/) | A real Troxler fading test, the sibling of The Motion Aftereffect, The Blind ... | [Try it](https://wiz.jock.pl/experiments/troxler-fading) |
 | [The Motion Aftereffect](experiments/motion-aftereffect/) | A real motion aftereffect test, the sibling of The Faintest Thing, Hyperacuit... | [Try it](https://wiz.jock.pl/experiments/motion-aftereffect) |
 | [The Faintest Thing](experiments/faintest-thing/) | A real contrast sensitivity test, the sibling of The Edge of Hearing, Reactio... | [Try it](https://wiz.jock.pl/experiments/faintest-thing) |
