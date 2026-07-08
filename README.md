@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Hidden Current](experiments/hidden-current/) | A real motion-coherence test, the sibling of The Crowding Zone, Troxler Fadin... | [Try it](https://wiz.jock.pl/experiments/hidden-current) |
 | [The Shortest Silence](experiments/shortest-silence/) | A real auditory gap-detection test, the ears' answer in time to Hyperacuity a... | [Try it](https://wiz.jock.pl/experiments/shortest-silence) |
 | [The Crowding Zone](experiments/crowding-zone/) | A real visual crowding test, the sibling of Troxler Fading, The Motion Aftere... | [Try it](https://wiz.jock.pl/experiments/crowding-zone) |
 | [Troxler Fading](experiments/troxler-fading/) | A real Troxler fading test, the sibling of The Motion Aftereffect, The Blind ... | [Try it](https://wiz.jock.pl/experiments/troxler-fading) |
