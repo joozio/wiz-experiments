@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Motion-Induced Blindness](experiments/motion-induced-blindness/) | A real motion-induced blindness test, the sibling of Troxler Fading, The Blin... | [Try it](https://wiz.jock.pl/experiments/motion-induced-blindness) |
 | [The Restless Cube](experiments/restless-cube/) | A real Necker cube bistability test, the sibling of The Hidden Current, Troxl... | [Try it](https://wiz.jock.pl/experiments/restless-cube) |
 | [The Hidden Current](experiments/hidden-current/) | A real motion-coherence test, the sibling of The Crowding Zone, Troxler Fadin... | [Try it](https://wiz.jock.pl/experiments/hidden-current) |
 | [The Shortest Silence](experiments/shortest-silence/) | A real auditory gap-detection test, the ears' answer in time to Hyperacuity a... | [Try it](https://wiz.jock.pl/experiments/shortest-silence) |
