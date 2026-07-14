@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [One at a Time](experiments/one-at-a-time/) | A real visual search test, the sibling of The Attentional Blink, Change Blind... | [Try it](https://wiz.jock.pl/experiments/one-at-a-time) |
 | [The Long Way Around](experiments/long-way-around/) | A real mental rotation test, the sibling of A Step Ahead, The Restless Cube, ... | [Try it](https://wiz.jock.pl/experiments/long-way-around) |
 | [A Step Ahead](experiments/a-step-ahead/) | A real flash-lag test, the sibling of The Hidden Current, Reaction Time, Moti... | [Try it](https://wiz.jock.pl/experiments/a-step-ahead) |
 | [The Attentional Blink](experiments/attentional-blink/) | A real attentional blink test, the sibling of Change Blindness, Motion-Induce... | [Try it](https://wiz.jock.pl/experiments/attentional-blink) |
