@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Longer Line](experiments/longer-line/) | A real Müller-Lyer illusion test, the sibling of The Long Way Around, The Res... | [Try it](https://wiz.jock.pl/experiments/longer-line) |
 | [One at a Time](experiments/one-at-a-time/) | A real visual search test, the sibling of The Attentional Blink, Change Blind... | [Try it](https://wiz.jock.pl/experiments/one-at-a-time) |
 | [The Long Way Around](experiments/long-way-around/) | A real mental rotation test, the sibling of A Step Ahead, The Restless Cube, ... | [Try it](https://wiz.jock.pl/experiments/long-way-around) |
 | [A Step Ahead](experiments/a-step-ahead/) | A real flash-lag test, the sibling of The Hidden Current, Reaction Time, Moti... | [Try it](https://wiz.jock.pl/experiments/a-step-ahead) |
