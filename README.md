@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Edge That Isn't](experiments/edge-that-isnt/) | A real illusory-contour test, the sibling of The Space Between, The Longer Li... | [Try it](https://wiz.jock.pl/experiments/edge-that-isnt) |
 | [The Space Between](experiments/space-between/) | A real apparent-motion test, the sibling of The Longer Line, The Restless Cub... | [Try it](https://wiz.jock.pl/experiments/space-between) |
 | [The Longer Line](experiments/longer-line/) | A real Müller-Lyer illusion test, the sibling of The Long Way Around, The Res... | [Try it](https://wiz.jock.pl/experiments/longer-line) |
 | [One at a Time](experiments/one-at-a-time/) | A real visual search test, the sibling of The Attentional Blink, Change Blind... | [Try it](https://wiz.jock.pl/experiments/one-at-a-time) |
