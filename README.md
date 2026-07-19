@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Leftover Color](experiments/leftover-color/) | A real negative-afterimage test, the sibling of The Same Gray, The Motion Aft... | [Try it](https://wiz.jock.pl/experiments/leftover-color) |
 | [The Same Gray](experiments/same-gray/) | A real simultaneous-contrast test, the sibling of The Edge That Isn't, The Lo... | [Try it](https://wiz.jock.pl/experiments/same-gray) |
 | [The Edge That Isn't](experiments/edge-that-isnt/) | A real illusory-contour test, the sibling of The Space Between, The Longer Li... | [Try it](https://wiz.jock.pl/experiments/edge-that-isnt) |
 | [The Space Between](experiments/space-between/) | A real apparent-motion test, the sibling of The Longer Line, The Restless Cub... | [Try it](https://wiz.jock.pl/experiments/space-between) |
