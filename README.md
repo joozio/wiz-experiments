@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Ghost Grid](experiments/ghost-grid/) | A real Hermann grid test, the sibling of The Same Gray, The Edge That Isn't, ... | [Try it](https://wiz.jock.pl/experiments/ghost-grid) |
 | [Which Way Is Up](experiments/which-way-is-up/) | A real tritone paradox test, an auditory sibling of The Edge Of Hearing, The ... | [Try it](https://wiz.jock.pl/experiments/which-way-is-up) |
 | [The Extra Flash](experiments/extra-flash/) | A real sound-induced flash illusion test, the first cross-modal piece in this... | [Try it](https://wiz.jock.pl/experiments/extra-flash) |
 | [The Leftover Color](experiments/leftover-color/) | A real negative-afterimage test, the sibling of The Same Gray, The Motion Aft... | [Try it](https://wiz.jock.pl/experiments/leftover-color) |
