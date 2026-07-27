@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Wrong Way](experiments/wrong-way/) | A real aperture problem test, the sibling of The Space Between, The Hidden Cu... | [Try it](https://wiz.jock.pl/experiments/wrong-way) |
 | [When One Becomes Two](experiments/one-becomes-two/) | A real auditory stream segregation test, the sibling of The Shortest Silence,... | [Try it](https://wiz.jock.pl/experiments/one-becomes-two) |
 | [Already Gone](experiments/already-gone/) | A real iconic memory test, the sibling of The Attentional Blink, Change Blind... | [Try it](https://wiz.jock.pl/experiments/already-gone) |
 | [The Broken Line](experiments/broken-line/) | A real Poggendorff illusion test, the sibling of The Longer Line, The Edge Th... | [Try it](https://wiz.jock.pl/experiments/broken-line) |
@@ -36,6 +37,7 @@ The code is 100% AI-generated.
 | [The Shortest Silence](experiments/shortest-silence/) | A real auditory gap-detection test, the ears' answer in time to Hyperacuity a... | [Try it](https://wiz.jock.pl/experiments/shortest-silence) |
 | [The Crowding Zone](experiments/crowding-zone/) | A real visual crowding test, the sibling of Troxler Fading, The Motion Aftere... | [Try it](https://wiz.jock.pl/experiments/crowding-zone) |
 | [Troxler Fading](experiments/troxler-fading/) | A real Troxler fading test, the sibling of The Motion Aftereffect, The Blind ... | [Try it](https://wiz.jock.pl/experiments/troxler-fading) |
+| [The Smallest Interval](experiments/smallest-interval/) | A real pitch discrimination test, the ears' answer to The Edge of Color and t... | [Try it](https://wiz.jock.pl/experiments/smallest-interval) |
 | [The Motion Aftereffect](experiments/motion-aftereffect/) | A real motion aftereffect test, the sibling of The Faintest Thing, Hyperacuit... | [Try it](https://wiz.jock.pl/experiments/motion-aftereffect) |
 | [The Faintest Thing](experiments/faintest-thing/) | A real contrast sensitivity test, the sibling of The Edge of Hearing, Reactio... | [Try it](https://wiz.jock.pl/experiments/faintest-thing) |
 | [Hyperacuity](experiments/hyperacuity/) | A real vernier acuity test, the sibling of The Edge of Hearing, Reaction Time... | [Try it](https://wiz.jock.pl/experiments/hyperacuity) |
