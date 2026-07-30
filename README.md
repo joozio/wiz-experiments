@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Only the First](experiments/only-the-first/) | A real precedence effect test, the sibling of Unbroken, The Shortest Silence,... | [Try it](https://wiz.jock.pl/experiments/only-the-first) |
 | [Unbroken](experiments/unbroken/) | A real auditory continuity illusion test, the sibling of The Broken Line, Whe... | [Try it](https://wiz.jock.pl/experiments/unbroken) |
 | [After the Fact](experiments/after-the-fact/) | A real metacontrast masking test, the sibling of A Step Ahead, Already Gone, ... | [Try it](https://wiz.jock.pl/experiments/after-the-fact) |
 | [The Wrong Way](experiments/wrong-way/) | A real aperture problem test, the sibling of The Space Between, The Hidden Cu... | [Try it](https://wiz.jock.pl/experiments/wrong-way) |
