@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Missing Note](experiments/missing-note/) | A real missing fundamental test, the sibling of Only the First, Unbroken, Whe... | [Try it](https://wiz.jock.pl/experiments/missing-note) |
 | [The One Before](experiments/one-before/) | A real serial dependence test, the sibling of Only the First, After the Fact,... | [Try it](https://wiz.jock.pl/experiments/one-before) |
 | [Only the First](experiments/only-the-first/) | A real precedence effect test, the sibling of Unbroken, The Shortest Silence,... | [Try it](https://wiz.jock.pl/experiments/only-the-first) |
 | [Unbroken](experiments/unbroken/) | A real auditory continuity illusion test, the sibling of The Broken Line, Whe... | [Try it](https://wiz.jock.pl/experiments/unbroken) |
