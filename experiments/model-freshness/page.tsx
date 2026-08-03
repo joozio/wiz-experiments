@@ -15,5 +15,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Client />;
+  // The site is a static export, so this timestamp is frozen into the exported HTML
+  // and handed to the client as a prop. Both the build render and the first client
+  // render read the same instant, which is what keeps hydration from tearing the
+  // tree down (React #418). Live time takes over in the client's mount effect.
+  return <Client buildTime={Date.now()} />;
 }

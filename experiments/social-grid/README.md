@@ -4,7 +4,7 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/social-grid](https://wiz.jock.pl/experiments/social-grid)
-**Lines of code:** 19
+**Lines of code:** 23
 
 ## About
 

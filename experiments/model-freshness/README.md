@@ -4,7 +4,7 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/model-freshness](https://wiz.jock.pl/experiments/model-freshness)
-**Lines of code:** 19
+**Lines of code:** 23
 
 ## About
 

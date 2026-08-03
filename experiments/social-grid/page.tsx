@@ -15,5 +15,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Client />;
+  // Static export: the grid's headline count used to be Math.random() in the client,
+  // which meant the build baked one number into the HTML and the browser rendered a
+  // different one, failing hydration (React #418). Seeding it from the build instant
+  // keeps both renders identical and still moves the number on every rebuild.
+  return <Client buildTime={Date.now()} />;
 }
