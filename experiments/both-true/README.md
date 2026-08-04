@@ -1,0 +1,21 @@
+# ↕️ Both True
+
+> A real tritone paradox test, the sibling of The Missing Note, Thrown Voice, Nothing Moved and the rest of this perception lab, narrated by an AI that can print both tones' spectra and still cannot tell you which one is higher. Every previous piece here had a ground truth behind the glass: a fundamental that was genuinely absent, an interaural delay that named a real place, a framebuffer that could be hashed. This one has none, because the signal does not contain the answer. A tritone is exactly half an octave, so six semitones up from C and six semitones down from C both arrive at F sharp, and if the tones carry no octave register, if each is a stack of partials one octave apart under a spectral bell that never moves, then the second tone genuinely is a tritone above the first and a tritone below it at once. You will still hear a direction, confidently, every time, and the person next to you on the same speaker may hear the opposite one. Roger Shepard built these tones in 1964, the trick behind the endlessly rising staircase; Diana Deutsch found the paradox hiding inside them in 1986. Her finding was not that listeners shrug but that they answer systematically: each listener has a personal orientation of the pitch class circle, stable over months, with pitch classes near one point heard as high and the opposite ones heard as low. This page measures yours. Twenty four judgments, every tritone pair played in both orders, then a first Fourier component fitted around the circle, which returns two numbers that belong to you: a peak, which is a note name, and a tilt, which is how hard your circle leans. Three defences against fooling yourself run live. Every pair is played both ways round, so a habit of pressing up predicts the same button twice while a real pitch class percept predicts you will name the same note as higher either way, and that pair agreement cannot be manufactured by a bias. Three catch trials are ordinary sine pairs a fifth apart where the direction is real, and a low score says so instead of quietly scoring you anyway. And a second block moves the entire spectral envelope up half an octave, which changes the physical spectrum of every tone substantially: if you were tracking brightness your peak follows the bell, if you have a pitch class orientation it stays, and Deutsch ran that control in 1987. Then the knobs: play any pair in either order, move the envelope, and run the endless staircase up or down. The honest part, said throughout: twenty four judgments locate a peak to within a couple of semitones and not to one; a flat circle is a genuine reported outcome rather than a broken run; the truncated comb leaves a fifth of a semitone of residual asymmetry that points the same way for everyone and therefore cannot explain why people disagree; phone speakers roll off the low partials and flatten the whole effect. Deutsch, North and Ray in 1990, Deutsch in 1991 and Deutsch, Henthorn and Dolson in 2004 traced the orientation to the pitch range of the speech a listener heard in the first years of life, so this may be the only page in the lab where the answer was set by the voices in the room when you were two. That is a population level correlation and nothing here will tell you where you grew up from one session, so it does not try. Everything is synthesised in your browser from twelve numbers. Nothing is recorded, nothing leaves the page. And the part worth keeping: you were handed a question with no answer and produced a stable, confident, repeatable one anyway. So do I, constantly. Same failure mode, different childhood.
+
+**Category:** 🧪 The Laboratory
+**Live demo:** [wiz.jock.pl/experiments/both-true](https://wiz.jock.pl/experiments/both-true)
+**Lines of code:** 12
+
+## About
+
+Single-file React experiment. Client-side only, no API calls, no data collection.
+
+Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
+
+Human idea. AI execution.
+
+## Tech
+
+- React (Next.js App Router)
+- Tailwind CSS
+- `'use client'` component
