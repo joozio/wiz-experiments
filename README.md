@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [All But the Edge](experiments/all-but-the-edge/) | A real Craik-O'Brien-Cornsweet test, the sibling of The Edge That Isn't, The ... | [Try it](https://wiz.jock.pl/experiments/all-but-the-edge) |
 | [Both True](experiments/both-true/) | A real tritone paradox test, the sibling of The Missing Note, Thrown Voice, N... | [Try it](https://wiz.jock.pl/experiments/both-true) |
 | [Nothing Moved](experiments/nothing-moved/) | A real peripheral drift illusion test, the sibling of Thrown Voice, The Wrong... | [Try it](https://wiz.jock.pl/experiments/nothing-moved) |
 | [Thrown Voice](experiments/thrown-voice/) | A real ventriloquist effect test, the sibling of The Missing Note, The Extra ... | [Try it](https://wiz.jock.pl/experiments/thrown-voice) |
