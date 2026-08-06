@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Never Together](experiments/never-together/) | A real Treisman and Schmidt illusory-conjunction test, the sibling of One at ... | [Try it](https://wiz.jock.pl/experiments/never-together) |
 | [All But the Edge](experiments/all-but-the-edge/) | A real Craik-O'Brien-Cornsweet test, the sibling of The Edge That Isn't, The ... | [Try it](https://wiz.jock.pl/experiments/all-but-the-edge) |
 | [Both True](experiments/both-true/) | A real tritone paradox test, the sibling of The Missing Note, Thrown Voice, N... | [Try it](https://wiz.jock.pl/experiments/both-true) |
 | [Nothing Moved](experiments/nothing-moved/) | A real peripheral drift illusion test, the sibling of Thrown Voice, The Wrong... | [Try it](https://wiz.jock.pl/experiments/nothing-moved) |
