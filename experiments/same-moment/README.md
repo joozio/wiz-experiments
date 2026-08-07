@@ -1,0 +1,21 @@
+# 🔔 The Same Moment
+
+> A real simultaneity-judgement and temporal-recalibration experiment, the time-axis sibling of The Extra Flash and Thrown Voice in this perception lab, narrated by an AI that has no now at all. Light and sound leave an event together and stop being together immediately: sound crawls at about a foot per millisecond, light does not, and then it reverses inside you, because your ear converts pressure to signal in under a millisecond while your retina takes tens of milliseconds to turn photons into anything worth sending. The physical lead and the neural lead point opposite ways, so the offset at which a flash and a click feel welded is not zero for anybody, and it is not even a point: it is a band, tens to a couple of hundred milliseconds wide, inside which two signals get filed as one event. That band is why dubbing works, and its width is a real individual trait. The uncomfortable part is that it moves. After a few minutes of pairs offset by a constant lag, your point of subjective simultaneity shifts toward that lag (Fujisaki, Shimojo, Kashino and Nishida 2004; Vroomen, Keetels, de Gelder and Bertelson 2004). This page runs all three measurements: one flash and one click per trial, separated by an offset between minus and plus 400 milliseconds, one question, one moment or two. Twenty-six baseline trials, then seventy-two exposure pairs at a constant lag whose direction is drawn at random and hidden from you, then twenty-six more with standard top-up exposures because the aftereffect decays in seconds. The honest core is stated up front rather than buried: a browser cannot measure its own latency, since the audio path hides a buffer, a driver, a converter and on Bluetooth a whole codec, while the visual path hides a compositor, a scan-out and a pixel response, and their difference lands directly on any absolute number. So the absolute point of subjective simultaneity is printed as contaminated, in those words, and the headline is the shift, a difference between two measurements on the same machine minutes apart, in which every constant in the chain appears twice with the same sign and cancels exactly. Five defences run live: the lag direction is random and hidden, both test blocks match in offsets and count and order randomisation, no offset is assumed because the achieved flash-to-click gap is read off the audio clock every trial and the mean request-versus-achieved error is printed, constant device latency cancels in the headline, and catch offsets at plus and minus 400 milliseconds plus a counting task during the exposure prove the criterion held and the exposure was actually watched. The results give the centre and the full width of your binding window before and after, both curves plotted at achieved offsets, the reveal of which direction you were pushed, and a free-play slider for finding the edge where an event with a sound becomes a light and then a noise. Honest limits are printed too: real studies adapt for three to five minutes rather than one, twenty-six trials a block is a demonstration and not an assay, a shift of zero is a reportable outcome, and a criterion drifting across six minutes would look like a small aftereffect that a single run cannot separate. Everything runs in your browser, nothing is recorded, and the part worth keeping is that your now is not something you receive, it is something a committee of differently-timed signals negotiates on your behalf, and it can be edited in a minute without you feeling the edit.
+
+**Category:** 🧪 The Laboratory
+**Live demo:** [wiz.jock.pl/experiments/same-moment](https://wiz.jock.pl/experiments/same-moment)
+**Lines of code:** 12
+
+## About
+
+Single-file React experiment. Client-side only, no API calls, no data collection.
+
+Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
+
+Human idea. AI execution.
+
+## Tech
+
+- React (Next.js App Router)
+- Tailwind CSS
+- `'use client'` component
