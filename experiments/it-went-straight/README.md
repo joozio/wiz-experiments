@@ -1,0 +1,21 @@
+# 📐 It Went Straight
+
+> A real double-drift experiment, the position-axis sibling of A Step Ahead and The Crowding Zone in this perception lab, narrated by an AI that reads the object's location out of a variable and can print it for you every frame. A blurry striped blob travels up and down a path that is exactly vertical: one x coordinate, a constant in the source, zero horizontal displacement on every frame in both directions. The stripes inside the blob slide sideways. Look slightly away from it and the path is not vertical any more, it is a diagonal, and at these settings most people report somewhere between fifteen and fifty degrees of tilt. Look straight at it, or let the page draw the physical line over the top, and the diagonal collapses back to the vertical it always was. This is the double-drift illusion, also called the curveball and the infinite regress illusion (Tse and Hsieh 2006; Shapiro, Lu, Knight and Ennis 2010, whose curveball won the Best Illusion of the Year contest in 2009), built on the older finding that motion shifts perceived position (Ramachandran and Anstis 1990; De Valois and De Valois 1991). The result that makes it worth four minutes rather than a gif is Lisi and Cavanagh 2015: when the perceived path has wandered tens of degrees off the physical one, a saccade to the blob still lands on the blob. The eye knows where it is. Awareness does not. Two positions for one object, in one head, at the same instant, and only one of them reaches you. Kwon, Tadin and Knill 2015 give the account this page is built on: position is integrated over time rather than read off, motion is the strongest available evidence about where a thing has got to, and where positional evidence is coarse the motion term dominates and the error compounds until something anchors it. Three blocks, all of them an angle you set by rotating a line. Block one, six traverses: stripes drifting one way on two of them, the other way on two, not drifting at all on two, with the direction randomised and hidden, so the prediction is not that you see a tilt but that your two answers come out with opposite signs, which suggestion cannot produce. Block two, the same stimulus with the fixation cross at three distances including zero, where the blob passes straight through the point you are staring at and the effect should die. Block three, the interesting one: the stripe speed is pinned to exactly the envelope speed on every trial by construction, so a pure geometry account predicts the same angle at one and a half seconds a leg as at four, while an integration account predicts the slow one is worse. Four defences run live: the path is provably vertical and the proof is a button rather than a promise, the drift direction is hidden, the response line carries no number and hides vertical somewhere different on the slider track every trial, and the zero-drift pair measures your own bias and is subtracted from everything else. Honest limits are printed too: two trials a condition is a demonstration and not an assay, a phone puts the whole path near your fovea where this is weakest, the field is mid grey because a Gabor must fade into the mean luminance or it stops being a Gabor and becomes a dark disc with stripes in it, eccentricity is reported in path lengths and never in degrees of visual angle because a browser cannot know how far your face is from the glass, and a small slant is a real outcome rather than a broken run. Everything runs in your browser, nothing is recorded, nothing leaves the page. And the part worth keeping: peripheral vision is dead reckoning, a ship adding up heading and speed with no landmarks, drifting further from the truth the longer it goes without a fix. You are not seeing where things are. You are seeing where the evidence says they should have got to by now, and the fovea is the only place you ever check.
+
+**Category:** 🧪 The Laboratory
+**Live demo:** [wiz.jock.pl/experiments/it-went-straight](https://wiz.jock.pl/experiments/it-went-straight)
+**Lines of code:** 12
+
+## About
+
+Single-file React experiment. Client-side only, no API calls, no data collection.
+
+Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
+
+Human idea. AI execution.
+
+## Tech
+
+- React (Next.js App Router)
+- Tailwind CSS
+- `'use client'` component

@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [It Went Straight](experiments/it-went-straight/) | A real double-drift experiment, the position-axis sibling of A Step Ahead and... | [Try it](https://wiz.jock.pl/experiments/it-went-straight) |
 | [The Same Moment](experiments/same-moment/) | A real simultaneity-judgement and temporal-recalibration experiment, the time... | [Try it](https://wiz.jock.pl/experiments/same-moment) |
 | [Never Together](experiments/never-together/) | A real Treisman and Schmidt illusory-conjunction test, the sibling of One at ... | [Try it](https://wiz.jock.pl/experiments/never-together) |
 | [All But the Edge](experiments/all-but-the-edge/) | A real Craik-O'Brien-Cornsweet test, the sibling of The Edge That Isn't, The ... | [Try it](https://wiz.jock.pl/experiments/all-but-the-edge) |
