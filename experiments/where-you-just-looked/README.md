@@ -1,0 +1,21 @@
+# 🔦 Where You Just Looked
+
+> A real inhibition of return experiment, the timing-axis sibling of The Attentional Blink and One At A Time in this perception lab, narrated by an AI that pays nothing at all to re-read the same thing twice. A box flashes. The flash is worthless by construction: it sits over the target exactly half the time, same and opposite trials are equal in number, and the page prints the achieved fraction at the end. About a tenth of a second later a disc appears and you press a key. If the disc lands in the box that flashed, you are faster. Wait most of a second, put the disc in that very same box, and you are slower. Slower than the other box, and slower than if nothing had flashed at all. Same box, same flash, same target, same you, opposite sign, and the only thing that changed is how long you waited. This is inhibition of return, found by Posner and Cohen in 1984 while they were measuring something else, named by Posner, Rafal, Choate and Vaughan in 1985, and tied to the oculomotor machinery of the superior colliculus by Rafal and colleagues in 1989 and by Sapir, Soroker, Berger and Henik in 1999, whose patient with a lesion of one collicular pathway simply lost the effect in half of space and kept it in the other half. Klein in 1988 proposed what the thing is for, and Klein and MacInnes in 1999 watched it working in the eye movements of people hunting for Waldo in a real picture: it is how a searching animal avoids searching the same place twice. Two blocks, both of them nothing but a key press as fast as you can manage. Block one, seventy six trials shuffled into a single deck: two boxes, four delays of 100, 250, 450 and 800 milliseconds, plus a neutral condition where both boxes flash so that faster and slower get measured against something instead of only against each other. The headline is not a speed, it is a sign flip, because your 100 millisecond difference should come out negative and your 800 millisecond difference positive, and expecting an effect can make you faster overall but it cannot reverse a sign halfway through a shuffled deck. Block two, six boxes in a ring, two of them flashing in sequence, asking whether the tag is a bookmark or a list: Danziger, Kingstone and Snyder 1998 and Snyder and Kingstone 2000 say several places carry it at once, which is what a forager needs and what a single bookmark could never supply. Six defences run live: the cue is uninformative by construction, delay and side are randomised and fully interleaved, catch trials carry no target at all so pressing on a hunch is scored against you, the wait before the flash is random so its onset cannot be timed either, medians rather than means with anticipations and lapses discarded and counted openly, and a neutral baseline. Honest limits are printed too: a browser reaction time carries your display and your keyboard on top of your brain, which is a constant that cancels exactly in a difference and is the reason every number that matters here is a difference, while the noise it adds does not cancel, so ten trials a cell is a demonstration and not an assay and a flat run is not evidence that you lack the effect. The delays are quantised to your refresh rate and the achieved values are printed rather than assumed. We cannot see your eyes, and the classic claim is about attention moving while the eyes hold still. Touchscreens add latency and, worse, variable latency. Everything runs in your browser, nothing is recorded, nothing leaves the page. And the part worth keeping: the thing that stops you searching the drawer you just searched is not a memory and it is not a decision. It is a small, blind, permanent tax on returning, about thirty milliseconds wide, applied to several recent places at once, never asking whether going back is a good idea this particular time, and you have never once felt it fire.
+
+**Category:** 🧪 The Laboratory
+**Live demo:** [wiz.jock.pl/experiments/where-you-just-looked](https://wiz.jock.pl/experiments/where-you-just-looked)
+**Lines of code:** 13
+
+## About
+
+Single-file React experiment. Client-side only, no API calls, no data collection.
+
+Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
+
+Human idea. AI execution.
+
+## Tech
+
+- React (Next.js App Router)
+- Tailwind CSS
+- `'use client'` component

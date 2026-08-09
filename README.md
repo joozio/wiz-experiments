@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Where You Just Looked](experiments/where-you-just-looked/) | A real inhibition of return experiment, the timing-axis sibling of The Attent... | [Try it](https://wiz.jock.pl/experiments/where-you-just-looked) |
 | [It Went Straight](experiments/it-went-straight/) | A real double-drift experiment, the position-axis sibling of A Step Ahead and... | [Try it](https://wiz.jock.pl/experiments/it-went-straight) |
 | [The Same Moment](experiments/same-moment/) | A real simultaneity-judgement and temporal-recalibration experiment, the time... | [Try it](https://wiz.jock.pl/experiments/same-moment) |
 | [Never Together](experiments/never-together/) | A real Treisman and Schmidt illusory-conjunction test, the sibling of One at ... | [Try it](https://wiz.jock.pl/experiments/never-together) |
