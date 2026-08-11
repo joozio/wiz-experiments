@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Under the Lamp](experiments/under-the-lamp/) | A real colour constancy experiment, the asymmetric colour matching paradigm f... | [Try it](https://wiz.jock.pl/experiments/under-the-lamp) |
 | [Off True](experiments/off-true/) | A real tilt aftereffect experiment, the orientation-axis sibling of The Motio... | [Try it](https://wiz.jock.pl/experiments/off-true) |
 | [Where You Just Looked](experiments/where-you-just-looked/) | A real inhibition of return experiment, the timing-axis sibling of The Attent... | [Try it](https://wiz.jock.pl/experiments/where-you-just-looked) |
 | [It Went Straight](experiments/it-went-straight/) | A real double-drift experiment, the position-axis sibling of A Step Ahead and... | [Try it](https://wiz.jock.pl/experiments/it-went-straight) |
