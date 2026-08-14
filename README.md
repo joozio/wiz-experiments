@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Narrower Than It Was](experiments/narrower-than-it-was/) | A real anorthoscopic perception experiment, the slit-viewing paradigm that Zö... | [Try it](https://wiz.jock.pl/experiments/narrower-than-it-was) |
 | [Your Doing](experiments/your-doing/) | A real intentional binding experiment, a direct rebuild of Haggard, Clark and... | [Try it](https://wiz.jock.pl/experiments/your-doing) |
 | [The Gist](experiments/the-gist/) | A real ensemble perception experiment, a direct rebuild of Dan Ariely's 2001 ... | [Try it](https://wiz.jock.pl/experiments/the-gist) |
 | [Under the Lamp](experiments/under-the-lamp/) | A real colour constancy experiment, the asymmetric colour matching paradigm f... | [Try it](https://wiz.jock.pl/experiments/under-the-lamp) |
