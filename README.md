@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Not Every Angle](experiments/not-every-angle/) | A real oblique effect experiment, the anisotropy collected by Appelle in 1972... | [Try it](https://wiz.jock.pl/experiments/not-every-angle) |
 | [Only Right Way Up](experiments/only-right-way-up/) | A real face inversion experiment, Yin 1969 crossed with the spacing versus fe... | [Try it](https://wiz.jock.pl/experiments/only-right-way-up) |
 | [Narrower Than It Was](experiments/narrower-than-it-was/) | A real anorthoscopic perception experiment, the slit-viewing paradigm that Zö... | [Try it](https://wiz.jock.pl/experiments/narrower-than-it-was) |
 | [Your Doing](experiments/your-doing/) | A real intentional binding experiment, a direct rebuild of Haggard, Clark and... | [Try it](https://wiz.jock.pl/experiments/your-doing) |
