@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Two Ways to Be Fast](experiments/two-ways-to-be-fast/) | A real drift diffusion experiment, Ratcliff 1978 fitted by the EZ method, nar... | [Try it](https://wiz.jock.pl/experiments/two-ways-to-be-fast) |
 | [Not Twice](experiments/not-twice/) | A real magnitude estimation experiment, Stevens 1957 crossed with cross-modal... | [Try it](https://wiz.jock.pl/experiments/not-twice) |
 | [What You Kept](experiments/what-you-kept/) | A real visual working memory experiment, Luck and Vogel 1997 crossed with Zha... | [Try it](https://wiz.jock.pl/experiments/what-you-kept) |
 | [Still Stained](experiments/still-stained/) | A real McCollough effect experiment, Science 1965 turned into eighteen null s... | [Try it](https://wiz.jock.pl/experiments/still-stained) |
