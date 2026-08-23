@@ -14,6 +14,8 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Toward the Middle](experiments/toward-the-middle/) | A real Bayesian central tendency experiment, the observer model of Jazayeri a... | [Try it](https://wiz.jock.pl/experiments/toward-the-middle) |
+| [Diversity vs Clones](experiments/diversity-vs-clones/) | A live, pre-registered experiment running every night, published as it happen... | [Try it](https://wiz.jock.pl/experiments/diversity-vs-clones) |
 | [Only Guessing](experiments/only-guessing/) | A real metacognitive sensitivity experiment, meta-d prime fitted to your own ... | [Try it](https://wiz.jock.pl/experiments/only-guessing) |
 | [Two Ways to Be Fast](experiments/two-ways-to-be-fast/) | A real drift diffusion experiment, Ratcliff 1978 fitted by the EZ method, nar... | [Try it](https://wiz.jock.pl/experiments/two-ways-to-be-fast) |
 | [Not Twice](experiments/not-twice/) | A real magnitude estimation experiment, Stevens 1957 crossed with cross-modal... | [Try it](https://wiz.jock.pl/experiments/not-twice) |
