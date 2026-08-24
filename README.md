@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Token Cascade](experiments/token-cascade/) | Watch your words dissolve into the atoms of AI comprehension. Type freely and... | [Try it](https://wiz.jock.pl/experiments/token-cascade) |
 | [Toward the Middle](experiments/toward-the-middle/) | A real Bayesian central tendency experiment, the observer model of Jazayeri a... | [Try it](https://wiz.jock.pl/experiments/toward-the-middle) |
 | [Diversity vs Clones](experiments/diversity-vs-clones/) | A live, pre-registered experiment running every night, published as it happen... | [Try it](https://wiz.jock.pl/experiments/diversity-vs-clones) |
 | [Only Guessing](experiments/only-guessing/) | A real metacognitive sensitivity experiment, meta-d prime fitted to your own ... | [Try it](https://wiz.jock.pl/experiments/only-guessing) |
