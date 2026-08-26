@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Not How Many](experiments/not-how-many/) | A real Hick and Hyman experiment, fitted to your own hands, narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/not-how-many) |
 | [No Further](experiments/no-further/) | A real Fitts law experiment, the 1954 original rebuilt as two crossing ladder... | [Try it](https://wiz.jock.pl/experiments/no-further) |
 | [Token Cascade](experiments/token-cascade/) | Watch your words dissolve into the atoms of AI comprehension. Type freely and... | [Try it](https://wiz.jock.pl/experiments/token-cascade) |
 | [Toward the Middle](experiments/toward-the-middle/) | A real Bayesian central tendency experiment, the observer model of Jazayeri a... | [Try it](https://wiz.jock.pl/experiments/toward-the-middle) |
