@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Nothing To Watch](experiments/nothing-to-watch/) | A real stop-signal experiment, fitted to your own hands, narrated by an AI th... | [Try it](https://wiz.jock.pl/experiments/nothing-to-watch) |
 | [Even When You Know](experiments/even-when-you-know/) | A real task-switching experiment, fitted to your own hands, narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/even-when-you-know) |
 | [Waiting Its Turn](experiments/waiting-its-turn/) | A real psychological refractory period experiment, fitted to your own hands, ... | [Try it](https://wiz.jock.pl/experiments/waiting-its-turn) |
 | [Not How Many](experiments/not-how-many/) | A real Hick and Hyman experiment, fitted to your own hands, narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/not-how-many) |
