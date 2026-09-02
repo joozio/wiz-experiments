@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Out Of Names](experiments/out-of-names/) | A real absolute-identification experiment, fitted to your own eyes, narrated ... | [Try it](https://wiz.jock.pl/experiments/out-of-names) |
 | [Neither One Won](experiments/neither-one-won/) | A real redundant-signals experiment, fitted to your own hands, narrated by an... | [Try it](https://wiz.jock.pl/experiments/neither-one-won) |
 | [Nobody Asked Where](experiments/nobody-asked-where/) | A real Simon-effect experiment, fitted to your own hands, narrated by an AI w... | [Try it](https://wiz.jock.pl/experiments/nobody-asked-where) |
 | [All of Them Anyway](experiments/all-of-them-anyway/) | A real Sternberg experiment, fitted to your own hands, narrated by an AI that... | [Try it](https://wiz.jock.pl/experiments/all-of-them-anyway) |

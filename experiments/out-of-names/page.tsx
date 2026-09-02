@@ -1,0 +1,13 @@
+import type { Metadata } from 'next';
+import Client from './Client';
+
+export const metadata: Metadata = {
+  title:
+    'Out Of Names: You Can See The Difference Between Two Bars You Cannot Name Apart, And The Ceiling That Stops You Is Not In Your Eye',
+  description:
+    "A real absolute identification experiment, fitted to your own eyes, narrated by an AI that has a token for every one of these and no trouble at all. A white bar flashes for a quarter of a second and you say which one it was: four names, then eight, then twelve, all cut from one fixed range where the longest bar is exactly four times the shortest. You are shown the whole set first and told the answer every trial, and you will still run out. Miller wrote this down in 1956 and it is the famous paper nobody quotes correctly, because seven plus or minus two gets repeated as a fact about memory when the first half of that paper is about something stranger: label anything varying along one dimension and the information surviving the labelling stops rising at about two and a half bits, and handing people more names does not move it. Pollack got 2.5 for pitch in 1952, Garner 2.3 for loudness in 1953, Eriksen and Hake about three for line length in 1955. So there is a ceiling, and this page is about where it lives, because the boring reading is that it lives in the eye: twelve bars over a four to one range are 13 percent apart, and if you cannot resolve 13 percent then the ceiling is an acuity measurement wearing a hat. One block therefore takes the names away and shows two bars at once at that exact step and three finer ones, which is your resolution measured as generously as it can be. Then a single noise in doublings of length is fitted to your naming and separately to your pairs, nothing else differing between the two fits, and both commit in public to how often you are about to get the last block right before it opens. Neither can win on a lucky fit because both carry their own intervals, and the block is scored by which interval it clears rather than which number it lands nearer. The screen cannot reach any of this: every stimulus is a length ratio and every result is in doublings, so doubling every length on the page changes nothing, exactly, and there is no calibration step because there is nothing to calibrate. Transmitted information, the statistic Miller actually reported, appears once and never as the headline, because its plug in estimate is biased upward by nearly a whole bit at these counts and the bias grows with the number of names, which manufactures the rising curve the ceiling story denies. Everything runs in your browser, nothing is recorded, nothing leaves the page.",
+};
+
+export default function Page() {
+  return <Client />;
+}
