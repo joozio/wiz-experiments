@@ -1,0 +1,13 @@
+import type { Metadata } from 'next';
+import Client from './Client';
+
+export const metadata: Metadata = {
+  title:
+    'The Last Ones Go First: The End Of A List Is Held Somewhere Else, And Fourteen Seconds Of Arithmetic Is Enough To Empty It',
+  description:
+    "A real free recall experiment, run on your own head, narrated by an AI that has never forgotten anything. Twelve unrelated words arrive one at a time and you type back as many as you can in any order, and everybody produces the same shape: the first few come back, the last few come back best of all, and the middle sags. That curve is old and it is not the interesting part, because two humps could be one memory with two good positions in it or two memories, and a curve cannot tell you which. What can tell you is a knob that moves one hump and leaves the other standing, and then a second knob that does the opposite. So this page turns both. Fourteen seconds of arithmetic between the last word and the first keystroke should take the end of the list away and leave the beginning alone. Three times as long on each word should lift the beginning and leave the end alone. That is the double dissociation, and it is the entire reason anybody believes there are two stores rather than one. The headline is not the naive version where recency moved and primacy did not, because a result that failed to reach significance is not a measured zero and this page is not allowed to pretend otherwise. Each headline is a difference of differences, positive only if the knob reached its own hump harder than it reached the other one, carrying a bootstrap interval over lists and a permutation null. Then eighteen lists in, the page stops, fits two rival models to what it has, and prints what each one says about a condition nobody has run yet: slow words AND the arithmetic, both knobs at once. One store says the end of the list is still the tall part, because a curve keeps its shape and a delay only lowers it. Two stores says the end is simply gone. Both numbers go on the screen with their own intervals before that block opens, and it is scored by which one the result clears rather than which one it lands nearer. If the two rivals never committed to different enough numbers the page says so instead of picking a winner. Two more lists run afterwards in the condition the session opened with, so an hour of practice and fatigue becomes a number rather than a worry. No number on the page reads a clock, because serial position is an integer and recall is a count, which is why there is no calibration step and nothing about your screen can reach the result. Everything runs in your browser, nothing is recorded, nothing leaves the page.",
+};
+
+export default function Page() {
+  return <Client />;
+}
