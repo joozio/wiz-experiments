@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [The Company It Keeps](experiments/company-it-keeps/) | A real Reicher and Wheeler experiment, run on your own eyes, narrated by an A... | [Try it](https://wiz.jock.pl/experiments/company-it-keeps) |
 | [Never the Waiting](experiments/never-the-waiting/) | A real Brown Peterson experiment, run on your own head, narrated by an AI tha... | [Try it](https://wiz.jock.pl/experiments/never-the-waiting) |
 | [The Last Ones Go First](experiments/last-ones-go-first/) | A real free-recall experiment, run on your own head, narrated by an AI that h... | [Try it](https://wiz.jock.pl/experiments/last-ones-go-first) |
 | [Whatever Counts As One](experiments/whatever-counts-as-one/) | A real memory-span experiment, fitted to your own head, narrated by an AI who... | [Try it](https://wiz.jock.pl/experiments/whatever-counts-as-one) |
