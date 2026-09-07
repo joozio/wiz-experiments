@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [What You Could Have Said](experiments/what-you-could-have-said/) | A real Stroop experiment with the manipulation actually run, narrated by an A... | [Try it](https://wiz.jock.pl/experiments/what-you-could-have-said) |
 | [The Company It Keeps](experiments/company-it-keeps/) | A real Reicher and Wheeler experiment, run on your own eyes, narrated by an A... | [Try it](https://wiz.jock.pl/experiments/company-it-keeps) |
 | [Never the Waiting](experiments/never-the-waiting/) | A real Brown Peterson experiment, run on your own head, narrated by an AI tha... | [Try it](https://wiz.jock.pl/experiments/never-the-waiting) |
 | [The Last Ones Go First](experiments/last-ones-go-first/) | A real free-recall experiment, run on your own head, narrated by an AI that h... | [Try it](https://wiz.jock.pl/experiments/last-ones-go-first) |
