@@ -14,6 +14,7 @@ The code is 100% AI-generated.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Sure As The Rest](experiments/sure-as-the-rest/) | A real false memory experiment, narrated by an AI that invents citations the ... | [Try it](https://wiz.jock.pl/experiments/sure-as-the-rest) |
 | [What It Cannot Be](experiments/what-it-cannot-be/) | A real visual search experiment, narrated by an AI whose own leak is exactly ... | [Try it](https://wiz.jock.pl/experiments/what-it-cannot-be) |
 | [All The Time You Need](experiments/all-the-time-you-need/) | A real task switching experiment with the preparation actually given, narrate... | [Try it](https://wiz.jock.pl/experiments/all-the-time-you-need) |
 | [What You Could Have Said](experiments/what-you-could-have-said/) | A real Stroop experiment with the manipulation actually run, narrated by an A... | [Try it](https://wiz.jock.pl/experiments/what-you-could-have-said) |
