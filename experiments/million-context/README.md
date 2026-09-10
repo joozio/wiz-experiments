@@ -1,6 +1,6 @@
 # 🧠 What Fits in 1M Tokens?
 
-> Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Books, conversations, code — fill it up.
+> Visualize the scale of Claude Fable 5.1's 1 million token context window. Books, conversations, code: fill it up.
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/million-context](https://wiz.jock.pl/experiments/million-context)

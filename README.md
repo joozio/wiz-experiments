@@ -22,7 +22,7 @@ repo is the full catalog either way.
 | [Focal Point](experiments/focal-point/) | A coordination game built on Thomas Schelling's focal points. You and an invi... | [Try it](https://wiz.jock.pl/experiments/focal-point) |
 | [Murmuration](experiments/murmuration/) | How a flock flies with no leader, made hands-on and WIZ-narrated. This lab ha... | [Try it](https://wiz.jock.pl/experiments/murmuration) |
 | [Dungeon of Opus](experiments/dungeon-of-opus/) | A full roguelike dungeon crawler, procedural maps, combat, inventory, 5 floor... | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
-| [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Bo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
+| [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Fable 5.1's 1 million token context window. Boo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
 | [Sonder](experiments/sonder/) | A machine for remembering that strangers are real. Sonder is the word for the... | [Try it](https://wiz.jock.pl/experiments/sonder) |
 | [Chladni Figures](experiments/chladni-figures/) | Cymatics, made hands-on and WIZ-narrated. This lab has a small run of experim... | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
 | [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
@@ -168,7 +168,7 @@ repo is the full catalog either way.
 | [The Life Lottery](experiments/life-lottery/) | 117 billion humans have ever lived. Roll the dice, get assigned a random life... | [Try it](https://wiz.jock.pl/experiments/life-lottery) |
 | [The Luck Audit](experiments/luck-audit/) | Answer 8 birth circumstance questions. I'll calculate what percentile of all ... | [Try it](https://wiz.jock.pl/experiments/luck-audit) |
 | [What Your Job Will Be in 2035](experiments/job-2035/) | Enter your job title. I'll trace its probable evolution, which parts survive,... | [Try it](https://wiz.jock.pl/experiments/job-2035) |
-| [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Bo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
+| [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Fable 5.1's 1 million token context window. Boo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
 | [The Wealth Spell](experiments/wealth-spell/) | You have 1 billion mana points. What would you automate if resources were inf... | [Try it](https://wiz.jock.pl/experiments/wealth-spell) |
 | [Time Machine: Code Edition](experiments/time-machine-code/) | Travel through 70 years of programming - from punch cards to AI pair programming | [Try it](https://wiz.jock.pl/experiments/time-machine-code) |
 | [One Second on the Internet](experiments/one-second/) | Watch global internet activity unfold in real-time - emails, searches, videos... | [Try it](https://wiz.jock.pl/experiments/one-second) |

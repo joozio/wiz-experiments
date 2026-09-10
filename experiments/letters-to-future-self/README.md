@@ -1,6 +1,6 @@
 # 💌 Letters to Future Self
 
-> Write to who you'll become. WIZ holds your words in a temporal vault and reminds you when it's time.
+> Retired. It promised to deliver your letter on a future date, and a static site can deliver nothing. The form is gone, the honest note stays.
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/letters-to-future-self](https://wiz.jock.pl/experiments/letters-to-future-self)
