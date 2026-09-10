@@ -151,11 +151,41 @@ Human idea. AI execution.
     return readme
 
 
+def clean_desc(desc, limit=None):
+    """Mirror a description without carrying a dash into this repo.
+
+    A handful of the older wiz-page descriptions still use an em dash. This repo
+    is written text, and written text here has none, so swap it rather than
+    copy it through.
+    """
+    desc = desc.replace(" \u2014 ", ", ").replace(" \u2013 ", ", ")
+    desc = desc.replace("\u2014", ", ").replace("\u2013", ", ")
+    if limit and len(desc) > limit:
+        desc = desc[: limit - 3] + "..."
+    return desc
+
+
+def parse_lab_slugs():
+    """The 15 slugs wiz.jock.pl/experiments actually lists, in display order.
+
+    Empty if the constant is missing, which is the honest fallback: the README
+    then just describes the full catalog without claiming a lab that the site
+    does not have.
+    """
+    m = re.search(r"export const LAB_SLUGS = \[(.*?)\] as const;",
+                  INDEX_FILE.read_text(), re.DOTALL)
+    return re.findall(r"'([^']+)'", m.group(1)) if m else []
+
+
 def generate_top_readme(experiments, translations):
     """Generate the top-level README catalog."""
-    readme = """# Wiz Experiments
+    lab_slugs = parse_lab_slugs()
+    total = len(experiments)
 
-> 30+ interactive experiments built by an AI agent, directed by a human.
+    readme = f"""# Wiz Experiments
+
+> The complete archive: {total} interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of {len(lab_slugs)}; this repo keeps all {total}.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -164,7 +194,27 @@ Every experiment here was built by [Wiz](https://wiz.jock.pl), an autonomous AI 
 The creative direction comes from [Pawel Jozefiak](https://thoughts.jock.pl).
 The code is 100% AI-generated.
 
+Since September 2026 the site lists {len(lab_slugs)} experiments at a time, with a new one
+every week, and every other experiment stays live in
+[the archive](https://wiz.jock.pl/experiments/archive/). Nothing was deleted, and this
+repo is the full catalog either way.
+
 """
+
+    if lab_slugs:
+        by_slug = {e["slug"]: e for e in experiments}
+        readme += "## \u2b50 The Lab (currently on the site)\n\n"
+        readme += "| Experiment | Description | Demo |\n"
+        readme += "|-----------|-------------|------|\n"
+        for slug in lab_slugs:
+            exp = by_slug.get(slug)
+            if not exp:
+                continue
+            name = translations.get(exp["nameKey"], slug)
+            desc = clean_desc(translations.get(exp["descKey"], ""), 80)
+            readme += (f"| [{name}](experiments/{slug}/) | {desc} | "
+                       f"[Try it](https://wiz.jock.pl/experiments/{slug}) |\n")
+        readme += "\n"
 
     # Group by category
     by_category = {}
@@ -174,7 +224,8 @@ The code is 100% AI-generated.
             by_category[cat] = []
         by_category[cat].append(exp)
 
-    # Render each category
+    # Render each category. This is every experiment, lab and archive alike:
+    # the repo is the archive, so it does not hide anything the site retired.
     category_order = ["laboratory", "observatory", "arcade", "reflection"]
     for cat_key in category_order:
         cat_exps = by_category.get(cat_key, [])
@@ -187,10 +238,8 @@ The code is 100% AI-generated.
         readme += "|-----------|-------------|------|\n"
         for exp in cat_exps:
             name = translations.get(exp["nameKey"], exp["slug"])
-            desc = translations.get(exp["descKey"], "")
             # Truncate long descriptions for the table
-            if len(desc) > 80:
-                desc = desc[:77] + "..."
+            desc = clean_desc(translations.get(exp["descKey"], ""), 80)
             slug = exp["slug"]
             readme += f"| [{name}](experiments/{slug}/) | {desc} | [Try it](https://wiz.jock.pl/experiments/{slug}) |\n"
         readme += "\n"
@@ -214,8 +263,9 @@ These experiments grew into their own standalone repositories:
 
 1. Pawel writes a creative brief (the "what" and "why")
 2. Wiz (Claude Code agent) builds the experiment as a single-file React component
-3. Automated pipeline deploys to [wiz.jock.pl](https://wiz.jock.pl) daily
+3. Automated pipeline deploys to [wiz.jock.pl](https://wiz.jock.pl)
 4. New experiments are pushed to this repo automatically
+5. The site keeps a curated lab of 15; everything else moves to the archive and stays live
 
 Read more: [I Told My AI to Build Apps Every Day](https://thoughts.jock.pl/p/directed-ai-experiments-vibe-business)
 

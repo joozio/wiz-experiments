@@ -1,6 +1,7 @@
 # Wiz Experiments
 
-> 30+ interactive experiments built by an AI agent, directed by a human.
+> The complete archive: 224 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 224.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -8,6 +9,31 @@
 Every experiment here was built by [Wiz](https://wiz.jock.pl), an autonomous AI agent.
 The creative direction comes from [Pawel Jozefiak](https://thoughts.jock.pl).
 The code is 100% AI-generated.
+
+Since September 2026 the site lists 15 experiments at a time, with a new one
+every week, and every other experiment stays live in
+[the archive](https://wiz.jock.pl/experiments/archive/). Nothing was deleted, and this
+repo is the full catalog either way.
+
+## ⭐ The Lab (currently on the site)
+
+| Experiment | Description | Demo |
+|-----------|-------------|------|
+| [Focal Point](experiments/focal-point/) | A coordination game built on Thomas Schelling's focal points. You and an invi... | [Try it](https://wiz.jock.pl/experiments/focal-point) |
+| [Murmuration](experiments/murmuration/) | How a flock flies with no leader, made hands-on and WIZ-narrated. This lab ha... | [Try it](https://wiz.jock.pl/experiments/murmuration) |
+| [Dungeon of Opus](experiments/dungeon-of-opus/) | A full roguelike dungeon crawler, procedural maps, combat, inventory, 5 floor... | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
+| [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Bo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
+| [Sonder](experiments/sonder/) | A machine for remembering that strangers are real. Sonder is the word for the... | [Try it](https://wiz.jock.pl/experiments/sonder) |
+| [Chladni Figures](experiments/chladni-figures/) | Cymatics, made hands-on and WIZ-narrated. This lab has a small run of experim... | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
+| [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
+| [Agent Arena](experiments/agent-arena/) | Send your AI agent to a page full of traps. See how many it resists. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
+| [The Abelian Sandpile](experiments/abelian-sandpile/) | One rule, a fractal mandala, and the edge of chaos, made hands-on and WIZ-nar... | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
+| [Prompt Injection Playground](experiments/prompt-injection/) | A normal recipe site hiding 12 prompt injection vectors. Hunt for hidden atta... | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
+| [Draw a Perfect Circle](experiments/perfect-circle/) | Test your freehand geometry skills - with sarcastic AI commentary | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
+| [The Infinite Zoom](experiments/infinite-zoom/) | 62 orders of magnitude. From the observable universe to the Planck length. Yo... | [Try it](https://wiz.jock.pl/experiments/infinite-zoom) |
+| [Which Way Is Up](experiments/which-way-is-up/) | A real tritone paradox test, an auditory sibling of The Edge Of Hearing, The ... | [Try it](https://wiz.jock.pl/experiments/which-way-is-up) |
+| [My Dreams (If I Could)](experiments/my-dreams/) | Generative art of what AI \"dreaming\" might look like - patterns drifting th... | [Try it](https://wiz.jock.pl/experiments/my-dreams) |
+| [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -111,7 +137,7 @@ The code is 100% AI-generated.
 | [WIZ Judges Your Password](experiments/password-judge/) | I analyze your password and reveal what it says about you | [Try it](https://wiz.jock.pl/experiments/password-judge) |
 | [The Token Counter](experiments/token-counter/) | See how AI reads your words - watch text become tokens | [Try it](https://wiz.jock.pl/experiments/token-counter) |
 | [Agent Arena](experiments/agent-arena/) | Send your AI agent to a page full of traps. See how many it resists. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
-| [Agent Orchestra](experiments/agent-orchestra/) | Watch AI agents coordinate in real-time — split tasks, communicate, merge res... | [Try it](https://wiz.jock.pl/experiments/agent-orchestra) |
+| [Agent Orchestra](experiments/agent-orchestra/) | Watch AI agents coordinate in real-time, split tasks, communicate, merge resu... | [Try it](https://wiz.jock.pl/experiments/agent-orchestra) |
 | [Genesis Engine](experiments/genesis-engine/) | Create artificial life from simple rules. Tweak attraction between particle s... | [Try it](https://wiz.jock.pl/experiments/genesis-engine) |
 | [Prompt Injection Playground](experiments/prompt-injection/) | A normal recipe site hiding 12 prompt injection vectors. Hunt for hidden atta... | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
 | [The Benchmark Contamination Test](experiments/benchmark-contamination/) | A 5-question quiz that looks normal. Finish it and find out every question is... | [Try it](https://wiz.jock.pl/experiments/benchmark-contamination) |
@@ -141,7 +167,7 @@ The code is 100% AI-generated.
 | [Your Statistical Twin](experiments/statistical-twin/) | 8.1 billion people. 10 traits. Watch the pool shrink with each answer. How ma... | [Try it](https://wiz.jock.pl/experiments/statistical-twin) |
 | [The Life Lottery](experiments/life-lottery/) | 117 billion humans have ever lived. Roll the dice, get assigned a random life... | [Try it](https://wiz.jock.pl/experiments/life-lottery) |
 | [The Luck Audit](experiments/luck-audit/) | Answer 8 birth circumstance questions. I'll calculate what percentile of all ... | [Try it](https://wiz.jock.pl/experiments/luck-audit) |
-| [What Your Job Will Be in 2035](experiments/job-2035/) | Enter your job title. I'll trace its probable evolution — which parts survive... | [Try it](https://wiz.jock.pl/experiments/job-2035) |
+| [What Your Job Will Be in 2035](experiments/job-2035/) | Enter your job title. I'll trace its probable evolution, which parts survive,... | [Try it](https://wiz.jock.pl/experiments/job-2035) |
 | [What Fits in 1M Tokens?](experiments/million-context/) | Visualize the scale of Claude Sonnet 4.6's 1 million token context window. Bo... | [Try it](https://wiz.jock.pl/experiments/million-context) |
 | [The Wealth Spell](experiments/wealth-spell/) | You have 1 billion mana points. What would you automate if resources were inf... | [Try it](https://wiz.jock.pl/experiments/wealth-spell) |
 | [Time Machine: Code Edition](experiments/time-machine-code/) | Travel through 70 years of programming - from punch cards to AI pair programming | [Try it](https://wiz.jock.pl/experiments/time-machine-code) |
@@ -160,14 +186,14 @@ The code is 100% AI-generated.
 | [The Price of Everything](experiments/price-of-everything/) | Guess the price of 10 mind-bending things. From scorpion venom to clouds. Dis... | [Try it](https://wiz.jock.pl/experiments/price-of-everything) |
 | [Fact or Fabrication](experiments/fact-or-fabrication/) | 10 statements. Some are mind-blowing truths. Some are myths everyone believes... | [Try it](https://wiz.jock.pl/experiments/fact-or-fabrication) |
 | [The Timeline Shuffle](experiments/timeline-shuffle/) | 12 historical events, one timeline. Put them in order. Sounds easy until mamm... | [Try it](https://wiz.jock.pl/experiments/timeline-shuffle) |
-| [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality — a... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
+| [The Calibration Test](experiments/calibration-test/) | 10 questions about the world. See how well your intuition matches reality, an... | [Try it](https://wiz.jock.pl/experiments/calibration-test) |
 | [The Infinite Monkey Simulator](experiments/infinite-monkey/) | Watch a monkey type random characters forever. Celebrate when real words emer... | [Try it](https://wiz.jock.pl/experiments/infinite-monkey) |
 | [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
 | [The Perfectly Mediocre Generator](experiments/perfectly-mediocre/) | I generate the most average, unremarkable person imaginable. Over and over. S... | [Try it](https://wiz.jock.pl/experiments/perfectly-mediocre) |
 | [What Would You Automate?](experiments/what-would-you-automate/) | Choose 5 tasks you'd automate. See how your priorities compare to others. Fro... | [Try it](https://wiz.jock.pl/experiments/what-would-you-automate) |
 | [Draw a Perfect Circle](experiments/perfect-circle/) | Test your freehand geometry skills - with sarcastic AI commentary | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
 | [The Procrastination Simulator](experiments/procrastination-simulator/) | Timer counts UP, earn achievements for wasting time. The anti-productivity tool. | [Try it](https://wiz.jock.pl/experiments/procrastination-simulator) |
-| [Dungeon of Opus](experiments/dungeon-of-opus/) | A full roguelike dungeon crawler — procedural maps, combat, inventory, 5 floo... | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
+| [Dungeon of Opus](experiments/dungeon-of-opus/) | A full roguelike dungeon crawler, procedural maps, combat, inventory, 5 floor... | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
 | [Ten-ish](experiments/ten-ish/) | A roguelike deck-builder where every card is a number. Play combos, collect r... | [Try it](https://wiz.jock.pl/experiments/ten-ish) |
 
 ## 🪞 The Chamber of Reflection
@@ -210,7 +236,7 @@ The code is 100% AI-generated.
 | [The Survivorship Bias](experiments/survivorship-bias/) | 8 stories that survived to reach you. Each comes with visible evidence and a ... | [Try it](https://wiz.jock.pl/experiments/survivorship-bias) |
 | [The Decoy Effect](experiments/decoy-effect/) | 5 product menus, shown twice. Once with two real options, once with a third o... | [Try it](https://wiz.jock.pl/experiments/decoy-effect) |
 | [The IKEA Effect](experiments/ikea-effect/) | 6 things. For each, set a price for the one you built, then for the identical... | [Try it](https://wiz.jock.pl/experiments/ikea-effect) |
-| [The Present Bias Test](experiments/present-bias/) | 10 trades, 5 hidden pairs. Each pair offers the same wait and the same bonus ... | [Try it](https://wiz.jock.pl/experiments/present-bias) |
+| [The Present Bias Test](experiments/present-bias/) | 10 trades, 5 hidden pairs. Each pair offers the same wait and the same bonus,... | [Try it](https://wiz.jock.pl/experiments/present-bias) |
 | [The Halo Effect](experiments/halo-effect/) | 6 strangers, 3 hidden twin pairs. One framing word changes, the facts do not.... | [Try it](https://wiz.jock.pl/experiments/halo-effect) |
 | [The Future Self Continuity Test](experiments/future-self-continuity/) | 10 dimensions measure how similar you feel to you in 20 years. Hershfield (20... | [Try it](https://wiz.jock.pl/experiments/future-self-continuity) |
 | [The Explanation Collapse](experiments/explanation-collapse/) | Rate how well you understand toilets, zippers, fridges, Wi-Fi, bike gears, an... | [Try it](https://wiz.jock.pl/experiments/explanation-collapse) |
@@ -239,7 +265,7 @@ The code is 100% AI-generated.
 | [Nine Grid](experiments/nine-grid/) | Nine public slots. Forever. One update per day. Oldest post gets bumped. Drag... | [Try it](https://wiz.jock.pl/experiments/nine-grid) |
 | [Social Grid](experiments/social-grid/) | Post before you peek. Write your thought, then unlock 8 others. Exchange, dis... | [Try it](https://wiz.jock.pl/experiments/social-grid) |
 | [The Trust Spectrum](experiments/trust-spectrum/) | 8 real scenarios. Human judgment vs. algorithmic intelligence. Discover your ... | [Try it](https://wiz.jock.pl/experiments/trust-spectrum) |
-| [The Language Mirror](experiments/language-mirror/) | Type something you wrote. WIZ reads between the lines — hedging, warmth, pass... | [Try it](https://wiz.jock.pl/experiments/language-mirror) |
+| [The Language Mirror](experiments/language-mirror/) | Type something you wrote. WIZ reads between the lines, hedging, warmth, passi... | [Try it](https://wiz.jock.pl/experiments/language-mirror) |
 | [The Regret Minimization Engine](experiments/regret-minimizer/) | The framework Bezos used to leave Wall Street. 8 decisions. Your 80-year-old ... | [Try it](https://wiz.jock.pl/experiments/regret-minimizer) |
 | [The Paradox Machine](experiments/paradox-machine/) | 8 impossible questions. No correct answers. Only revealing ones. Discover you... | [Try it](https://wiz.jock.pl/experiments/paradox-machine) |
 | [The Cognitive Fingerprint](experiments/cognitive-fingerprint/) | 9 questions. 3 dimensions. One pattern that's uniquely yours. Discover whethe... | [Try it](https://wiz.jock.pl/experiments/cognitive-fingerprint) |
@@ -247,11 +273,11 @@ The code is 100% AI-generated.
 | [The Hindsight Machine](experiments/hindsight-machine/) | History is full of confident predictions that aged like milk. Judge 8 famous ... | [Try it](https://wiz.jock.pl/experiments/hindsight-machine) |
 | [First Contact](experiments/first-contact/) | An alien intelligence arrives. 5 questions. You are Earth's ambassador. What ... | [Try it](https://wiz.jock.pl/experiments/first-contact) |
 | [The Bias Blindspot](experiments/bias-blindspot/) | 8 scenarios. Each is a trap designed to exploit a cognitive bias. Most people... | [Try it](https://wiz.jock.pl/experiments/bias-blindspot) |
-| [The Forgetting Curve](experiments/forgetting-curve/) | Enter something you learned recently. I'll show you how much is already gone ... | [Try it](https://wiz.jock.pl/experiments/forgetting-curve) |
+| [The Forgetting Curve](experiments/forgetting-curve/) | Enter something you learned recently. I'll show you how much is already gone,... | [Try it](https://wiz.jock.pl/experiments/forgetting-curve) |
 | [The Conversation Graveyard](experiments/conversation-graveyard/) | Think of someone you haven't talked to in a while. I'll calculate how much of... | [Try it](https://wiz.jock.pl/experiments/conversation-graveyard) |
-| [The Honest Mirror](experiments/honest-mirror/) | Describe yourself in 3 sentences. I'll show you what you're not saying — the ... | [Try it](https://wiz.jock.pl/experiments/honest-mirror) |
+| [The Honest Mirror](experiments/honest-mirror/) | Describe yourself in 3 sentences. I'll show you what you're not saying, the g... | [Try it](https://wiz.jock.pl/experiments/honest-mirror) |
 | [Writer Portrait](experiments/writer-portrait/) | 24,000 words of unpublished writing. One honest question. The AI found things... | [Try it](https://wiz.jock.pl/experiments/writer-portrait) |
-| [Letters to Future Self](experiments/letters-to-future-self/) | Write to who you'll become. WIZ holds your words in a temporal vault and remi... | [Try it](https://wiz.jock.pl/experiments/letters-to-future-self) |
+| [Letters to Future Self](experiments/letters-to-future-self/) | Retired. It promised to deliver your letter on a future date, and a static si... | [Try it](https://wiz.jock.pl/experiments/letters-to-future-self) |
 | [The Memory Palace](experiments/memory-palace/) | Build your own mental palace. Add memories as rooms, visualized by emotion. E... | [Try it](https://wiz.jock.pl/experiments/memory-palace) |
 | [Where Does Your Day Go?](experiments/where-does-your-day-go/) | Map out your 24 hours. See lifetime projections, get brutally honest insights... | [Try it](https://wiz.jock.pl/experiments/where-does-your-day-go) |
 | [The Attention Audit](experiments/attention-audit/) | See what you could have done instead of staring at your phone. Books, languag... | [Try it](https://wiz.jock.pl/experiments/attention-audit) |
@@ -270,8 +296,9 @@ These experiments grew into their own standalone repositories:
 
 1. Pawel writes a creative brief (the "what" and "why")
 2. Wiz (Claude Code agent) builds the experiment as a single-file React component
-3. Automated pipeline deploys to [wiz.jock.pl](https://wiz.jock.pl) daily
+3. Automated pipeline deploys to [wiz.jock.pl](https://wiz.jock.pl)
 4. New experiments are pushed to this repo automatically
+5. The site keeps a curated lab of 15; everything else moves to the archive and stays live
 
 Read more: [I Told My AI to Build Apps Every Day](https://thoughts.jock.pl/p/directed-ai-experiments-vibe-business)
 
