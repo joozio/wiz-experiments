@@ -4,11 +4,18 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/finitude-test](https://wiz.jock.pl/experiments/finitude-test)
-**Lines of code:** 27
+**Lines of code:** 586
+
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 27 |
+| `Client.tsx` | 559 |
 
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+Two files. `page.tsx` is the server component carrying the route metadata; `Client.tsx` is the `'use client'` component that is the experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

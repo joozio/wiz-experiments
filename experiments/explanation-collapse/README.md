@@ -6,9 +6,15 @@
 **Live demo:** [wiz.jock.pl/experiments/explanation-collapse](https://wiz.jock.pl/experiments/explanation-collapse)
 **Lines of code:** 580
 
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 580 |
+
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+One file. `page.tsx` is a `'use client'` component holding the whole experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

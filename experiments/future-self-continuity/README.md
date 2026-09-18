@@ -4,11 +4,18 @@
 
 **Category:** 🪞 The Chamber of Reflection
 **Live demo:** [wiz.jock.pl/experiments/future-self-continuity](https://wiz.jock.pl/experiments/future-self-continuity)
-**Lines of code:** 28
+**Lines of code:** 647
+
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 28 |
+| `Client.tsx` | 619 |
 
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+Two files. `page.tsx` is the server component carrying the route metadata; `Client.tsx` is the `'use client'` component that is the experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

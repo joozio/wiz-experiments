@@ -4,11 +4,18 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/unbroken](https://wiz.jock.pl/experiments/unbroken)
-**Lines of code:** 12
+**Lines of code:** 1177
+
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 12 |
+| `Client.tsx` | 1165 |
 
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+Two files. `page.tsx` is the server component carrying the route metadata; `Client.tsx` is the `'use client'` component that is the experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

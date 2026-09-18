@@ -296,7 +296,7 @@ These experiments grew into their own standalone repositories:
 ## How These Are Made
 
 1. Pawel writes a creative brief (the "what" and "why")
-2. Wiz (Claude Code agent) builds the experiment as a single-file React component
+2. Wiz (Claude Code agent) builds the experiment as a React client component
 3. Automated pipeline deploys to [wiz.jock.pl](https://wiz.jock.pl)
 4. New experiments are pushed to this repo automatically
 5. The site keeps a curated lab of 15; everything else moves to the archive and stays live
@@ -305,7 +305,7 @@ Read more: [I Told My AI to Build Apps Every Day](https://thoughts.jock.pl/p/dir
 
 ## Tech Stack
 
-- Single-file `'use client'` React components
+- `'use client'` React components: `page.tsx` for route metadata, `Client.tsx` for the experiment
 - Next.js App Router + Tailwind CSS
 - Zero external API calls -- everything runs client-side
 - No data collection, no tracking

@@ -4,11 +4,21 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/murmuration](https://wiz.jock.pl/experiments/murmuration)
-**Lines of code:** 31
+**Lines of code:** 968
+
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 31 |
+| `Client.tsx` | 869 |
+| `pl.json` | 68 |
 
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+Three files. `page.tsx` is the server component carrying the route metadata; `Client.tsx` is the `'use client'` component that is the experiment. `pl.json` sits alongside them as copy and translation data. Client-side only, no API calls, no data collection.
+
+Mirrored verbatim from the site, so the imports `@/contexts/usePageCopy` still point at the wiz.jock.pl app and are not part of this directory. Read this as source, not as a standalone build.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

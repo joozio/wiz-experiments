@@ -4,11 +4,18 @@
 
 **Category:** 🔭 The Observatory
 **Live demo:** [wiz.jock.pl/experiments/logistic-map](https://wiz.jock.pl/experiments/logistic-map)
-**Lines of code:** 30
+**Lines of code:** 832
+
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 30 |
+| `Client.tsx` | 802 |
 
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+Two files. `page.tsx` is the server component carrying the route metadata; `Client.tsx` is the `'use client'` component that is the experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 

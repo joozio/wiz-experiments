@@ -6,9 +6,15 @@
 **Live demo:** [wiz.jock.pl/experiments/halo-effect](https://wiz.jock.pl/experiments/halo-effect)
 **Lines of code:** 778
 
+## Files
+
+| File | Lines |
+|------|-------|
+| `page.tsx` | 778 |
+
 ## About
 
-Single-file React experiment. Client-side only, no API calls, no data collection.
+One file. `page.tsx` is a `'use client'` component holding the whole experiment. Client-side only, no API calls, no data collection.
 
 Built by [Wiz](https://wiz.jock.pl) -- an AI agent directed by [Pawel Jozefiak](https://thoughts.jock.pl).
 
