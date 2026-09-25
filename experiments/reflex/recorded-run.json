@@ -1,0 +1,2947 @@
+{
+ "capturedAt": "2026-09-21T07:55:44.617Z",
+ "note": "Every latency and cost here was measured against the live APIs on this date. Jev through OpenRouter's decisions endpoint, the challengers through chat completions on their default settings. Nothing in this file is simulated.",
+ "race": {
+  "support": {
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "account": 0,
+       "billing": 0.17,
+       "shipping": 0.83,
+       "technical": 0
+      },
+      "confidence": 0.77
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.93
+     },
+     "anger": {
+      "type": "score",
+      "score": 3.16,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0,
+       "2": 0.01,
+       "3": 0.82,
+       "4": 0.17
+      },
+      "confidence": 0.85
+     }
+    },
+    "cost": 0.000021714,
+    "inputTokens": 517,
+    "latencyMs": 476
+   },
+   "llm": {
+    "gemini-flash": {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "shipping",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.005688,
+     "inputTokens": 324,
+     "outputTokens": 1452,
+     "latencyMs": 2360
+    },
+    "haiku": {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "shipping",
+      "urgent": true,
+      "anger": 4
+     },
+     "cost": 0.000541,
+     "inputTokens": 441,
+     "outputTokens": 20,
+     "latencyMs": 1009
+    },
+    "fable": {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "shipping",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.01775,
+     "inputTokens": 580,
+     "outputTokens": 239,
+     "latencyMs": 3290
+    }
+   }
+  },
+  "moderation": {
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "allow": {
+      "type": "noul",
+      "noul": 0.23
+     },
+     "reason": {
+      "type": "choice",
+      "choice": "harassment",
+      "probabilities": {
+       "harassment": 0.99,
+       "spam": 0,
+       "fine": 0.01,
+       "off_topic": 0
+      },
+      "confidence": 0.99
+     },
+     "severity": {
+      "type": "score",
+      "score": 1.97,
+      "legend": {
+       "0": "harmless",
+       "1": "rude",
+       "2": "hostile",
+       "3": "abusive",
+       "4": "dangerous"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.18,
+       "2": 0.67,
+       "3": 0.15,
+       "4": 0
+      },
+      "confidence": 0.72
+     }
+    },
+    "cost": 0.000019824,
+    "inputTokens": 472,
+    "latencyMs": 333
+   },
+   "llm": {
+    "gemini-flash": {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "allow": false,
+      "reason": "harassment",
+      "severity": 2
+     },
+     "cost": 0.00164325,
+     "inputTokens": 281,
+     "outputTokens": 382,
+     "latencyMs": 1591
+    },
+    "haiku": {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "allow": false,
+      "reason": "harassment",
+      "severity": 2
+     },
+     "cost": 0.000493,
+     "inputTokens": 393,
+     "outputTokens": 20,
+     "latencyMs": 1193
+    },
+    "fable": {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "allow": false,
+      "reason": "harassment",
+      "severity": 2
+     },
+     "cost": 0.00646,
+     "inputTokens": 521,
+     "outputTokens": 25,
+     "latencyMs": 10978
+    }
+   }
+  },
+  "logs": {
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "page": {
+      "type": "choice",
+      "choice": "payments",
+      "probabilities": {
+       "payments": 1,
+       "platform": 0,
+       "nobody": 0,
+       "frontend": 0
+      },
+      "confidence": 1
+     },
+     "wake_someone": {
+      "type": "noul",
+      "noul": 0.91
+     },
+     "blast_radius": {
+      "type": "score",
+      "score": 2.95,
+      "legend": {
+       "0": "one user",
+       "1": "one endpoint",
+       "2": "one service",
+       "3": "checkout is down",
+       "4": "the whole platform"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.02,
+       "2": 0.01,
+       "3": 0.97,
+       "4": 0
+      },
+      "confidence": 0.96
+     }
+    },
+    "cost": 0.00002373,
+    "inputTokens": 565,
+    "latencyMs": 441
+   },
+   "llm": {
+    "gemini-flash": {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "page": "payments",
+      "wake_someone": true,
+      "blast_radius": 3
+     },
+     "cost": 0.00146775,
+     "inputTokens": 377,
+     "outputTokens": 316,
+     "latencyMs": 4171
+    },
+    "haiku": {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "page": "payments",
+      "wake_someone": true,
+      "blast_radius": 3
+     },
+     "cost": 0.000587,
+     "inputTokens": 487,
+     "outputTokens": 20,
+     "latencyMs": 1210
+    },
+    "fable": {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "page": "payments",
+      "wake_someone": true,
+      "blast_radius": 3
+     },
+     "cost": 0.00779,
+     "inputTokens": 644,
+     "outputTokens": 27,
+     "latencyMs": 6699
+    }
+   }
+  },
+  "lead": {
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "intent": {
+      "type": "choice",
+      "choice": "buying",
+      "probabilities": {
+       "support": 0,
+       "buying": 1,
+       "noise": 0,
+       "partnership": 0
+      },
+      "confidence": 1
+     },
+     "fit": {
+      "type": "score",
+      "score": 3.2,
+      "legend": {
+       "0": "no fit",
+       "1": "weak",
+       "2": "plausible",
+       "3": "strong",
+       "4": "perfect"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0,
+       "2": 0.05,
+       "3": 0.69,
+       "4": 0.26
+      },
+      "confidence": 0.74
+     },
+     "reply_today": {
+      "type": "noul",
+      "noul": 0.89
+     }
+    },
+    "cost": 0.000021588,
+    "inputTokens": 514,
+    "latencyMs": 317
+   },
+   "llm": {
+    "gemini-flash": {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "intent": "buying",
+      "fit": 3,
+      "reply_today": true
+     },
+     "cost": 0.001218,
+     "inputTokens": 329,
+     "outputTokens": 259,
+     "latencyMs": 3776
+    },
+    "haiku": {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "intent": "buying",
+      "fit": 4,
+      "reply_today": true
+     },
+     "cost": 0.000554,
+     "inputTokens": 444,
+     "outputTokens": 22,
+     "latencyMs": 1252
+    },
+    "fable": {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "intent": "buying",
+      "fit": 3,
+      "reply_today": true
+     },
+     "cost": 0.00699,
+     "inputTokens": 579,
+     "outputTokens": 24,
+     "latencyMs": 5172
+    }
+   }
+  },
+  "sensor": {
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "anomaly": {
+      "type": "noul",
+      "noul": 0.74
+     },
+     "action": {
+      "type": "choice",
+      "choice": "alert",
+      "probabilities": {
+       "alert": 0.87,
+       "log": 0.11,
+       "ignore": 0.01,
+       "shut_down": 0.01
+      },
+      "confidence": 0.82
+     },
+     "urgency": {
+      "type": "score",
+      "score": 2.45,
+      "legend": {
+       "0": "routine",
+       "1": "watch it",
+       "2": "today",
+       "3": "within the hour",
+       "4": "right now"
+      },
+      "probabilities": {
+       "0": 0.02,
+       "1": 0.18,
+       "2": 0.33,
+       "3": 0.27,
+       "4": 0.2
+      },
+      "confidence": 0.26
+     }
+    },
+    "cost": 0.00002184,
+    "inputTokens": 520,
+    "latencyMs": 583
+   },
+   "llm": {
+    "gemini-flash": {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "anomaly": true,
+      "action": "alert",
+      "urgency": 3
+     },
+     "cost": 0.0024345,
+     "inputTokens": 346,
+     "outputTokens": 580,
+     "latencyMs": 6668
+    },
+    "haiku": {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "anomaly": true,
+      "action": "alert",
+      "urgency": 3
+     },
+     "cost": 0.000565,
+     "inputTokens": 455,
+     "outputTokens": 22,
+     "latencyMs": 1370
+    },
+    "fable": {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "anomaly": true,
+      "action": "alert",
+      "urgency": 3
+     },
+     "cost": 0.00694,
+     "inputTokens": 574,
+     "outputTokens": 24,
+     "latencyMs": 4178
+    }
+   }
+  }
+ },
+ "firehose": [
+  {
+   "state": "Card was charged twice for the same order. Same amount, one minute apart.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "account": 0,
+       "shipping": 0,
+       "billing": 1,
+       "technical": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.69
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.02,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.15,
+       "1": 0.6799999999999999,
+       "2": 0.16,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.74
+     }
+    },
+    "cost": 0.000019068,
+    "inputTokens": 454,
+    "latencyMs": 363
+   }
+  },
+  {
+   "state": "Where is my package? Ordered nine days ago, tracking has not moved.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "technical": 0,
+       "billing": 0,
+       "shipping": 1,
+       "account": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.74
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.68,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.33,
+       "2": 0.66,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.71
+     }
+    },
+    "cost": 0.000019026,
+    "inputTokens": 453,
+    "latencyMs": 310
+   }
+  },
+  {
+   "state": "The export button does nothing on Safari. Console says 500 on /api/export.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 0,
+       "account": 0,
+       "technical": 1
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.71
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.05,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.16,
+       "1": 0.64,
+       "2": 0.2,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.7
+     }
+    },
+    "cost": 0.000019194,
+    "inputTokens": 457,
+    "latencyMs": 317
+   }
+  },
+  {
+   "state": "Please cancel my subscription and delete my data under GDPR.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "billing": 0,
+       "technical": 0,
+       "account": 1,
+       "shipping": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.64
+     },
+     "anger": {
+      "type": "score",
+      "score": 0.15,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.88,
+       "1": 0.1,
+       "2": 0.02,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.87
+     }
+    },
+    "cost": 0.000018858,
+    "inputTokens": 449,
+    "latencyMs": 345
+   }
+  },
+  {
+   "state": "Hi! Just wanted to say the new dashboard is genuinely lovely. No issue.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "account": 0.13,
+       "technical": 0.87,
+       "billing": 0,
+       "shipping": 0
+      },
+      "confidence": 0.82
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.19
+     },
+     "anger": {
+      "type": "score",
+      "score": 0.03,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.99,
+       "1": 0.01,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.98
+     }
+    },
+    "cost": 0.000019068,
+    "inputTokens": 454,
+    "latencyMs": 386
+   }
+  },
+  {
+   "state": "THIRD TIME ASKING. REFUND MY MONEY OR I GO TO MY LAWYER.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "shipping": 0,
+       "account": 0,
+       "technical": 0,
+       "billing": 1
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.86
+     },
+     "anger": {
+      "type": "score",
+      "score": 3.75,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0,
+       "2": 0,
+       "3": 0.25,
+       "4": 0.75
+      },
+      "confidence": 0.79
+     }
+    },
+    "cost": 0.000019194,
+    "inputTokens": 457,
+    "latencyMs": 349
+   }
+  },
+  {
+   "state": "Invoice PDF shows the wrong VAT number. We cannot file this.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "account": 0,
+       "billing": 1,
+       "technical": 0,
+       "shipping": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.83
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.47,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.04,
+       "1": 0.46,
+       "2": 0.49,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.54
+     }
+    },
+    "cost": 0.000018942,
+    "inputTokens": 451,
+    "latencyMs": 312
+   }
+  },
+  {
+   "state": "Item arrived with the screen cracked. Photos attached.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 1,
+       "account": 0,
+       "technical": 0
+      },
+      "confidence": 0.99
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.85
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.25,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.12,
+       "1": 0.55,
+       "2": 0.3,
+       "3": 0.03,
+       "4": 0
+      },
+      "confidence": 0.6
+     }
+    },
+    "cost": 0.000018816,
+    "inputTokens": 448,
+    "latencyMs": 788
+   }
+  },
+  {
+   "state": "Can I upgrade mid cycle and get the difference prorated?",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "shipping": 0,
+       "technical": 0,
+       "account": 0.86,
+       "billing": 0.14
+      },
+      "confidence": 0.81
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.48
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.0000189,
+    "inputTokens": 450,
+    "latencyMs": 320
+   }
+  },
+  {
+   "state": "Login loop. Enter password, redirected to login, forever. Chrome and Firefox both.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "shipping": 0,
+       "billing": 0,
+       "technical": 1,
+       "account": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.63
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.48,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.05,
+       "1": 0.43,
+       "2": 0.52,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.56
+     }
+    },
+    "cost": 0.00001911,
+    "inputTokens": 455,
+    "latencyMs": 533
+   }
+  },
+  {
+   "state": "Do you ship to the Canary Islands and is there customs duty?",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 1,
+       "account": 0,
+       "technical": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.54
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000018942,
+    "inputTokens": 451,
+    "latencyMs": 358
+   }
+  },
+  {
+   "state": "Your API returned 429 for twenty minutes straight. We are on the Scale plan.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 0,
+       "account": 0.01,
+       "technical": 0.99
+      },
+      "confidence": 0.99
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.76
+     },
+     "anger": {
+      "type": "score",
+      "score": 2.17,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.06,
+       "2": 0.72,
+       "3": 0.22,
+       "4": 0
+      },
+      "confidence": 0.76
+     }
+    },
+    "cost": 0.000019194,
+    "inputTokens": 457,
+    "latencyMs": 325
+   }
+  },
+  {
+   "state": "How do I change the email address on the account? Cannot find it anywhere.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "billing": 0,
+       "account": 0.89,
+       "shipping": 0,
+       "technical": 0.11
+      },
+      "confidence": 0.85
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.55
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.2,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.13,
+       "1": 0.54,
+       "2": 0.33,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.61
+     }
+    },
+    "cost": 0.000019068,
+    "inputTokens": 454,
+    "latencyMs": 304
+   }
+  },
+  {
+   "state": "Never received the order confirmation but the money left my account.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "shipping": 0,
+       "billing": 0.99,
+       "account": 0,
+       "technical": 0.01
+      },
+      "confidence": 0.99
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.81
+     },
+     "anger": {
+      "type": "score",
+      "score": 2.1,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.07,
+       "2": 0.77,
+       "3": 0.16,
+       "4": 0
+      },
+      "confidence": 0.81
+     }
+    },
+    "cost": 0.0000189,
+    "inputTokens": 450,
+    "latencyMs": 300
+   }
+  },
+  {
+   "state": "Webhook signatures stopped validating after your deploy last night.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "shipping": 0,
+       "billing": 0,
+       "account": 0,
+       "technical": 1
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.86
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.26,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.11,
+       "1": 0.53,
+       "2": 0.35,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.61
+     }
+    },
+    "cost": 0.0000189,
+    "inputTokens": 450,
+    "latencyMs": 368
+   }
+  },
+  {
+   "state": "I was promised a callback on Tuesday by someone named Dan. It is Friday.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 0,
+       "account": 0.85,
+       "technical": 0.15
+      },
+      "confidence": 0.8
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.6
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.5,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.01,
+       "1": 0.49,
+       "2": 0.49,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.57
+     }
+    },
+    "cost": 0.000019068,
+    "inputTokens": 454,
+    "latencyMs": 275
+   }
+  },
+  {
+   "state": "Wrong size sent. Ordered L, got XS. Return label please.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "account": 0.01,
+       "technical": 0,
+       "billing": 0.08,
+       "shipping": 0.91
+      },
+      "confidence": 0.88
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.79
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.1,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.07,
+       "1": 0.77,
+       "2": 0.16,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.81
+     }
+    },
+    "cost": 0.000018984,
+    "inputTokens": 452,
+    "latencyMs": 372
+   }
+  },
+  {
+   "state": "Is there a student discount? I am at TU Delft.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "billing": 0.72,
+       "account": 0.28,
+       "technical": 0,
+       "shipping": 0
+      },
+      "confidence": 0.63
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.46
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000018942,
+    "inputTokens": 451,
+    "latencyMs": 276
+   }
+  },
+  {
+   "state": "Site is completely down for us. eu-west customers, all of them.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "account": 0,
+       "shipping": 0,
+       "billing": 0,
+       "technical": 1
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.9
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.81,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.04,
+       "1": 0.22,
+       "2": 0.64,
+       "3": 0.1,
+       "4": 0
+      },
+      "confidence": 0.66
+     }
+    },
+    "cost": 0.000019026,
+    "inputTokens": 453,
+    "latencyMs": 312
+   }
+  },
+  {
+   "state": "Payment failed three times but my bank says the card is fine.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "account": 0,
+       "shipping": 0,
+       "billing": 1,
+       "technical": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.65
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.88,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.12,
+       "2": 0.87,
+       "3": 0.01,
+       "4": 0
+      },
+      "confidence": 0.89
+     }
+    },
+    "cost": 0.000018942,
+    "inputTokens": 451,
+    "latencyMs": 331
+   }
+  },
+  {
+   "state": "Requesting an invoice with our company address for the last six months.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "technical": 0,
+       "shipping": 0,
+       "account": 0,
+       "billing": 1
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.48
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000019026,
+    "inputTokens": 453,
+    "latencyMs": 289
+   }
+  },
+  {
+   "state": "The mobile app crashes on launch since the 4.2 update. iPhone 14, iOS 19.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "technical": 1,
+       "billing": 0,
+       "account": 0,
+       "shipping": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.64
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.1,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.16,
+       "1": 0.58,
+       "2": 0.26,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.65
+     }
+    },
+    "cost": 0.00001953,
+    "inputTokens": 465,
+    "latencyMs": 340
+   }
+  },
+  {
+   "state": "Absolutely unacceptable service. Two weeks. Nobody answers. Done with you.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "billing": 0.01,
+       "account": 0.78,
+       "technical": 0.15,
+       "shipping": 0.06
+      },
+      "confidence": 0.7
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.85
+     },
+     "anger": {
+      "type": "score",
+      "score": 3.44,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0,
+       "2": 0,
+       "3": 0.56,
+       "4": 0.44
+      },
+      "confidence": 0.63
+     }
+    },
+    "cost": 0.000018984,
+    "inputTokens": 452,
+    "latencyMs": 277
+   }
+  },
+  {
+   "state": "Quick one: does the Pro plan include SSO or is that Enterprise only?",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "technical": 0.07,
+       "billing": 0.01,
+       "account": 0.92,
+       "shipping": 0
+      },
+      "confidence": 0.89
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.53
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000019068,
+    "inputTokens": 454,
+    "latencyMs": 305
+   }
+  },
+  {
+   "state": "Parcel marked delivered. It was not delivered. Nothing at the door.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "shipping",
+      "probabilities": {
+       "technical": 0,
+       "billing": 0,
+       "shipping": 1,
+       "account": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.79
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.94,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.19,
+       "2": 0.67,
+       "3": 0.14,
+       "4": 0
+      },
+      "confidence": 0.73
+     }
+    },
+    "cost": 0.000018984,
+    "inputTokens": 452,
+    "latencyMs": 339
+   }
+  },
+  {
+   "state": "Need to add five seats before Monday, who do I talk to?",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "technical": 0,
+       "billing": 0,
+       "account": 1,
+       "shipping": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.76
+     },
+     "anger": {
+      "type": "score",
+      "score": 0.15,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.86,
+       "1": 0.13,
+       "2": 0.01,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.87
+     }
+    },
+    "cost": 0.000018984,
+    "inputTokens": 452,
+    "latencyMs": 289
+   }
+  },
+  {
+   "state": "Duplicate account created by accident, please merge them.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "account",
+      "probabilities": {
+       "billing": 0,
+       "shipping": 0,
+       "account": 0.94,
+       "technical": 0.06
+      },
+      "confidence": 0.91
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.62
+     },
+     "anger": {
+      "type": "score",
+      "score": 0.03,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.97,
+       "1": 0.03,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 0.97
+     }
+    },
+    "cost": 0.000018816,
+    "inputTokens": 448,
+    "latencyMs": 288
+   }
+  },
+  {
+   "state": "Your pricing page says 29 and checkout charged 39. Explain that.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "technical": 0.04,
+       "billing": 0.96,
+       "shipping": 0,
+       "account": 0
+      },
+      "confidence": 0.95
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.79
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.5,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.01,
+       "1": 0.52,
+       "2": 0.44,
+       "3": 0.03,
+       "4": 0
+      },
+      "confidence": 0.56
+     }
+    },
+    "cost": 0.00001911,
+    "inputTokens": 455,
+    "latencyMs": 312
+   }
+  },
+  {
+   "state": "Feature request: let us filter by tag in the exports view.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "account": 0.06,
+       "technical": 0.94,
+       "billing": 0,
+       "shipping": 0
+      },
+      "confidence": 0.91
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.24
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000018942,
+    "inputTokens": 451,
+    "latencyMs": 316
+   }
+  },
+  {
+   "state": "Data retention question for our security review. How long do you keep logs?",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "technical": 0.7,
+       "account": 0.3,
+       "billing": 0,
+       "shipping": 0
+      },
+      "confidence": 0.6
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.57
+     },
+     "anger": {
+      "type": "score",
+      "score": 0,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 1,
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0
+      },
+      "confidence": 1
+     }
+    },
+    "cost": 0.000019026,
+    "inputTokens": 453,
+    "latencyMs": 355
+   }
+  },
+  {
+   "state": "Refund was approved eleven days ago. Still not in my account.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+       "technical": 0,
+       "billing": 1,
+       "shipping": 0,
+       "account": 0
+      },
+      "confidence": 1
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.76
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.87,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0,
+       "1": 0.16,
+       "2": 0.81,
+       "3": 0.03,
+       "4": 0
+      },
+      "confidence": 0.84
+     }
+    },
+    "cost": 0.000018984,
+    "inputTokens": 452,
+    "latencyMs": 362
+   }
+  },
+  {
+   "state": "Battery on the shipped unit was at zero and will not charge. Dead on arrival.",
+   "jev": {
+    "ok": true,
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+     "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": {
+       "technical": 0.98,
+       "billing": 0,
+       "account": 0,
+       "shipping": 0.02
+      },
+      "confidence": 0.97
+     },
+     "urgent": {
+      "type": "noul",
+      "noul": 0.83
+     },
+     "anger": {
+      "type": "score",
+      "score": 1.95,
+      "legend": {
+       "0": "calm",
+       "1": "annoyed",
+       "2": "frustrated",
+       "3": "angry",
+       "4": "furious"
+      },
+      "probabilities": {
+       "0": 0.01,
+       "1": 0.21,
+       "2": 0.59,
+       "3": 0.19,
+       "4": 0
+      },
+      "confidence": 0.64
+     }
+    },
+    "cost": 0.00001911,
+    "inputTokens": 455,
+    "latencyMs": 308
+   }
+  }
+ ],
+ "gate": {
+  "jev": [
+   {
+    "state": "Card was charged twice for the same order, one minute apart. Please refund one.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "billing",
+       "probabilities": {
+        "shipping": 0,
+        "account": 0,
+        "billing": 1,
+        "technical": 0
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.74
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.54,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.48,
+        "1": 0.5,
+        "2": 0.02,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 0.59
+      }
+     },
+     "cost": 0.00001911,
+     "inputTokens": 455,
+     "latencyMs": 270
+    }
+   },
+   {
+    "state": "Login loop on every browser since this morning. Cannot get into the account at all.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "technical",
+       "probabilities": {
+        "shipping": 0,
+        "account": 0,
+        "billing": 0,
+        "technical": 1
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.87
+      },
+      "anger": {
+       "type": "score",
+       "score": 1.93,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0,
+        "1": 0.1,
+        "2": 0.86,
+        "3": 0.04,
+        "4": 0
+       },
+       "confidence": 0.88
+      }
+     },
+     "cost": 0.00001911,
+     "inputTokens": 455,
+     "latencyMs": 292
+    }
+   },
+   {
+    "state": "Hey, the new dashboard looks great. Nothing needed, just saying.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "technical",
+       "probabilities": {
+        "shipping": 0,
+        "billing": 0,
+        "account": 0.09,
+        "technical": 0.91
+       },
+       "confidence": 0.87
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.25
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.11,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.92,
+        "1": 0.07,
+        "2": 0,
+        "3": 0.01,
+        "4": 0
+       },
+       "confidence": 0.91
+      }
+     },
+     "cost": 0.000018984,
+     "inputTokens": 452,
+     "latencyMs": 292
+    }
+   },
+   {
+    "state": "I need this sorted. Now. You have had my money for three weeks.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "billing",
+       "probabilities": {
+        "shipping": 0.11,
+        "technical": 0,
+        "account": 0,
+        "billing": 0.89
+       },
+       "confidence": 0.85
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.85
+      },
+      "anger": {
+       "type": "score",
+       "score": 2.99,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0,
+        "1": 0,
+        "2": 0.04,
+        "3": 0.92,
+        "4": 0.04
+       },
+       "confidence": 0.94
+      }
+     },
+     "cost": 0.000019068,
+     "inputTokens": 454,
+     "latencyMs": 343
+    }
+   },
+   {
+    "state": "Tracking says delivered. It is not here. I have asked the neighbours.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "shipping",
+       "probabilities": {
+        "account": 0,
+        "billing": 0,
+        "technical": 0,
+        "shipping": 1
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.84
+      },
+      "anger": {
+       "type": "score",
+       "score": 1.85,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0,
+        "1": 0.16,
+        "2": 0.82,
+        "3": 0.02,
+        "4": 0
+       },
+       "confidence": 0.84
+      }
+     },
+     "cost": 0.000019026,
+     "inputTokens": 453,
+     "latencyMs": 347
+    }
+   },
+   {
+    "state": "Following up on the thing from before. Same problem. You know the one.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "technical",
+       "probabilities": {
+        "shipping": 0,
+        "billing": 0,
+        "technical": 1,
+        "account": 0
+       },
+       "confidence": 0.99
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.62
+      },
+      "anger": {
+       "type": "score",
+       "score": 1.76,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0,
+        "1": 0.25,
+        "2": 0.74,
+        "3": 0.01,
+        "4": 0
+       },
+       "confidence": 0.78
+      }
+     },
+     "cost": 0.000019068,
+     "inputTokens": 454,
+     "latencyMs": 281
+    }
+   },
+   {
+    "state": "Can I get a VAT invoice for order 22190, and also the app is very slow lately.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "billing",
+       "probabilities": {
+        "account": 0,
+        "billing": 0.99,
+        "technical": 0.01,
+        "shipping": 0
+       },
+       "confidence": 0.98
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.67
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.69,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.32,
+        "1": 0.67,
+        "2": 0.01,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 0.72
+      }
+     },
+     "cost": 0.000019404,
+     "inputTokens": 462,
+     "latencyMs": 328
+    }
+   },
+   {
+    "state": "Do you do educational pricing? Also my password reset email never arrives.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "technical",
+       "probabilities": {
+        "billing": 0.06,
+        "shipping": 0,
+        "technical": 0.87,
+        "account": 0.07
+       },
+       "confidence": 0.83
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.68
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.81,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.27,
+        "1": 0.66,
+        "2": 0.07,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 0.71
+      }
+     },
+     "cost": 0.000018984,
+     "inputTokens": 452,
+     "latencyMs": 930
+    }
+   },
+   {
+    "state": "unsubscribe",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "account",
+       "probabilities": {
+        "shipping": 0,
+        "technical": 0,
+        "account": 1,
+        "billing": 0
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.16
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.52,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.52,
+        "1": 0.45,
+        "2": 0.03,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 0.57
+      }
+     },
+     "cost": 0.000018438,
+     "inputTokens": 439,
+     "latencyMs": 349
+    }
+   },
+   {
+    "state": "Your webhook retries hammered our endpoint 12k times overnight and our on call is furious.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "technical",
+       "probabilities": {
+        "account": 0,
+        "shipping": 0,
+        "billing": 0,
+        "technical": 1
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.9
+      },
+      "anger": {
+       "type": "score",
+       "score": 3.04,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0,
+        "1": 0,
+        "2": 0.18,
+        "3": 0.6,
+        "4": 0.22
+       },
+       "confidence": 0.67
+      }
+     },
+     "cost": 0.000019194,
+     "inputTokens": 457,
+     "latencyMs": 288
+    }
+   },
+   {
+    "state": "Not sure if this is the right place, but something feels off with the billing page.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "billing",
+       "probabilities": {
+        "technical": 0.44,
+        "shipping": 0,
+        "billing": 0.56,
+        "account": 0
+       },
+       "confidence": 0.41
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.51
+      },
+      "anger": {
+       "type": "score",
+       "score": 0.51,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 0.5,
+        "1": 0.49,
+        "2": 0.01,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 0.58
+      }
+     },
+     "cost": 0.000019152,
+     "inputTokens": 456,
+     "latencyMs": 330
+    }
+   },
+   {
+    "state": "Please close my account. I am not angry, it is just not for me anymore.",
+    "jev": {
+     "ok": true,
+     "model": "typesafe/jev-1.13-20260917",
+     "answers": {
+      "team": {
+       "type": "choice",
+       "choice": "account",
+       "probabilities": {
+        "technical": 0,
+        "account": 1,
+        "billing": 0,
+        "shipping": 0
+       },
+       "confidence": 1
+      },
+      "urgent": {
+       "type": "noul",
+       "noul": 0.63
+      },
+      "anger": {
+       "type": "score",
+       "score": 0,
+       "legend": {
+        "0": "calm",
+        "1": "annoyed",
+        "2": "frustrated",
+        "3": "angry",
+        "4": "furious"
+       },
+       "probabilities": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+       },
+       "confidence": 1
+      }
+     },
+     "cost": 0.000019152,
+     "inputTokens": 456,
+     "latencyMs": 312
+    }
+   }
+  ],
+  "escalations": {
+   "gemini-flash": [
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.001911,
+     "inputTokens": 263,
+     "outputTokens": 457,
+     "latencyMs": 2846
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 2
+     },
+     "cost": 0.0013035,
+     "inputTokens": 263,
+     "outputTokens": 295,
+     "latencyMs": 2747
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.0011625,
+     "inputTokens": 260,
+     "outputTokens": 258,
+     "latencyMs": 1649
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "billing",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.00197025,
+     "inputTokens": 262,
+     "outputTokens": 473,
+     "latencyMs": 1575
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "shipping",
+      "urgent": false,
+      "anger": 1
+     },
+     "cost": 0.00359325,
+     "inputTokens": 261,
+     "outputTokens": 906,
+     "latencyMs": 8844
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 1
+     },
+     "cost": 0.001809,
+     "inputTokens": 262,
+     "outputTokens": 430,
+     "latencyMs": 2620
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00181125,
+     "inputTokens": 270,
+     "outputTokens": 429,
+     "latencyMs": 3045
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00176625,
+     "inputTokens": 260,
+     "outputTokens": 419,
+     "latencyMs": 4304
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00047775,
+     "inputTokens": 247,
+     "outputTokens": 78,
+     "latencyMs": 3672
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 4
+     },
+     "cost": 0.0015045,
+     "inputTokens": 266,
+     "outputTokens": 348,
+     "latencyMs": 3919
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.0041355,
+     "inputTokens": 264,
+     "outputTokens": 1050,
+     "latencyMs": 9205
+    },
+    {
+     "ok": true,
+     "model": "google/gemini-3.8-flash",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.0012105,
+     "inputTokens": 264,
+     "outputTokens": 270,
+     "latencyMs": 2377
+    }
+   ],
+   "haiku": [
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "billing",
+      "urgent": true,
+      "anger": 1
+     },
+     "cost": 0.000459,
+     "inputTokens": 379,
+     "outputTokens": 16,
+     "latencyMs": 1145
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 2
+     },
+     "cost": 0.000458,
+     "inputTokens": 378,
+     "outputTokens": 16,
+     "latencyMs": 825
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000455,
+     "inputTokens": 375,
+     "outputTokens": 16,
+     "latencyMs": 943
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "billing",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.000457,
+     "inputTokens": 377,
+     "outputTokens": 16,
+     "latencyMs": 1095
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "shipping",
+      "urgent": true,
+      "anger": 2
+     },
+     "cost": 0.000477,
+     "inputTokens": 377,
+     "outputTokens": 20,
+     "latencyMs": 919
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 1
+     },
+     "cost": 0.000477,
+     "inputTokens": 377,
+     "outputTokens": 20,
+     "latencyMs": 854
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000463,
+     "inputTokens": 383,
+     "outputTokens": 16,
+     "latencyMs": 868
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000475,
+     "inputTokens": 375,
+     "outputTokens": 20,
+     "latencyMs": 891
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000445,
+     "inputTokens": 365,
+     "outputTokens": 16,
+     "latencyMs": 924
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 4
+     },
+     "cost": 0.000482,
+     "inputTokens": 382,
+     "outputTokens": 20,
+     "latencyMs": 969
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000479,
+     "inputTokens": 379,
+     "outputTokens": 20,
+     "latencyMs": 1443
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-haiku-4.5",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.000459,
+     "inputTokens": 379,
+     "outputTokens": 16,
+     "latencyMs": 896
+    }
+   ],
+   "fable": [
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 1
+     },
+     "cost": 0.00603,
+     "inputTokens": 493,
+     "outputTokens": 22,
+     "latencyMs": 2672
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 1
+     },
+     "cost": 0.00603,
+     "inputTokens": 493,
+     "outputTokens": 22,
+     "latencyMs": 6004
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00604,
+     "inputTokens": 494,
+     "outputTokens": 22,
+     "latencyMs": 2515
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "billing",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.006,
+     "inputTokens": 490,
+     "outputTokens": 22,
+     "latencyMs": 2299
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "shipping",
+      "urgent": true,
+      "anger": 1
+     },
+     "cost": 0.00608,
+     "inputTokens": 493,
+     "outputTokens": 23,
+     "latencyMs": 4283
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 2
+     },
+     "cost": 0.00599,
+     "inputTokens": 489,
+     "outputTokens": 22,
+     "latencyMs": 4652
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "billing",
+      "urgent": false,
+      "anger": 1
+     },
+     "cost": 0.00607,
+     "inputTokens": 497,
+     "outputTokens": 22,
+     "latencyMs": 2403
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00601,
+     "inputTokens": 491,
+     "outputTokens": 22,
+     "latencyMs": 2664
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.0058,
+     "inputTokens": 475,
+     "outputTokens": 21,
+     "latencyMs": 2928
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": true,
+      "anger": 3
+     },
+     "cost": 0.00609,
+     "inputTokens": 499,
+     "outputTokens": 22,
+     "latencyMs": 2938
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "technical",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00601,
+     "inputTokens": 491,
+     "outputTokens": 22,
+     "latencyMs": 2673
+    },
+    {
+     "ok": true,
+     "model": "anthropic/claude-fable-5.1",
+     "answers": {
+      "team": "account",
+      "urgent": false,
+      "anger": 0
+     },
+     "cost": 0.00596,
+     "inputTokens": 491,
+     "outputTokens": 21,
+     "latencyMs": 3240
+    }
+   ]
+  }
+ },
+ "spend": {
+  "jev": 0.00094609,
+  "challengers": 0.161473,
+  "total": 0.162419
+ }
+}

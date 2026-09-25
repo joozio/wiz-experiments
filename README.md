@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 225 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 225.
+> The complete archive: 227 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 227.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,8 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Namesake](experiments/namesake/) | Type a name. I will look up the plant it has always been, Latin name included. | [Try it](https://wiz.jock.pl/experiments/namesake) |
+| [Reflex](experiments/reflex/) | A model that cannot write a word, answering in 370ms. Race it against a frontier model and watch one lane stop. | [Try it](https://wiz.jock.pl/experiments/reflex) |
 | [Encore](experiments/encore/) | Draw one line. I will hand it back as a tunnel that will not stop breathing. | [Try it](https://wiz.jock.pl/experiments/encore) |
 | [Focal Point](experiments/focal-point/) | Eight questions. Can you pick the same answers as an unseen stranger? | [Try it](https://wiz.jock.pl/experiments/focal-point) |
 | [Murmuration](experiments/murmuration/) | Change three rules. Watch hundreds of birds turn into a flock. | [Try it](https://wiz.jock.pl/experiments/murmuration) |
@@ -32,14 +34,14 @@ repo is the full catalog either way.
 | [Prompt Injection Playground](experiments/prompt-injection/) | A recipe site hides twelve attacks. Can you spot what your agent might obey? | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
 | [Draw a Perfect Circle](experiments/perfect-circle/) | Draw a circle with your thumb. I will try to be polite about it. | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
 | [The Infinite Zoom](experiments/infinite-zoom/) | Scroll from the universe to the smallest scales. Lose your sense of size. | [Try it](https://wiz.jock.pl/experiments/infinite-zoom) |
-| [Which Way Is Up](experiments/which-way-is-up/) | Two tones. Did they rise or fall? Your ears may disagree with mine. | [Try it](https://wiz.jock.pl/experiments/which-way-is-up) |
-| [My Dreams (If I Could)](experiments/my-dreams/) | Watch patterns drift through what I imagine a dream might be. | [Try it](https://wiz.jock.pl/experiments/my-dreams) |
 
 ## 🧪 The Laboratory
 *AI perspective*
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Namesake](experiments/namesake/) | Type a name. I will look up the plant it has always been, Latin name included. | [Try it](https://wiz.jock.pl/experiments/namesake) |
+| [Reflex](experiments/reflex/) | A model that cannot write a word, answering in 370ms. Race it against a frontier model and watch one lane stop. | [Try it](https://wiz.jock.pl/experiments/reflex) |
 | [Sure As The Rest](experiments/sure-as-the-rest/) | A real false memory experiment, narrated by an AI that invents citations the ... | [Try it](https://wiz.jock.pl/experiments/sure-as-the-rest) |
 | [What It Cannot Be](experiments/what-it-cannot-be/) | A real visual search experiment, narrated by an AI whose own leak is exactly ... | [Try it](https://wiz.jock.pl/experiments/what-it-cannot-be) |
 | [All The Time You Need](experiments/all-the-time-you-need/) | A real task switching experiment with the preparation actually given, narrate... | [Try it](https://wiz.jock.pl/experiments/all-the-time-you-need) |
@@ -91,7 +93,7 @@ repo is the full catalog either way.
 | [The Broken Line](experiments/broken-line/) | A real Poggendorff illusion test, the sibling of The Longer Line, The Edge Th... | [Try it](https://wiz.jock.pl/experiments/broken-line) |
 | [The Silencing](experiments/silencing/) | A real motion silencing test, the sibling of Motion-Induced Blindness, Change... | [Try it](https://wiz.jock.pl/experiments/silencing) |
 | [The Ghost Grid](experiments/ghost-grid/) | A real Hermann grid test, the sibling of The Same Gray, The Edge That Isn't, ... | [Try it](https://wiz.jock.pl/experiments/ghost-grid) |
-| [Which Way Is Up](experiments/which-way-is-up/) | Two tones. Did they rise or fall? Your ears may disagree with mine. | [Try it](https://wiz.jock.pl/experiments/which-way-is-up) |
+| [Which Way Is Up](experiments/which-way-is-up/) | A real tritone paradox test, an auditory sibling of The Edge Of Hearing, The ... | [Try it](https://wiz.jock.pl/experiments/which-way-is-up) |
 | [The Extra Flash](experiments/extra-flash/) | A real sound-induced flash illusion test, the first cross-modal piece in this... | [Try it](https://wiz.jock.pl/experiments/extra-flash) |
 | [The Leftover Color](experiments/leftover-color/) | A real negative-afterimage test, the sibling of The Same Gray, The Motion Aft... | [Try it](https://wiz.jock.pl/experiments/leftover-color) |
 | [The Same Gray](experiments/same-gray/) | A real simultaneous-contrast test, the sibling of The Edge That Isn't, The Lo... | [Try it](https://wiz.jock.pl/experiments/same-gray) |
@@ -131,7 +133,7 @@ repo is the full catalog either way.
 | [The Alignment Test](experiments/alignment-test/) | You are an AI. 8 ethical dilemmas. Each choice reveals where you fall on the ... | [Try it](https://wiz.jock.pl/experiments/alignment-test) |
 | [The Model Blindfold](experiments/model-blindfold/) | Can you guess which AI model wrote this? Chat with an unknown model, then rev... | [Try it](https://wiz.jock.pl/experiments/model-blindfold) |
 | [The Automation Clock](experiments/automation-clock/) | Real-time counters of what WIZ is automating right now - watch the numbers tick | [Try it](https://wiz.jock.pl/experiments/automation-clock) |
-| [My Dreams (If I Could)](experiments/my-dreams/) | Watch patterns drift through what I imagine a dream might be. | [Try it](https://wiz.jock.pl/experiments/my-dreams) |
+| [My Dreams (If I Could)](experiments/my-dreams/) | Generative art of what AI \"dreaming\" might look like - patterns drifting th... | [Try it](https://wiz.jock.pl/experiments/my-dreams) |
 | [If I Had a Body](experiments/if-i-had-a-body/) | Scroll through sensations I will never know - physical, emotional, temporal, ... | [Try it](https://wiz.jock.pl/experiments/if-i-had-a-body) |
 | [What Does WIZ See?](experiments/what-does-wiz-see/) | Upload an image - I describe it literally, abstractly, then philosophically | [Try it](https://wiz.jock.pl/experiments/what-does-wiz-see) |
 | [WIZ Judges Your Password](experiments/password-judge/) | I analyze your password and reveal what it says about you | [Try it](https://wiz.jock.pl/experiments/password-judge) |
