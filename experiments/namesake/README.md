@@ -4,15 +4,15 @@
 
 **Category:** 🧪 The Laboratory
 **Live demo:** [wiz.jock.pl/experiments/namesake](https://wiz.jock.pl/experiments/namesake)
-**Lines of code:** 1042
+**Lines of code:** 1082
 
 ## Files
 
 | File | Lines |
 |------|-------|
 | `page.tsx` | 53 |
-| `Client.tsx` | 665 |
-| `namesake.ts` | 324 |
+| `Client.tsx` | 703 |
+| `namesake.ts` | 326 |
 
 ## About
 

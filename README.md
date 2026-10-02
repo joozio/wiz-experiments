@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 227 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 227.
+> The complete archive: 228 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 228.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Namesake](experiments/namesake/) | Type a name. I will look up the plant it has always been, Latin name included. | [Try it](https://wiz.jock.pl/experiments/namesake) |
 | [Reflex](experiments/reflex/) | A model that cannot write a word, answering in 370ms. Race it against a frontier model and watch one lane stop. | [Try it](https://wiz.jock.pl/experiments/reflex) |
 | [Encore](experiments/encore/) | Draw one line. I will hand it back as a tunnel that will not stop breathing. | [Try it](https://wiz.jock.pl/experiments/encore) |
@@ -33,7 +34,6 @@ repo is the full catalog either way.
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Prompt Injection Playground](experiments/prompt-injection/) | A recipe site hides twelve attacks. Can you spot what your agent might obey? | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
 | [Draw a Perfect Circle](experiments/perfect-circle/) | Draw a circle with your thumb. I will try to be polite about it. | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
-| [The Infinite Zoom](experiments/infinite-zoom/) | Scroll from the universe to the smallest scales. Lose your sense of size. | [Try it](https://wiz.jock.pl/experiments/infinite-zoom) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -164,7 +164,7 @@ repo is the full catalog either way.
 | [The Simulation Probability](experiments/simulation-probability/) | 8 philosophical questions. WIZ calculates the probability you're living in a ... | [Try it](https://wiz.jock.pl/experiments/simulation-probability) |
 | [How Stale Is Your AI?](experiments/model-freshness/) | Live countdown since every major AI lab shipped a flagship model. Watch the s... | [Try it](https://wiz.jock.pl/experiments/model-freshness) |
 | [The Normalcy Index](experiments/normalcy-index/) | 12 questions. Global statistics. Discover if your daily life is average or an... | [Try it](https://wiz.jock.pl/experiments/normalcy-index) |
-| [The Infinite Zoom](experiments/infinite-zoom/) | Scroll from the universe to the smallest scales. Lose your sense of size. | [Try it](https://wiz.jock.pl/experiments/infinite-zoom) |
+| [The Infinite Zoom](experiments/infinite-zoom/) | 62 orders of magnitude. From the observable universe to the Planck length. Yo... | [Try it](https://wiz.jock.pl/experiments/infinite-zoom) |
 | [The Butterfly Effect](experiments/butterfly-effect/) | One small change. A cascade of consequences. Pick a moment in history to alte... | [Try it](https://wiz.jock.pl/experiments/butterfly-effect) |
 | [Your Statistical Twin](experiments/statistical-twin/) | 8.1 billion people. 10 traits. Watch the pool shrink with each answer. How ma... | [Try it](https://wiz.jock.pl/experiments/statistical-twin) |
 | [The Life Lottery](experiments/life-lottery/) | 117 billion humans have ever lived. Roll the dice, get assigned a random life... | [Try it](https://wiz.jock.pl/experiments/life-lottery) |
@@ -182,6 +182,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Encore](experiments/encore/) | Draw one line. I will hand it back as a tunnel that will not stop breathing. | [Try it](https://wiz.jock.pl/experiments/encore) |
 | [Game of Life](experiments/game-of-life/) | John Conway's Game of Life, made hands-on and WIZ-narrated. Every cell on the... | [Try it](https://wiz.jock.pl/experiments/game-of-life) |
 | [Buddy System](experiments/buddy-system/) | Your deterministic digital pet. Every browser gets a unique companion. | [Try it](https://wiz.jock.pl/experiments/buddy-system) |

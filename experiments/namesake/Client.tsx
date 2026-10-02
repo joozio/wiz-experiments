@@ -212,6 +212,7 @@ export default function Client({ first }: { first: FirstPaint }) {
   const [vvHeight, setVvHeight] = useState<number | null>(null);
   const [vvTop, setVvTop] = useState(0);
 
+  const rootRef = useRef<HTMLDivElement>(null);
   const cvRef = useRef<HTMLCanvasElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const labelRef = useRef<HTMLDivElement>(null);
@@ -312,6 +313,37 @@ export default function Client({ first }: { first: FirstPaint }) {
       window.clearTimeout(t);
       vv.removeEventListener('resize', apply);
       window.removeEventListener('resize', apply);
+    };
+  }, []);
+
+  // Below md the stage is fixed over the whole page, so the site chrome it covers is
+  // invisible and unclickable but still in the tab order: a phone visitor tabbed through
+  // three dead stops before reaching the field. Everything that is not the stage goes
+  // inert while the stage covers it, which leaves the page's own controls and nothing else.
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const marked: HTMLElement[] = [];
+    const release = () => {
+      marked.forEach((el) => el.removeAttribute('inert'));
+      marked.length = 0;
+    };
+    const apply = () => {
+      release();
+      if (!mq.matches) return;
+      for (let el: HTMLElement | null = rootRef.current; el && el !== document.body; el = el.parentElement) {
+        for (const sib of Array.from(el.parentElement?.children ?? [])) {
+          if (sib !== el && sib instanceof HTMLElement && !sib.hasAttribute('inert')) {
+            sib.setAttribute('inert', '');
+            marked.push(sib);
+          }
+        }
+      }
+    };
+    apply();
+    mq.addEventListener('change', apply);
+    return () => {
+      mq.removeEventListener('change', apply);
+      release();
     };
   }, []);
 
@@ -501,6 +533,7 @@ export default function Client({ first }: { first: FirstPaint }) {
 
   return (
     <div
+      ref={rootRef}
       className="fixed inset-0 z-30 flex flex-col overflow-hidden overscroll-none bg-[#07090B] font-mono text-[#94A29E] md:relative md:inset-auto md:z-auto md:overflow-visible md:bg-transparent"
       style={{
         height: vvHeight ? `${vvHeight}px` : undefined,
@@ -532,8 +565,13 @@ export default function Client({ first }: { first: FirstPaint }) {
         )}
       </div>
 
-      {/* The plate: two hairlines, the organism, 28px of air, the label. Nothing else. */}
-      <div className={`${tight ? 'mx-3' : 'mx-4'} min-h-0 flex-1 md:mx-auto md:aspect-[4/5] md:w-full md:max-w-[min(100%,calc(74dvh*0.8))] md:flex-none`}>
+      {/* The plate: two hairlines, the organism, 28px of air, the label. Nothing else.
+          Its height is the viewport minus the chrome it shares the column with, measured:
+          181px above it (nav 77, main padding 32, title block 72) and 164px below it, down to
+          the bottom of the status line. 350px keeps the field, Grow, Keep, Copy link and the
+          message above the fold from 768px of viewport height up, and still gives the plant
+          almost all of a 1080px screen. */}
+      <div className={`${tight ? 'mx-3' : 'mx-4'} min-h-0 flex-1 md:mx-auto md:aspect-[4/5] md:w-full md:max-w-[min(100%,max(180px,calc((100dvh_-_350px)*0.8)))] md:flex-none`}>
         <div className="relative h-full w-full rounded-[2px] border border-[#1B2328] p-[6px]">
           <div className={`flex h-full w-full flex-col rounded-[2px] border border-[#1B2328] bg-[#0B0E11] pt-1 ${tight ? 'px-3 pb-2' : 'px-4 pb-4'}`}>
             <div className="relative min-h-0 flex-1">
@@ -593,7 +631,7 @@ export default function Client({ first }: { first: FirstPaint }) {
         </div>
       </div>
 
-      <div className={`shrink-0 px-4 ${tight ? 'pt-2' : 'pt-4'} pb-[max(10px,env(safe-area-inset-bottom))] md:mx-auto md:w-full md:max-w-[min(100%,calc(74dvh*0.8))] md:px-0 md:pb-0`}>
+      <div className={`shrink-0 px-4 ${tight ? 'pt-2' : 'pt-4'} pb-[max(10px,env(safe-area-inset-bottom))] md:mx-auto md:w-full md:max-w-[min(100%,max(180px,calc((100dvh_-_350px)*0.8)))] md:px-0 md:pb-0`}>
         <form
           className="flex gap-2"
           onSubmit={(e) => {

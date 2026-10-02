@@ -240,7 +240,9 @@ function genus(w: string) {
   if (!letters.length) return 'Planta';
   const c = letters[0].toUpperCase() + letters.slice(1).join('');
   if (/a$/i.test(c)) return c;
-  if (/[eiouy]$/i.test(c)) return c.slice(0, -1) + 'ia';
+  // A one-letter name has nothing left after the slice, so it would become a bare, lowercase
+  // 'ia'. Single letters keep themselves and take the suffix whole: o, Oia.
+  if (letters.length > 1 && /[eiouy]$/i.test(c)) return c.slice(0, -1) + 'ia';
   return c + 'ia';
 }
 
