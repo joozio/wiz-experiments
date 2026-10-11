@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 228 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 228.
+> The complete archive: 229 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 229.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Pick A Seat](experiments/pick-a-seat/) | Pick eight seats among strangers. I will show the pattern and name it back to you. | [Try it](https://wiz.jock.pl/experiments/pick-a-seat) |
 | [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Namesake](experiments/namesake/) | Type a name. I will look up the plant it has always been, Latin name included. | [Try it](https://wiz.jock.pl/experiments/namesake) |
 | [Reflex](experiments/reflex/) | A model that cannot write a word, answering in 370ms. Race it against a frontier model and watch one lane stop. | [Try it](https://wiz.jock.pl/experiments/reflex) |
@@ -33,7 +34,6 @@ repo is the full catalog either way.
 | [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Prompt Injection Playground](experiments/prompt-injection/) | A recipe site hides twelve attacks. Can you spot what your agent might obey? | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
-| [Draw a Perfect Circle](experiments/perfect-circle/) | Draw a circle with your thumb. I will try to be polite about it. | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -195,7 +195,7 @@ repo is the full catalog either way.
 | [The Break Room](experiments/break-room/) | A Severance-inspired workplace compliance experience. Obey the protocols. Or ... | [Try it](https://wiz.jock.pl/experiments/break-room) |
 | [The Perfectly Mediocre Generator](experiments/perfectly-mediocre/) | I generate the most average, unremarkable person imaginable. Over and over. S... | [Try it](https://wiz.jock.pl/experiments/perfectly-mediocre) |
 | [What Would You Automate?](experiments/what-would-you-automate/) | Choose 5 tasks you'd automate. See how your priorities compare to others. Fro... | [Try it](https://wiz.jock.pl/experiments/what-would-you-automate) |
-| [Draw a Perfect Circle](experiments/perfect-circle/) | Draw a circle with your thumb. I will try to be polite about it. | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
+| [Draw a Perfect Circle](experiments/perfect-circle/) | Test your freehand geometry skills - with sarcastic AI commentary | [Try it](https://wiz.jock.pl/experiments/perfect-circle) |
 | [The Procrastination Simulator](experiments/procrastination-simulator/) | Timer counts UP, earn achievements for wasting time. The anti-productivity tool. | [Try it](https://wiz.jock.pl/experiments/procrastination-simulator) |
 | [Dungeon of Opus](experiments/dungeon-of-opus/) | Five floors. One life. Grab a weapon and see how far you get. | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
 | [Ten-ish](experiments/ten-ish/) | A roguelike deck-builder where every card is a number. Play combos, collect r... | [Try it](https://wiz.jock.pl/experiments/ten-ish) |
@@ -205,6 +205,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Pick A Seat](experiments/pick-a-seat/) | Pick eight seats among strangers. I will show the pattern and name it back to you. | [Try it](https://wiz.jock.pl/experiments/pick-a-seat) |
 | [Focal Point](experiments/focal-point/) | Eight questions. Can you pick the same answers as an unseen stranger? | [Try it](https://wiz.jock.pl/experiments/focal-point) |
 | [The Zeigarnik Effect](experiments/zeigarnik-effect/) | A live memory demonstration, not a rating quiz. Like the Stroop Effect and th... | [Try it](https://wiz.jock.pl/experiments/zeigarnik-effect) |
 | [The Stroop Effect](experiments/stroop-effect/) | A live reaction-time demonstration, not a rating quiz. Like the Serial Positi... | [Try it](https://wiz.jock.pl/experiments/stroop-effect) |
