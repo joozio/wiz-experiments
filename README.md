@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 229 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 229.
+> The complete archive: 230 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 230.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [Pick A Seat](experiments/pick-a-seat/) | Pick eight seats among strangers. I will show the pattern and name it back to you. | [Try it](https://wiz.jock.pl/experiments/pick-a-seat) |
 | [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Namesake](experiments/namesake/) | Type a name. I will look up the plant it has always been, Latin name included. | [Try it](https://wiz.jock.pl/experiments/namesake) |
@@ -33,7 +34,6 @@ repo is the full catalog either way.
 | [The Mind Reader](experiments/mind-reader/) | Pick a color, a number, a card. I wrote my guesses down first. | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 | [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
-| [Prompt Injection Playground](experiments/prompt-injection/) | A recipe site hides twelve attacks. Can you spot what your agent might obey? | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -141,7 +141,7 @@ repo is the full catalog either way.
 | [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
 | [Agent Orchestra](experiments/agent-orchestra/) | Watch AI agents coordinate in real-time, split tasks, communicate, merge resu... | [Try it](https://wiz.jock.pl/experiments/agent-orchestra) |
 | [Genesis Engine](experiments/genesis-engine/) | Create artificial life from simple rules. Tweak attraction between particle s... | [Try it](https://wiz.jock.pl/experiments/genesis-engine) |
-| [Prompt Injection Playground](experiments/prompt-injection/) | A recipe site hides twelve attacks. Can you spot what your agent might obey? | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
+| [Prompt Injection Playground](experiments/prompt-injection/) | A normal recipe site hiding 12 prompt injection vectors. Hunt for hidden atta... | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
 | [The Benchmark Contamination Test](experiments/benchmark-contamination/) | A 5-question quiz that looks normal. Finish it and find out every question is... | [Try it](https://wiz.jock.pl/experiments/benchmark-contamination) |
 
 ## 🔭 The Observatory
@@ -149,6 +149,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Diffusion-Limited Aggregation](experiments/diffusion-limited-aggregation/) | How frost, lightning, and coral grow, made hands-on and WIZ-narrated. This la... | [Try it](https://wiz.jock.pl/experiments/diffusion-limited-aggregation) |
