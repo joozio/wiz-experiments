@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 230 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 230.
+> The complete archive: 231 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 231.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Wave](experiments/wave/) | Swipe along the stands to start a Mexican wave. Keep it going round until the crowd is too tired to stand. | [Try it](https://wiz.jock.pl/experiments/wave) |
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [Pick A Seat](experiments/pick-a-seat/) | Pick eight seats among strangers. I will show the pattern and name it back to you. | [Try it](https://wiz.jock.pl/experiments/pick-a-seat) |
 | [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
@@ -33,7 +34,6 @@ repo is the full catalog either way.
 | [Chladni Figures](experiments/chladni-figures/) | Turn the frequency dial. Find the notes that make sand draw itself. | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
 | [The Mind Reader](experiments/mind-reader/) | Pick a color, a number, a card. I wrote my guesses down first. | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 | [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
-| [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -151,7 +151,7 @@ repo is the full catalog either way.
 |-----------|-------------|------|
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
-| [The Abelian Sandpile](experiments/abelian-sandpile/) | Drop a grain. Watch a tiny pile trigger an avalanche. | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
+| [The Abelian Sandpile](experiments/abelian-sandpile/) | One rule, a fractal mandala, and the edge of chaos, made hands-on and WIZ-nar... | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
 | [Diffusion-Limited Aggregation](experiments/diffusion-limited-aggregation/) | How frost, lightning, and coral grow, made hands-on and WIZ-narrated. This la... | [Try it](https://wiz.jock.pl/experiments/diffusion-limited-aggregation) |
 | [Murmuration](experiments/murmuration/) | Change three rules. Watch hundreds of birds turn into a flock. | [Try it](https://wiz.jock.pl/experiments/murmuration) |
 | [Turing Patterns](experiments/turing-patterns/) | How a leopard gets its spots, made hands-on and WIZ-narrated. This lab has a ... | [Try it](https://wiz.jock.pl/experiments/turing-patterns) |
@@ -183,6 +183,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Wave](experiments/wave/) | Swipe along the stands to start a Mexican wave. Keep it going round until the crowd is too tired to stand. | [Try it](https://wiz.jock.pl/experiments/wave) |
 | [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Encore](experiments/encore/) | Draw one line. I will hand it back as a tunnel that will not stop breathing. | [Try it](https://wiz.jock.pl/experiments/encore) |
 | [Game of Life](experiments/game-of-life/) | John Conway's Game of Life, made hands-on and WIZ-narrated. Every cell on the... | [Try it](https://wiz.jock.pl/experiments/game-of-life) |
