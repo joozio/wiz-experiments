@@ -853,6 +853,23 @@ function Minimap({ map, player, enemies }: { map: Tile[][]; player: Player; enem
 
 // ==================== MAIN COMPONENT ====================
 
+// High score storage. Blocked storage throws on access, so it reads as no score and saves nothing.
+function readHighScore(): number {
+  if (typeof window === 'undefined') return 0;
+  try {
+    return parseInt(localStorage.getItem('dungeon_highscore') || '0') || 0;
+  } catch {
+    return 0;
+  }
+}
+
+function saveHighScore(hs: number) {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem('dungeon_highscore', String(hs));
+  } catch {}
+}
+
 export default function DungeonOfOpus() {
   const [game, setGame] = useState<GameState | null>(null);
   const [showHelp, setShowHelp] = useState(false);
@@ -882,7 +899,7 @@ export default function DungeonOfOpus() {
     const visibleMap = updateVisibility(map, px, py);
     const enemies = spawnEnemies(rooms, visibleMap, 1, px, py);
 
-    const stored = typeof window !== 'undefined' ? parseInt(localStorage.getItem('dungeon_highscore') || '0') : 0;
+    const stored = readHighScore();
 
     setGame({
       phase: 'playing',
@@ -999,7 +1016,7 @@ export default function DungeonOfOpus() {
             if (newState.player.hp <= 0) {
               const finalScore = score + player.gold + player.kills * 5;
               const hs = Math.max(game.highScore, finalScore);
-              if (typeof window !== 'undefined') localStorage.setItem('dungeon_highscore', String(hs));
+              saveHighScore(hs);
               setGame({ ...newState, phase: 'gameover', score: finalScore, highScore: hs });
             } else {
               setGame(newState);
@@ -1019,7 +1036,7 @@ export default function DungeonOfOpus() {
             if (newState.player.hp <= 0) {
               const finalScore = score + player.gold + player.kills * 5;
               const hs = Math.max(game.highScore, finalScore);
-              if (typeof window !== 'undefined') localStorage.setItem('dungeon_highscore', String(hs));
+              saveHighScore(hs);
               setGame({ ...newState, phase: 'gameover', score: finalScore, highScore: hs });
             } else {
               setGame(newState);
@@ -1036,7 +1053,7 @@ export default function DungeonOfOpus() {
         if (player.floor >= MAX_FLOOR) {
           const finalScore = score + player.gold * 2 + player.kills * 10 + player.level * 50;
           const hs = Math.max(game.highScore, finalScore);
-          if (typeof window !== 'undefined') localStorage.setItem('dungeon_highscore', String(hs));
+          saveHighScore(hs);
           setGame({ ...game, phase: 'victory', player, score: finalScore, highScore: hs, messages });
           return;
         }
@@ -1090,7 +1107,7 @@ export default function DungeonOfOpus() {
     if (newState.player.hp <= 0) {
       const finalScore = score + player.gold + player.kills * 5;
       const hs = Math.max(game.highScore, finalScore);
-      if (typeof window !== 'undefined') localStorage.setItem('dungeon_highscore', String(hs));
+      saveHighScore(hs);
       setGame({ ...newState, phase: 'gameover', score: finalScore, highScore: hs, messages: [...newState.messages, 'You have perished in the dungeon.'] });
       return;
     }
@@ -1109,7 +1126,7 @@ export default function DungeonOfOpus() {
     if (newState.player.hp <= 0) {
       const finalScore = game.score + player.gold + player.kills * 5;
       const hs = Math.max(game.highScore, finalScore);
-      if (typeof window !== 'undefined') localStorage.setItem('dungeon_highscore', String(hs));
+      saveHighScore(hs);
       setGame({ ...newState, phase: 'gameover', score: finalScore, highScore: hs });
     } else {
       setGame(newState);
@@ -1230,7 +1247,7 @@ export default function DungeonOfOpus() {
 
   // Title screen
   if (!game || game.phase === 'title') {
-    const hs = typeof window !== 'undefined' ? parseInt(localStorage.getItem('dungeon_highscore') || '0') : 0;
+    const hs = readHighScore();
     return (
       <div className="flex flex-col items-center justify-center min-h-[70vh]" tabIndex={0} ref={gameRef}>
         <div className="text-center mb-4">

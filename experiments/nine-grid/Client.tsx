@@ -50,15 +50,21 @@ export default function NineGridClient() {
   const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    const lastDate = localStorage.getItem(LAST_POST_KEY);
-    const today = new Date().toDateString();
-    if (saved) setPosts(JSON.parse(saved));
-    if (lastDate === today) setPostedToday(true);
+    // Storage can be blocked (throws) or hold something unreadable; keep the defaults then.
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      const lastDate = localStorage.getItem(LAST_POST_KEY);
+      const today = new Date().toDateString();
+      const parsed = saved ? JSON.parse(saved) : null;
+      if (Array.isArray(parsed) && parsed.length) setPosts(parsed);
+      if (lastDate === today) setPostedToday(true);
+    } catch {}
   }, []);
 
   const savePosts = useCallback((p: Post[]) => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+    } catch {}
     setPosts(p);
   }, []);
 
@@ -96,7 +102,9 @@ export default function NineGridClient() {
     setBumpedPost(oldest);
     setTimeout(() => setBumpedPost(null), 4000);
     savePosts(next);
-    localStorage.setItem(LAST_POST_KEY, new Date().toDateString());
+    try {
+      localStorage.setItem(LAST_POST_KEY, new Date().toDateString());
+    } catch {}
     setPostedToday(true);
     setNewText('');
     setShowInput(false);
@@ -249,8 +257,10 @@ export default function NineGridClient() {
         <div className="text-center">
           <button
             onClick={() => {
-              localStorage.removeItem(STORAGE_KEY);
-              localStorage.removeItem(LAST_POST_KEY);
+              try {
+                localStorage.removeItem(STORAGE_KEY);
+                localStorage.removeItem(LAST_POST_KEY);
+              } catch {}
               setPosts(DEFAULT_POSTS);
               setPostedToday(false);
               setBumpedPost(null);

@@ -65,12 +65,11 @@ const loadInitialSurveyState = (): SurveyState => {
     return { results: seedResults, totalResponses: 42 }
   }
 
-  const stored = localStorage.getItem('automation-survey-results')
-  if (!stored) {
-    return { results: seedResults, totalResponses: 42 }
-  }
-
   try {
+    const stored = localStorage.getItem('automation-survey-results')
+    if (!stored) {
+      return { results: seedResults, totalResponses: 42 }
+    }
     const parsed = JSON.parse(stored)
     return {
       results: parsed.results || seedResults,
@@ -115,11 +114,13 @@ export default function WhatWouldYouAutomate() {
     const newCount = totalResponses + 1
 
     // Save to localStorage
-    localStorage.setItem('automation-survey-results', JSON.stringify({
-      results: newResults,
-      count: newCount,
-      lastSubmit: Date.now()
-    }))
+    try {
+      localStorage.setItem('automation-survey-results', JSON.stringify({
+        results: newResults,
+        count: newCount,
+        lastSubmit: Date.now()
+      }))
+    } catch {}
 
     setSurveyState({
       results: newResults,
