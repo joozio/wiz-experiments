@@ -12,6 +12,7 @@ interface Post {
   content: string;
   daysAgo: number;
   isNew?: boolean;
+  postedAt?: number;
 }
 
 const DEFAULT_POSTS: Post[] = [
@@ -34,6 +35,21 @@ function getTimeLabel(daysAgo: number): string {
   if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks ago`;
   if (daysAgo < 60) return '1 month ago';
   return `${Math.floor(daysAgo / 30)} months ago`;
+}
+
+// Posts age with the calendar from postedAt. Posts saved before postedAt existed fall back
+// to their id (Date.now() when written) or, for seed posts, the fixed daysAgo.
+function postedAtOf(post: Post): number {
+  return post.postedAt ?? (post.isNew ? Number(post.id) : NaN);
+}
+
+function ageOf(post: Post, now = new Date()): number {
+  const at = postedAtOf(post);
+  if (!Number.isFinite(at)) return post.daysAgo;
+  const then = new Date(at);
+  const days = (Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) -
+    Date.UTC(then.getFullYear(), then.getMonth(), then.getDate())) / 86400000;
+  return Math.max(0, Math.round(days));
 }
 
 const STORAGE_KEY = 'nine-grid-posts';
@@ -89,15 +105,19 @@ export default function NineGridClient() {
 
   const handleSubmit = () => {
     if (!newText.trim() || postedToday) return;
-    const oldest = [...posts].sort((a, b) => b.daysAgo - a.daysAgo)[0];
-    const oldestIdx = posts.findIndex(p => p.id === oldest.id);
+    // From the first post on, seed posts start ageing too, from the age they showed today.
+    const now = Date.now();
+    const dated = posts.map(p => Number.isFinite(postedAtOf(p)) ? p : { ...p, postedAt: now - p.daysAgo * 86400000 });
+    const oldest = [...dated].sort((a, b) => ageOf(b) - ageOf(a))[0];
+    const oldestIdx = dated.findIndex(p => p.id === oldest.id);
     const newPost: Post = {
       id: Date.now().toString(),
       content: newText.trim(),
       daysAgo: 0,
       isNew: true,
+      postedAt: now,
     };
-    const next = [...posts];
+    const next = [...dated];
     next[oldestIdx] = newPost;
     setBumpedPost(oldest);
     setTimeout(() => setBumpedPost(null), 4000);
@@ -181,10 +201,10 @@ export default function NineGridClient() {
                 {post.content}
               </p>
               <div className="mt-2 text-xs text-gray-600">
-                {post.isNew ? (
+                {post.isNew && ageOf(post) === 0 ? (
                   <span className="text-emerald-500 font-medium">just now</span>
                 ) : (
-                  getTimeLabel(post.daysAgo)
+                  getTimeLabel(ageOf(post))
                 )}
               </div>
               {/* drag handle indicator */}
