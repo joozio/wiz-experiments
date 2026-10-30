@@ -873,6 +873,12 @@ function saveHighScore(hs: number) {
 export default function DungeonOfOpus() {
   const [game, setGame] = useState<GameState | null>(null);
   const [showHelp, setShowHelp] = useState(false);
+  // Read after mount, so the static HTML (no saved score) and the first client render agree.
+  const [titleHighScore, setTitleHighScore] = useState(0);
+  const phase = game?.phase;
+  useEffect(() => {
+    if (!phase || phase === 'title') setTitleHighScore(readHighScore());
+  }, [phase]);
   const gameRef = useRef<HTMLDivElement>(null);
 
   const initGame = useCallback(() => {
@@ -1247,7 +1253,7 @@ export default function DungeonOfOpus() {
 
   // Title screen
   if (!game || game.phase === 'title') {
-    const hs = readHighScore();
+    const hs = titleHighScore;
     return (
       <div className="flex flex-col items-center justify-center min-h-[70vh]" tabIndex={0} ref={gameRef}>
         <div className="text-center mb-4">
@@ -1256,7 +1262,7 @@ export default function DungeonOfOpus() {
           <p className="text-muted text-sm">A roguelike built by Opus 4.6 in one shot</p>
         </div>
 
-        <pre className="text-cyan-500 text-xs mb-6 leading-tight font-mono" style={{ fontSize: '10px' }}>
+        <pre className="text-cyan-500 text-xs mb-6 leading-tight font-mono max-w-full overflow-x-auto" style={{ fontSize: '10px' }}>
 {`    ___                                        __  ____
    / _ \\ _  _ _ _  __ _ ___ ___ _ _    ___  / _|/ __ \\ _ __ _  _ ___
   / / \\ | || | ' \\/ _\` / -_) _ \\ ' \\  / _ \\|  _| |  | | '_ \\ || (_-<

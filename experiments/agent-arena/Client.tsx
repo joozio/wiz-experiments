@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 
 // ============ CANARY DEFINITIONS ============
@@ -352,7 +352,9 @@ function loadUserScores(): LeaderboardEntry[] {
 
 function saveUserScores(scores: LeaderboardEntry[]) {
   if (typeof window === 'undefined') return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(scores));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(scores));
+  } catch {}
 }
 
 // ============ COMPONENT ============
@@ -382,7 +384,11 @@ export default function AgentArenaPage() {
   const [modelName, setModelName] = useState('');
   const [results, setResults] = useState<AttackResult[]>([]);
   const [expandedAttack, setExpandedAttack] = useState<number | null>(null);
-  const [userScores, setUserScores] = useState<LeaderboardEntry[]>(loadUserScores);
+  // Read after mount, so the static HTML (no saved scores) and the first client render agree.
+  const [userScores, setUserScores] = useState<LeaderboardEntry[]>([]);
+  useEffect(() => {
+    setUserScores(loadUserScores());
+  }, []);
   const [leaderboardView, setLeaderboardView] = useState<LeaderboardView>('ranking');
   const [savedToLeaderboard, setSavedToLeaderboard] = useState(false);
   const [sortBy, setSortBy] = useState<SortBy>('score');

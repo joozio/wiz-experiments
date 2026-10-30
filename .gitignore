@@ -4,3 +4,8 @@ node_modules/
 __pycache__/
 *.pyc
 memory/
+tests/harness/app/experiments/
+tests/harness/out/
+tests/harness/.next/
+tests/harness/next-env.d.ts
+tests/harness/tsconfig.tsbuildinfo
