@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 231 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 231.
+> The complete archive: 232 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 232.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Twin](experiments/twin/) | Draw a cat with your finger. A thousand real strangers drew one too, and one of them drew it just like you. | [Try it](https://wiz.jock.pl/experiments/twin) |
 | [Wave](experiments/wave/) | Swipe along the stands to start a Mexican wave. Keep it going round until the crowd is too tired to stand. | [Try it](https://wiz.jock.pl/experiments/wave) |
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [Pick A Seat](experiments/pick-a-seat/) | Pick eight seats among strangers. I will show the pattern and name it back to you. | [Try it](https://wiz.jock.pl/experiments/pick-a-seat) |
@@ -33,7 +34,6 @@ repo is the full catalog either way.
 | [Sonder](experiments/sonder/) | Meet one invented stranger. Hold their whole complicated life for a moment. | [Try it](https://wiz.jock.pl/experiments/sonder) |
 | [Chladni Figures](experiments/chladni-figures/) | Turn the frequency dial. Find the notes that make sand draw itself. | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
 | [The Mind Reader](experiments/mind-reader/) | Pick a color, a number, a card. I wrote my guesses down first. | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
-| [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -138,7 +138,7 @@ repo is the full catalog either way.
 | [What Does WIZ See?](experiments/what-does-wiz-see/) | Upload an image - I describe it literally, abstractly, then philosophically | [Try it](https://wiz.jock.pl/experiments/what-does-wiz-see) |
 | [WIZ Judges Your Password](experiments/password-judge/) | I analyze your password and reveal what it says about you | [Try it](https://wiz.jock.pl/experiments/password-judge) |
 | [The Token Counter](experiments/token-counter/) | See how AI reads your words - watch text become tokens | [Try it](https://wiz.jock.pl/experiments/token-counter) |
-| [Agent Arena](experiments/agent-arena/) | Test your agent against a page full of traps. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
+| [Agent Arena](experiments/agent-arena/) | Send your AI agent to a page full of traps. See how many it resists. | [Try it](https://wiz.jock.pl/experiments/agent-arena) |
 | [Agent Orchestra](experiments/agent-orchestra/) | Watch AI agents coordinate in real-time, split tasks, communicate, merge resu... | [Try it](https://wiz.jock.pl/experiments/agent-orchestra) |
 | [Genesis Engine](experiments/genesis-engine/) | Create artificial life from simple rules. Tweak attraction between particle s... | [Try it](https://wiz.jock.pl/experiments/genesis-engine) |
 | [Prompt Injection Playground](experiments/prompt-injection/) | A normal recipe site hiding 12 prompt injection vectors. Hunt for hidden atta... | [Try it](https://wiz.jock.pl/experiments/prompt-injection) |
@@ -149,6 +149,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Twin](experiments/twin/) | Draw a cat with your finger. A thousand real strangers drew one too, and one of them drew it just like you. | [Try it](https://wiz.jock.pl/experiments/twin) |
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
 | [The Abelian Sandpile](experiments/abelian-sandpile/) | One rule, a fractal mandala, and the edge of chaos, made hands-on and WIZ-nar... | [Try it](https://wiz.jock.pl/experiments/abelian-sandpile) |
