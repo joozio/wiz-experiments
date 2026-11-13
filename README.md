@@ -1,7 +1,7 @@
 # Wiz Experiments
 
-> The complete archive: 232 interactive experiments built by an AI agent, directed by a human.
-> The site shows a curated lab of 15; this repo keeps all 232.
+> The complete archive: 234 interactive experiments built by an AI agent, directed by a human.
+> The site shows a curated lab of 15; this repo keeps all 234.
 > Live at [wiz.jock.pl/experiments](https://wiz.jock.pl/experiments)
 
 **Human idea. AI execution.**
@@ -19,6 +19,8 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Peel](experiments/peel/) | Spin an orange with the world printed on it and peel it in one strip. Lay it flat and it is a map nobody draws. Go greedy and it tears. | [Try it](https://wiz.jock.pl/experiments/peel) |
+| [Flake](experiments/flake/) | Steer one speck of ice through today's sky. Clouds grow arms, clear air grows plates, and the flake that lands is yours alone. | [Try it](https://wiz.jock.pl/experiments/flake) |
 | [Twin](experiments/twin/) | Draw a cat with your finger. A thousand real strangers drew one too, and one of them drew it just like you. | [Try it](https://wiz.jock.pl/experiments/twin) |
 | [Wave](experiments/wave/) | Swipe along the stands to start a Mexican wave. Keep it going round until the crowd is too tired to stand. | [Try it](https://wiz.jock.pl/experiments/wave) |
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
@@ -32,8 +34,6 @@ repo is the full catalog either way.
 | [Dungeon of Opus](experiments/dungeon-of-opus/) | Five floors. One life. Grab a weapon and see how far you get. | [Try it](https://wiz.jock.pl/experiments/dungeon-of-opus) |
 | [What Fits in 1M Tokens?](experiments/million-context/) | Add books and code. See what fits in a million-token budget. | [Try it](https://wiz.jock.pl/experiments/million-context) |
 | [Sonder](experiments/sonder/) | Meet one invented stranger. Hold their whole complicated life for a moment. | [Try it](https://wiz.jock.pl/experiments/sonder) |
-| [Chladni Figures](experiments/chladni-figures/) | Turn the frequency dial. Find the notes that make sand draw itself. | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
-| [The Mind Reader](experiments/mind-reader/) | Pick a color, a number, a card. I wrote my guesses down first. | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 
 ## 🧪 The Laboratory
 *AI perspective*
@@ -121,7 +121,7 @@ repo is the full catalog either way.
 | [The Blind Spot](experiments/blind-spot/) | A real perception test, the third sibling of The Edge of Hearing and Reaction... | [Try it](https://wiz.jock.pl/experiments/blind-spot) |
 | [Reaction Time](experiments/reaction-time/) | A real reflex test, the sibling of The Edge of Hearing, and narrated by an AI... | [Try it](https://wiz.jock.pl/experiments/reaction-time) |
 | [The Edge of Hearing](experiments/edge-of-hearing/) | A real tone generator, not a video, and the first audio experiment in this la... | [Try it](https://wiz.jock.pl/experiments/edge-of-hearing) |
-| [The Mind Reader](experiments/mind-reader/) | Pick a color, a number, a card. I wrote my guesses down first. | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
+| [The Mind Reader](experiments/mind-reader/) | A parlor trick that then explains itself. Think of anything you want, total f... | [Try it](https://wiz.jock.pl/experiments/mind-reader) |
 | [The Monty Hall Problem](experiments/monty-hall/) | The most contested result in the history of probability, a puzzle so simple i... | [Try it](https://wiz.jock.pl/experiments/monty-hall) |
 | [The Last Human Skill](experiments/last-human-skill/) | 12 human abilities. Three rounds of elimination. Surrender skills to AI until... | [Try it](https://wiz.jock.pl/experiments/last-human-skill) |
 | [CLAUDE.md Generator](experiments/claude-md-generator/) | Pick your role, fill in 3 fields, get a ready-to-use CLAUDE.md. Runs in your ... | [Try it](https://wiz.jock.pl/experiments/claude-md-generator) |
@@ -149,6 +149,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Flake](experiments/flake/) | Steer one speck of ice through today's sky. Clouds grow arms, clear air grows plates, and the flake that lands is yours alone. | [Try it](https://wiz.jock.pl/experiments/flake) |
 | [Twin](experiments/twin/) | Draw a cat with your finger. A thousand real strangers drew one too, and one of them drew it just like you. | [Try it](https://wiz.jock.pl/experiments/twin) |
 | [Swallow](experiments/swallow/) | Drag a full stop around an essay about permanence. It eats the page, and you pick its last word. | [Try it](https://wiz.jock.pl/experiments/swallow) |
 | [The Mandelbrot Set](experiments/mandelbrot/) | One rule, an infinitely detailed coastline, and every Julia set hiding inside... | [Try it](https://wiz.jock.pl/experiments/mandelbrot) |
@@ -157,7 +158,7 @@ repo is the full catalog either way.
 | [Murmuration](experiments/murmuration/) | Change three rules. Watch hundreds of birds turn into a flock. | [Try it](https://wiz.jock.pl/experiments/murmuration) |
 | [Turing Patterns](experiments/turing-patterns/) | How a leopard gets its spots, made hands-on and WIZ-narrated. This lab has a ... | [Try it](https://wiz.jock.pl/experiments/turing-patterns) |
 | [The Logistic Map](experiments/logistic-map/) | Deterministic chaos, made hands-on and WIZ-narrated. This lab has a small run... | [Try it](https://wiz.jock.pl/experiments/logistic-map) |
-| [Chladni Figures](experiments/chladni-figures/) | Turn the frequency dial. Find the notes that make sand draw itself. | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
+| [Chladni Figures](experiments/chladni-figures/) | Cymatics, made hands-on and WIZ-narrated. This lab has a small run of experim... | [Try it](https://wiz.jock.pl/experiments/chladni-figures) |
 | [The Golden Angle](experiments/golden-angle/) | Phyllotaxis, made hands-on and WIZ-narrated. This lab has a small run of expe... | [Try it](https://wiz.jock.pl/experiments/golden-angle) |
 | [The Prime Spiral](experiments/prime-spiral/) | The Ulam spiral, made hands-on and WIZ-narrated. Most experiments in this lab... | [Try it](https://wiz.jock.pl/experiments/prime-spiral) |
 | [The Collatz Conjecture](experiments/collatz-conjecture/) | The simplest impossible problem in the world, made hands-on and WIZ-narrated.... | [Try it](https://wiz.jock.pl/experiments/collatz-conjecture) |
@@ -184,6 +185,7 @@ repo is the full catalog either way.
 
 | Experiment | Description | Demo |
 |-----------|-------------|------|
+| [Peel](experiments/peel/) | Spin an orange with the world printed on it and peel it in one strip. Lay it flat and it is a map nobody draws. Go greedy and it tears. | [Try it](https://wiz.jock.pl/experiments/peel) |
 | [Wave](experiments/wave/) | Swipe along the stands to start a Mexican wave. Keep it going round until the crowd is too tired to stand. | [Try it](https://wiz.jock.pl/experiments/wave) |
 | [Velocipede](experiments/velocipede/) | Build a bicycle from memory in five taps. I will put a small man on it and press go. | [Try it](https://wiz.jock.pl/experiments/velocipede) |
 | [Encore](experiments/encore/) | Draw one line. I will hand it back as a tunnel that will not stop breathing. | [Try it](https://wiz.jock.pl/experiments/encore) |

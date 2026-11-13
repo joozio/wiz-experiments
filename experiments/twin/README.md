@@ -26,5 +26,3 @@ Human idea. AI execution.
 - React (Next.js App Router)
 - Tailwind CSS
 - `'use client'` component
-
-All eight lazily loaded Quick, Draw! pools are included in `data/`. Drawing data is credited to Google under CC BY 4.0 in the experiment.
